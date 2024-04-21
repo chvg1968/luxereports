@@ -1,0 +1,59 @@
+{
+    "users": [
+      {
+        "username": "Yoon",
+        "password": "Y919",
+        "property": "Villa Paloma",
+        "role":"viewer"
+      },
+      {
+        "username": "Sharpe",
+        "password": "S001",
+        "property": "Casa Prestige",
+        "role":"viewer"
+      },
+      {
+        "username": "Beatty",
+        "password": "B174",
+        "property": "Villa Palacio",
+        "role":"viewer"
+      },
+      {
+        "username": "Goldberg",
+        "password": "G247",
+        "property": "Villa Clara",
+        "role":"viewer"
+      },
+      {
+        "username": "Arana",
+        "password": "A341",
+        "property": "Villa Flora",
+        "role":"viewer"
+      },
+      {
+        "username": "Neesen",
+        "password": "N687",
+        "property": "Casa Paraiso",
+        "role":"viewer"
+      },
+      {
+        "username": "Lucy",
+        "password": "L000",
+        "property": "All Properties",
+        "role":"admin"
+      },
+      {
+        "username": "Cal",
+        "password": "C000",
+        "property": "Calendar",
+        "role":"calendar"
+      },
+      {
+        "username": "Clean",
+        "password": "C234",
+        "property": "Cleaning",
+        "role":"cleaning"
+      }
+    ]
+  }
+  

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Luxe Properties</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-********"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <img src="/images/logo.png" alt="Logo" width="200" height="200" />
+      <p id="currentDate"></p>
+      <div id="navContainer"></div>
+    </header>
+    <main>
+      <div id="loginForm">
+        <h2>Log in</h2>
+        <form id="userLoginForm">
+          <label for="username">User:</label>
+          <input
+            type="text"
+            id="username"
+            name="username"
+            required
+          /><br /><br />
+          <label for="password">Password:</label>
+          <input
+            type="password"
+            id="password"
+            name="password"
+            required
+          /><br /><br />
+          <button type="submit">Log in</button>
+        </form>
+      </div>
+      <div id="navContainer" style="display: none"></div>
+      <div id="propertyData" style="display: none">
+        <!-- Aquí se mostrarán los datos de la propiedad del usuario -->
+        <h2>Luxe Properties Report</h2>
+        <p id="propertyInfo"></p>
+        <p id="propertyInfo2"></p>
+      </div>
+    </main>
+    <footer>
+      <p>&copy; 2024 Luxe Properties. All rights reserved.</p>
+    </footer>
+    <script src="script.js" type="module"></script>
+  </body>
+</html>
