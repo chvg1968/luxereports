@@ -111,3 +111,11 @@ footer {
   background: transparent;
   border: 1px solid #ccc;
 }
+
+.hidden {
+  display: none;
+}
+
+.hidden-on-load {
+  display: none;
+}

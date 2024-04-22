@@ -14,14 +14,27 @@ function loadNavigation(user) {
         filterNavigation(user);
         addNavigationEventListeners();
       })
-      .catch((error) => console.error('Error al cargar el menú de navegación', error));
+      .catch((error) => console.error('Error to load navigation', error));
   }
 }
 
 function filterNavigation(user) {
+    const logoutOption = document.querySelector('.hidden-on-load');
+    logoutOption.classList.remove('hidden-on-load');
     const menuBar = document.querySelector('.menu-bar');
+    menuBar.classList.remove('hidden');
     const userRole = getUserRole(user);
     const isAdmin = isAdminUser(user);
+
+    if (logoutOption && menuBar) {
+      // Ocultar la opción de logout por defecto
+      logoutOption.classList.add('hidden-on-load');
+      menuBar.classList.remove('hidden');
+
+      if (isAdmin || userRole === 'viewer' || userRole === 'cleaning' || userRole === 'calendar') {
+          logoutOption.classList.remove('hidden-on-load');
+      }
+  }
   
     // Ocultar todos los menús principales
     const menuItems = document.querySelectorAll('.menu');
