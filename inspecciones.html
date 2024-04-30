@@ -1,54 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css" />
-    <title>Inspecciones</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css" />
+  <title>Inspecciones</title>
 </head>
 <body>
+  
     <header>
-        <nav>
-          <ul>
-            <li><a href="javascript:void(0);" id="logout">Logout</a></li>
-            <li><a href="/Inspections/villaclara/VillaClara.html" data-target="/Inspections/villaclara/VillaClara.html">Villa Clara</a></li>
-            <li><a href="/Inspections/villaflora/VillaFlora.html" data-target="/Inspections/villaflora/VillaFlora.html">Villa Flora</a></li>
-            <li><a href="/Inspections/casaparaiso/CasaParaiso.html" data-target="/Inspections/casaparaiso/CasaParaiso.html">Casa Paraiso</a></li>
-            <li><a href="/Inspections/casaprestige/CasaPrestige.html" data-target="/Inspections/casaprestige/CasaPrestige.html">Casa Prestige</a></li>
-            <li><a href="/Inspections/villapaloma/VillaPaloma.html" data-target="/Inspections/villapaloma/VillaPaloma.html">Villa Paloma</a></li>
-            <li><a href="/Inspections/villapalacio/VillaPalacio.html" data-target="/Inspections/villapalacio/VillaPalacio.html">Villa Palacio</a></li>
-          </ul>
-        </nav>
-      </header>
-      
-      <div id="content"></div>
-      
-      <script>
-        const nav = document.querySelector('nav');
-        const contentDiv = document.getElementById('content');
-      
-        nav.addEventListener('click', e => {
-          e.preventDefault();
-          const target = e.target.closest('a');
-      
-          if (target && target.id === 'logout') {
-            // Lógica para cerrar sesión
-          } else if (target && target.dataset.target) {
-            const url = target.dataset.target;
-            fetchContent(url);
-          }
-        });
-      
-        function fetchContent(url) {
-          fetch(url)
-            .then(response => response.text())
-            .then(html => {
-              contentDiv.innerHTML = html;
-            })
-            .catch(error => {
-              console.error('Error al cargar el contenido:', error);
-            });
+      <img src="/images/logo.png" alt="Logo" width="200" height="200" />
+      <nav id="main-nav">
+        <ul>
+          <li><a href="index.html" id="logout">Logout</a></li>
+          <li><a href="/Inspections/villaclara/VillaClara.html">Villa Clara</a></li>
+          <li><a href="/Inspections/villaflora/VillaFlora.html">Villa Flora</a></li>
+          <li><a href="/Inspections/casaparaiso/CasaParaiso.html">Casa Paraiso</a></li>
+          <li><a href="/Inspections/casaprestige/CasaPrestige.html">Casa Prestige</a></li>
+          <li><a href="/Inspections/villapaloma/VillaPaloma.html">Villa Paloma</a></li>
+          <li><a href="/Inspections/villapalacio/VillaPalacio.html">Villa Palacio</a></li>
+        </ul>
+      </nav>
+    </header>
+  
+
+  <div id="content">
+  </div>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      console.log("Script cargado correctamente");
+
+      const contentDiv = document.getElementById('content');
+      const nav = document.getElementById('main-nav');
+
+      nav.addEventListener('click', e => {
+        e.preventDefault();
+        const target = e.target.closest('a');
+
+        if (target && target.id === 'logout') {
+          logout();
+        } else if (target && target.href) {
+          fetchContent(target.href);
         }
-      </script>
+      });
+
+      function fetchContent(url) {
+        fetch(url)
+          .then(response => {
+            if (!response.ok) {
+              throw new Error('Error al cargar el contenido');
+            }
+            return response.text();
+          })
+          .then(html => {
+            contentDiv.innerHTML = html;
+          })
+          .catch(error => {
+            console.error('Error al cargar el contenido:', error);
+            // Aquí podrías mostrar un mensaje de error al usuario
+          });
+      }
+
+      function logout() {
+        // Limpiar la sesión u otras tareas de cierre de sesión
+        // Redirigir al usuario a la página de inicio de sesión
+        window.location.href = 'index.html';
+      }
+    });
+  </script>
 </body>
 </html>

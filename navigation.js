@@ -89,7 +89,7 @@ function filterNavigation(user) {
       });
     }
     if (user.username === 'Insp' && userRole === 'inspeccion') {
-      openPage('inspecciones.html');
+      window.location.href = 'inspecciones.html';
     }
   }
 
