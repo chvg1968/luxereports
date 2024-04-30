@@ -1,8 +1,12 @@
 // content.js
 import { loadNavigation } from './navigation.js';
 
-function openPage(url, user) {
-  const main = document.querySelector('main');
+
+
+
+function openPage(url) {
+  const main = document.querySelector('main');//
+  
   if (main) {
     fetch(url)
       .then((response) => response.text())

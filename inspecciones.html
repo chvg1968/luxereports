@@ -4,13 +4,16 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="styles.css" />
+  
+
   <title>Inspecciones</title>
 </head>
 <body>
-  
-    <header>
-      <img src="/images/logo.png" alt="Logo" width="200" height="200" />
+   
+    <header class="header-insp">
+      <img src="/images/logo.png" alt="Logo" width="200" height="200" /> 
       <nav id="main-nav">
+        <button class="menu-toggle">&#9776; Menu</button>
         <ul>
           <li><a href="index.html" id="logout">Logout</a></li>
           <li><a href="/Inspections/villaclara/VillaClara.html">Villa Clara</a></li>
@@ -24,27 +27,41 @@
     </header>
   
 
-  <div id="content">
+  <div id="content-insp">
   </div>
 
   <script>
+    
+
     document.addEventListener('DOMContentLoaded', () => {
       console.log("Script cargado correctamente");
-
-      const contentDiv = document.getElementById('content');
+      const contentDiv = document.getElementById('content-insp');
       const nav = document.getElementById('main-nav');
-
+      const menuToggle = nav.querySelector('.menu-toggle');
+      const menuItems = nav.querySelector('ul');
+      const menuLinks = nav.querySelectorAll('a');
+    
+      menuToggle.addEventListener('click', () => {
+        menuItems.classList.toggle('show');
+      });
+    
+      // Cerrar el menú después de seleccionar un elemento
+      menuLinks.forEach(link => {
+        link.addEventListener('click', () => {
+          menuItems.classList.remove('show');
+        });
+      });
+    
       nav.addEventListener('click', e => {
         e.preventDefault();
         const target = e.target.closest('a');
-
         if (target && target.id === 'logout') {
           logout();
         } else if (target && target.href) {
           fetchContent(target.href);
         }
       });
-
+    
       function fetchContent(url) {
         fetch(url)
           .then(response => {
@@ -61,7 +78,7 @@
             // Aquí podrías mostrar un mensaje de error al usuario
           });
       }
-
+    
       function logout() {
         // Limpiar la sesión u otras tareas de cierre de sesión
         // Redirigir al usuario a la página de inicio de sesión

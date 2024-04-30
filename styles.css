@@ -2,7 +2,7 @@
 body {
   font-family: 'Open Sans', sans-serif;
   margin: 0;
-  padding: 0;
+  padding: 10px;
   background-color: #f5f5f5;
   color: #333;
 }
@@ -153,46 +153,36 @@ iframe {
   object-fit: contain; /* Ajusta la imagen para que quepa dentro del contenedor */
 }
 
-/* Media query para hacer el banner responsivo */
-/* Estilos base */
 
-
-#main-nav ul {
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
-  display: flex;
-}
-
-#main-nav ul li {
-  margin-right: 20px;
-}
-
-#main-nav ul li:last-child {
-  margin-right: 0;
-}
-
-#main-nav ul li a {
-  text-decoration: none;
-  color: #333;
-}
-
-/* Estilos para pantallas pequeñas */
-@media screen and (max-width: 768px) {
-  header {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
-  #main-nav {
-    margin-top: 20px;
-  }
-
+@media (max-width: 768px) {
   #main-nav ul {
-    flex-direction: column;
+    display: none; /* Ocultar el menú */
   }
 
-  #main-nav ul li {
-    margin: 10px 0;
+  .menu-toggle {
+    display: block; /* Mostrar el botón toggle */
   }
+}
+
+/* Estilos para pantallas más grandes */
+@media (min-width: 769px) {
+  .menu-toggle {
+    display: none; /* Ocultar el botón toggle */
+  }
+}
+
+
+.menu-toggle {
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+/* #main-nav ul {
+  display: none;
+} */
+
+#main-nav ul.show {
+  display: block;
 }

@@ -88,7 +88,7 @@ function filterNavigation(user) {
         item.style.display = 'list-item';
       });
     }
-    if (user.username === 'Insp' && userRole === 'inspeccion') {
+    if (user && user.username === 'Insp' && userRole === 'inspeccion') {
       window.location.href = 'inspecciones.html';
     }
   }
