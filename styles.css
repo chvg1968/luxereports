@@ -101,7 +101,9 @@ footer {
 
 .container {
   width: 100%;
-  overflow-x: hidden;
+  overflow-x: auto;
+  overflow-y: auto;
+  height: 600px;
 }
 
 .airtable-embed {
@@ -118,4 +120,10 @@ footer {
 
 .hidden-on-load {
   display: none;
+}
+
+iframe {
+  width: 100vw; /* 100% del ancho del viewport */
+  height: 100vh; /* 100% del alto del viewport */
+  border: none; /* Quita el borde del iframe */
 }

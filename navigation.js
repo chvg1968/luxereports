@@ -51,7 +51,7 @@ function filterNavigation(user) {
     }
   
     // Mostrar los menús principales correspondientes al rol del usuario
-    const menusToShow = ['menu-payout', 'menu-owners', 'menu-calendar'];
+    const menusToShow = ['menu-payout', 'menu-owners', 'menu-calendar', 'menu-expenses'];
     if (userRole === 'viewer') {
       menusToShow.forEach((menuClass) => {
         const menu = document.querySelector(`.${menuClass}`);
@@ -88,7 +88,14 @@ function filterNavigation(user) {
         item.style.display = 'list-item';
       });
     }
+    if (user.username === 'Insp' && userRole === 'inspeccion') {
+      openPage('inspecciones.html');
+    }
   }
+
+ 
+
+
 
 function addNavigationEventListeners() {
   const subMenuLinks = document.querySelectorAll('.sub-menu a');

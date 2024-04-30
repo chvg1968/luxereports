@@ -53,6 +53,12 @@
         "password": "C234",
         "property": "Cleaning",
         "role":"cleaning"
+      },
+      {
+        "username": "Insp",
+        "password": "I000",
+        "property": "Inspeccion",
+        "role":"inspeccion"
       }
     ]
 }

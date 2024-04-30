@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css" />
+    <title>Inspecciones</title>
+</head>
+<body>
+    <header>
+        <nav>
+          <ul>
+            <li><a href="javascript:void(0);" id="logout">Logout</a></li>
+            <li><a href="/Inspections/villaclara/VillaClara.html" data-target="/Inspections/villaclara/VillaClara.html">Villa Clara</a></li>
+            <li><a href="/Inspections/villaflora/VillaFlora.html" data-target="/Inspections/villaflora/VillaFlora.html">Villa Flora</a></li>
+            <li><a href="/Inspections/casaparaiso/CasaParaiso.html" data-target="/Inspections/casaparaiso/CasaParaiso.html">Casa Paraiso</a></li>
+            <li><a href="/Inspections/casaprestige/CasaPrestige.html" data-target="/Inspections/casaprestige/CasaPrestige.html">Casa Prestige</a></li>
+            <li><a href="/Inspections/villapaloma/VillaPaloma.html" data-target="/Inspections/villapaloma/VillaPaloma.html">Villa Paloma</a></li>
+            <li><a href="/Inspections/villapalacio/VillaPalacio.html" data-target="/Inspections/villapalacio/VillaPalacio.html">Villa Palacio</a></li>
+          </ul>
+        </nav>
+      </header>
+      
+      <div id="content"></div>
+      
+      <script>
+        const nav = document.querySelector('nav');
+        const contentDiv = document.getElementById('content');
+      
+        nav.addEventListener('click', e => {
+          e.preventDefault();
+          const target = e.target.closest('a');
+      
+          if (target && target.id === 'logout') {
+            // Lógica para cerrar sesión
+          } else if (target && target.dataset.target) {
+            const url = target.dataset.target;
+            fetchContent(url);
+          }
+        });
+      
+        function fetchContent(url) {
+          fetch(url)
+            .then(response => response.text())
+            .then(html => {
+              contentDiv.innerHTML = html;
+            })
+            .catch(error => {
+              console.error('Error al cargar el contenido:', error);
+            });
+        }
+      </script>
+</body>
+</html>
