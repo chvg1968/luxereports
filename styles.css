@@ -7,6 +7,9 @@ body {
   color: #333;
 }
 
+ul{
+  list-style-type: none;
+}
 /* Encabezado */
 header {
   background-color: #ffffff; /* Cambiado a blanco */
@@ -185,4 +188,19 @@ iframe {
 
 #main-nav ul.show {
   display: block;
+}
+
+.home a {
+  color: #fff;
+  text-decoration: none;
+  padding: 15px 20px;
+  background-color: #c39346;
+  transition: background-color 0.3s ease;
+  margin: 0px;
+  left:0px; 
+  top: 0px;
+}
+
+.home a:hover {
+  background-color: #555;
 }

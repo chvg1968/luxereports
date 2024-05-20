@@ -42,3 +42,4 @@ document.addEventListener('DOMContentLoaded', () => {
   showCurrentDate();
   setInterval(showCurrentDate, 1000);
 });
+
