@@ -132,12 +132,32 @@ iframe {
 }
 
 .banner {
-  display: flex;
+  display: inline-block;
   justify-content: center;
   align-items: center;
   width: 100%; /* Ajusta el ancho al 100% del contenedor padre */
   height: 200px; /* Altura inicial */
   background-color: #f0f0f0; /* Color de fondo opcional */
+}
+
+.home{
+  padding: 20px;
+}
+
+
+.header-insp {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #ffffff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  z-index: 1000; /* Asegura que el menú esté por encima del contenido */
+  padding: 10px 0;
+}
+
+.content {
+  padding-top: 250px; /* Ajusta este valor para ajustar el espacio entre el banner y el contenido */
 }
 
 /* Media query para hacer el banner responsivo */
