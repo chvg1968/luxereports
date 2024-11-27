@@ -24,31 +24,40 @@ header {
 }
 
 /* Navegación */
+
+nav {
+  background-color: #c19a6b; /* Color de fondo del menú principal */
+  padding: 10px 0; /* Espaciado vertical */
+  position: relative; /* Asegura que los submenús se posicionen relativos al menú */
+  text-align: center; /* Centra el contenido del menú principal */
+}
+
+
 nav ul {
-  list-style-type: none;
+  list-style: none; /* Elimina los puntos de las listas */
+  margin: 0; /* Centra la navegación */
   padding: 0;
-  margin: 0;
-  background-color: #c39346; /* Mantener el fondo del menú en gris oscuro */
-  display: flex;
-  justify-content: center;
+  display: inline-block;
+  text-align: center;
 }
 
 nav ul li {
+  display: inline-block; /* Coloca los elementos principales en una línea */
+  margin: 0 15px; /* Espaciado horizontal entre elementos */
   position: relative;
 }
 
 nav ul li a {
-  display: flex;
-  align-items: center;
-  color: #fff; /* Mantener el color de los enlaces en blanco */
-  text-decoration: none;
-  padding: 15px 20px;
-  transition: background-color 0.3s ease;
+  color: #fff; /* Color del texto (blanco) */
+  text-decoration: none; /* Elimina el subrayado */
+  font-weight: bold; /* Hace el texto más prominente */
+  padding: 10px 15px; /* Espaciado interno */
+  display: inline-block;
 }
 
-nav ul li a i {
-  margin-right: 10px;
-  color: #fff; /* Agregar color blanco a los iconos */
+nav ul li a:hover {
+  background-color: #b8860b; /* Color de fondo al pasar el ratón */
+  border-radius: 5px; /* Bordes redondeados opcionales */
 }
 
 nav ul li:hover > a {
@@ -62,13 +71,21 @@ nav ul li:hover > a {
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   z-index: 1;
   top: 100%; /* Agregado */
-  left: 0; /* Agregado */
+  left: 0; 
+  width: auto; /* Ancho fijo para el submenú (opcional) */
+  padding: 5px 0;
+}
+
+.sub-menu li {
+  display: block; /* Asegura que cada elemento esté en una nueva línea */
+  margin: 0; /* Elimina márgenes adicionales */
 }
 
 .sub-menu li a {
   color: #333;
   padding: 10px 20px;
-  display: block; /* Agregado */
+  display: block; 
+  text-decoration: none;/* Agregado */
 }
 
 .sub-menu li a:hover {
@@ -79,6 +96,21 @@ nav ul li:hover > .sub-menu {
   display: block;
 }
 
+/* Animación para el submenú */
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-10px); /* Desplazamiento inicial desde arriba */
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0); /* Posición final */
+  }
+}
+
+nav ul li:hover > .sub-menu {
+  animation: slideDown 0.3s ease; /* Añade animación */
+}
 /* Contenido principal */
 main {
   padding: 20px;
