@@ -1,0 +1,445 @@
+body {
+  font-family: 'Open Sans', sans-serif;
+  margin: 0;
+  padding: 10px;
+  background-color: #f5f5f5;
+  color: #333;
+}
+
+ul{
+  list-style-type: none;  
+}
+
+li {
+  list-style-type: none; /* Elimina el marcador */
+}
+/* Encabezado */
+header {
+  background-color: #ffffff; /* Cambiado a blanco */
+  color: #333; /* Cambiado a gris oscuro */
+  padding: 20px;
+  text-align: center;
+}
+
+#currentDate {
+  font-size: 18px;
+  margin: 10px 0 0;
+}
+
+/* Navegación */
+
+nav {
+  background-color: #c19a6b; /* Color de fondo del menú principal */
+  padding: 10px 0; /* Espaciado vertical */
+  position: relative; /* Asegura que los submenús se posicionen relativos al menú */
+  text-align: center; /* Centra el contenido del menú principal */
+}
+
+
+nav ul {
+  list-style: none; /* Elimina los puntos de las listas */
+  margin: 0; /* Centra la navegación */
+  padding: 0;
+  display: inline-block;
+  text-align: center;
+}
+
+nav ul li {
+  display: inline-block; /* Coloca los elementos principales en una línea */
+  margin: 0 15px; /* Espaciado horizontal entre elementos */
+  position: relative;
+}
+
+nav ul li a {
+  color: #fff; /* Color del texto (blanco) */
+  text-decoration: none; /* Elimina el subrayado */
+  font-weight: bold; /* Hace el texto más prominente */
+  padding: 10px 15px; /* Espaciado interno */
+  display: inline-block;
+}
+
+nav ul li a:hover {
+  background-color: #b8860b; /* Color de fondo al pasar el ratón */
+  border-radius: 5px; /* Bordes redondeados opcionales */
+}
+
+nav ul li:hover > a {
+  background-color: #555;
+}
+
+
+/* Contenido principal */
+main {
+  padding: 20px;
+}
+
+/* Pie de página */
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+/* Estilos específicos */
+.welcome {
+  color: #333;
+  padding: 30px;
+  text-align: center;
+}
+
+.container {
+  width: 100%;
+  overflow-x: auto;
+  overflow-y: auto;
+  height: 600px;
+}
+
+.airtable-embed {
+  width: 80%;
+  max-width: 100vw;
+  height: 533px;
+  background: transparent;
+  border: 1px solid #ccc;
+}
+
+.hidden {
+  display: none;
+}
+
+.hidden-on-load {
+  display: none;
+}
+
+iframe {
+  width: 100vw; /* 100% del ancho del viewport */
+  height: 100vh; /* 100% del alto del viewport */
+  border: none; /* Quita el borde del iframe */
+}
+
+.banner {
+  display: inline-block;
+  justify-content: center;
+  align-items: center;
+  width: 100%; /* Ajusta el ancho al 100% del contenedor padre */
+  height: 100px; /* Altura inicial */
+  background-color: #f0f0f0; /* Color de fondo opcional */
+}
+
+.home{
+  padding: 20px;
+  height: 100px;
+  background-color: #ffffff;
+}
+
+
+.header-insp {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #ffffff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  z-index: 1000; /* Asegura que el menú esté por encima del contenido */
+  padding: 10px 0;
+}
+
+.content {
+  padding-top: 250px; /* Ajusta este valor para ajustar el espacio entre el banner y el contenido */
+}
+
+/* Media query para hacer el banner responsivo */
+@media screen and (max-width: 768px) {
+  .banner {
+    height: 100px; /* Reducir la altura en pantallas más pequeñas */
+    flex-direction: column; /* Cambiar la dirección del flexbox a columna */
+  }
+}
+
+.banner img {
+  width: auto;
+  height: auto;
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain; /* Ajusta la imagen para que quepa dentro del contenedor */
+}
+
+
+
+#main-nav ul.show {
+  display: block;
+}
+
+.home a {
+  color: #fff;
+  text-decoration: none;
+  padding: 15px 20px;
+  background-color: #c39346;
+  transition: background-color 0.3s ease;
+  margin: 0px;
+  left:0px; 
+  top: 0px;
+}
+
+.home a:hover {
+  background-color: #555;
+}
+
+/* Login */
+.login-container {
+  max-width: 400px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.input-login {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+
+/* Home */
+button {
+  width: 100%;
+  padding: 12px 20px; /* Más espacio para hacerlo visualmente atractivo */
+  background-color: transparent; /* Fondo transparente para minimalismo */
+  color: rgb(183, 95, 29); /* Color primario del texto */
+  font-size: 1rem; /* Tamaño de fuente ajustado */
+  font-family: 'Arial', sans-serif; /* Fuente moderna y limpia */
+  text-transform: uppercase; /* Texto en mayúsculas para impacto visual */
+  letter-spacing: 1px; /* Espaciado entre letras para un estilo más refinado */
+  border: none; /* Eliminamos los bordes */
+  border-bottom: 2px solid rgba(183, 95, 29, 0.6); /* Línea sutil inferior */
+  border-radius: 4px; /* Bordes suaves */
+  cursor: pointer;
+  transition: all 0.3s ease-in-out; /* Animación suave para cambios */
+}
+
+button:hover {
+  color: rgb(255, 111, 50); /* Color más vivo al pasar el cursor */
+  border-bottom: 2px solid rgb(255, 111, 50); /* Línea inferior más intensa */
+  transform: translateY(-2px); /* Efecto de levitación */
+}
+
+button:focus {
+  outline: none; /* Eliminamos el contorno por defecto */
+  box-shadow: 0 0 8px rgba(255, 111, 50, 0.6); /* Resaltado al enfocar */
+}
+
+
+.buttons-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  gap: 10px;
+}
+
+
+
+
+.properties-container {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 20px;
+  padding: 5px;
+  width: 100;
+  height: 100;
+  
+}
+
+.properties-container.single-property {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin : 0 auto;
+  width: 100%;/* Ajusta según tus necesidades */
+}
+
+.property-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  width: 100%; /* Asegura que se adapte al contenedor padre */
+  max-width: 300px; /* Tamaño máximo opcional */
+  background-color: #f8f8f8;
+}
+
+.property-card img {
+  width: 100%; /* La imagen ocupará el 100% del ancho del contenedor */
+  aspect-ratio: 16/9; /* Mantiene una relación de aspecto 16:9 */
+  object-fit: cover; /* Asegura que la imagen cubra el espacio sin deformarse */
+  object-position: center; /* Centra la imagen dentro del contenedor */
+}
+
+.property-card h3 {
+  text-align: center;
+  padding: 10px;
+  background-color: #ae6a1b;
+  color: white;
+}
+
+.property-card a {
+  display: block;
+  text-align: center;
+  padding: 10px;
+  background-color: #404c56;
+  color: white;
+  text-decoration: none;
+}
+
+.property-card a:hover {
+  background-color: #0056b3;
+}
+
+.property-image {
+  width: 10%;
+  height: 200;
+  object-fit: cover;
+}
+
+/* Property */
+#property-details {
+  padding: 20px;
+}
+
+.property-header {
+  display: flex;
+  flex-direction: column; /* Elementos en columna */
+  align-items: center; /* Centrado horizontal */
+  justify-content: center; /* Centrado vertical */
+  text-align: center; 
+  margin-bottom: 10px;/* Centrar texto */
+}
+
+.property-header img {
+  width: 100%; /* La imagen ocupará el 100% del ancho del contenedor */
+  aspect-ratio: 16/9; /* Mantiene una relación de aspecto 16:9 */
+  object-fit: cover; /* Asegura que la imagen cubra el espacio sin deformarse */
+  object-position: center; /* Centra la imagen dentro del contenedor */
+}
+
+.iframe-wrapper {
+  width: 100%;
+  height: 500px; /* Altura fija o ajústala según necesites */
+  max-width: 100vw;
+  overflow-y: auto !important; /* Forzamos el scroll */
+  margin-bottom: 20px;
+  -webkit-overflow-scrolling: touch;
+  position: relative;
+  /* Añade un margen entre los iframes si es necesario */
+}
+
+.iframe-wrapper iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+  position: absolute; /* Posición absoluta dentro del wrapper */
+  top: 0;
+  left: 0;
+  pointer-events: auto; /* Aseguramos que reciba eventos del mouse */
+}
+
+.logout-link {
+  color: #fff;
+  text-decoration: none;
+  padding: 15px 20px;
+  background-color: #89a4df;
+  transition: background-color 0.3s ease;
+  margin: 0px;
+  left:0px; 
+  top: 0px;
+  
+}
+
+/* Web Responsive */
+/* Ajustar el login en pantallas pequeñas */
+@media screen and (max-width: 768px) {
+  .properties-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+    width: 100%;
+    height: 100%;
+  }
+.buttons-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+
+  }
+}
+
+.menu-toggle {
+  margin: 0; /* Asegúrate de que no dependa del margen para posicionarse */
+  top: 10px;
+  right: 10px;
+  background: rgb(104, 104, 133); 
+  color: white;
+  border: none;
+  font-size: 1rem;
+  cursor: pointer;
+  padding: 10px; 
+  position: fixed; /* Usa fixed para que siempre permanezca en el mismo lugar */
+  z-index: 1000; /* Asegura que esté por encima del contenido */
+  width: 80px;
+}
+
+.menu-toggle.initial {
+  transform: translate(0, 0); /* Asegúrate de que no se desplace fuera de pantalla */
+}
+
+@media screen and (max-width: 540px) {
+  .buttons-container {
+    display: none; /* Ocultar el menú */
+  }
+
+  .menu-toggle {
+    display: block; /* Mostrar el botón de menú */
+    position: fixed; /* Fijo para evitar desplazamientos */
+    top: 185px; /* Asegura la posición */
+    right: 10px;
+  }
+  
+  .buttons-list {
+    display: none; /* Ocultar la lista por defecto */
+  }
+  
+  .buttons-list.active {
+    display: block; /* Mostrar la lista cuando se active el toggle */
+  }
+}
+
+   /* Mostrar el botón toggle */
+  
+
+
+
+/* Estilos para pantallas más grandes */
+@media screen and (min-width: 540px) {
+  .menu-toggle {
+    display: none; /* Ocultar el botón toggle */
+  }
+
+.property-header img{
+  width: 20%;
+  height: 200;
+  object-fit: cover;
+}
+}

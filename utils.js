@@ -1,17 +1,13 @@
 // utils.js
-function showCurrentDate() {
-    const currentDateElement = document.getElementById('currentDate');
-    if (currentDateElement) {
+export function showCurrentDate() {
+  const dateContainer = document.getElementById('currentDate');
+  if (dateContainer) {
       const now = new Date();
-      const options = {
-        weekday: 'long',
-        year: 'numeric',
-        month: 'long',
-        day: 'numeric',
-      };
-      const formattedDate = now.toLocaleString('en-En', options);
-      currentDateElement.textContent = formattedDate;
-    }
+      dateContainer.textContent = now.toLocaleDateString('es-ES', {
+          weekday: 'long',
+          year: 'numeric',
+          month: 'long',
+          day: 'numeric',
+      });
   }
-  
-  export { showCurrentDate };
+}

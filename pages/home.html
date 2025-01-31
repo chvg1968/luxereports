@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Properties</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header>
+        <img src="../assets/logo.png" class="logo" title="logo">
+        <h1>Welcome <span id="username"></span> to Luxe Properties</h1>
+        <a href="login.html" class="logout-link">Logout 🚪</a>
+    </header>
+    <div id="properties-container" class="properties-container"></div>
+    <script type="module" src="../js/home.js" ></script>
+    <script>
+        // Obtener el usuario almacenado en localStorage
+        const user = JSON.parse(localStorage.getItem('user'));
+  
+        if (user && user.username) {
+            // Mostrar el nombre del usuario en el saludo
+            document.getElementById('username').textContent = user.username;
+        } else {
+            // Si no hay usuario, redirigir al login
+            window.location.href = 'login.html';
+        }
+  
+        // Configurar el botón de logout
+        document.getElementById('logout').addEventListener('click', function() {
+            localStorage.removeItem('user'); // Elimina al usuario del localStorage
+            window.location.href = 'login.html'; // Redirige al login
+        });
+      </script>
+</body>
+</html>

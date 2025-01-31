@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css" />
+    <title>Inspecciones - Luxe Properties</title>
+</head>
+<body>
+    <script type="module">
+        // Importar función de validación desde login.js
+        import { validateUserAccess } from '../js/login.js';
+
+        // Verificar autenticación y rol
+        window.addEventListener('DOMContentLoaded', () => {
+            const user = JSON.parse(localStorage.getItem('user'));
+            
+            if (!validateUserAccess(user, 'inspeccion')) {
+                window.location.href = 'login.html';
+            }
+        });
+    </script>
+
+    <header class="header-insp">
+        <div class="logo-container">
+            <img src="/assets/logo.png" alt="Logo Luxe Properties" class="logo" width="200" height="200" />
+        </div>
+
+        <nav id="main-nav">
+            <button class="menu-toggle" aria-label="Menú de navegación">
+                <span class="menu-icon">&#9776;</span>
+                Menú
+            </button>
+
+            <ul class="nav-menu">
+                <li><a href="#" id="logout" class="nav-link">Cerrar sesión</a></li>
+                
+                <li class="nav-item">
+                    <a href="Inspections/villaclara/VillaClara.html" class="nav-link">3325 Villa Clara</a>
+                </li>
+                <li class="nav-item">
+                    <a href="Inspections/villaflora/VillaFlora.html" class="nav-link">10180 Villa Flora</a>
+                </li>
+                <li class="nav-item">
+                    <a href="Inspections/casaparaiso/CasaParaiso.html" class="nav-link">Est. 24 Casa Paraiso</a>
+                </li>
+                <li class="nav-item">
+                    <a href="Inspections/casaprestige/CasaPrestige.html" class="nav-link">Atl. G7 Casa Prestige</a>
+                </li>
+                <li class="nav-item">
+                    <a href="Inspections/villapaloma/VillaPaloma.html" class="nav-link">5138 Villa Paloma</a>
+                </li>
+                <li class="nav-item">
+                    <a href="Inspections/villapalacio/VillaPalacio.html" class="nav-link">7256 Villa Palacio</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="content-insp" class="inspections-container">
+        <h1>Inspecciones</h1>
+        <p>Seleccione la propiedad para realizar la inspección</p>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2024 Luxe Properties. Todos los derechos reservados.</p>
+    </footer>
+
+    <script type="module">
+        // Manejo de cierre de sesión
+        document.getElementById('logout').addEventListener('click', (event) => {
+            event.preventDefault();
+            
+            try {
+                localStorage.removeItem('user');
+                sessionStorage.clear();
+                window.location.href = '../pages/login.html';
+            } catch (error) {
+                console.error('Error al cerrar sesión:', error);
+                alert('Hubo un problema al cerrar la sesión. Intente nuevamente.');
+            }
+        });
+    </script>
+
+    <script type="module" src="../router.js"></script>
+  
+</body>
+</html>

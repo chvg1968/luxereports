@@ -16,7 +16,7 @@ document.addEventListener('DOMContentLoaded', () => {
     function logout() {
         // Limpiar la sesión u otras tareas de cierre de sesión
         // Redirigir al usuario a la página de inicio de sesión
-        window.location.href = "index.html";
+        window.location.href = "/pages/login.html";
     }
 });
 
