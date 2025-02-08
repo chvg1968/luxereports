@@ -201,6 +201,27 @@
         }
       },
       {
+        "name": "Villa Ocean Haven",
+        "image": "/assets/Villa Ocean Haven.jpg",
+        "reports": {
+          "expenses": {
+            "src": "https://airtable.com/embed/appMIfpUBefs16jCk/shrCLEOGrRayoKle7?viewControls=on"
+          },
+          "calendar": {
+            "src": "https://airtable.com/embed/appMIfpUBefs16jCk/shrxYjuYkKY5cF4Um" 
+          },
+          "cleaning": {     
+            "src": "https://airtable.com/embed/appMIfpUBefs16jCk/shrtM7vcZtuedZjfZ" 
+            },
+          "payout": {
+            "src": "https://airtable.com/embed/appMIfpUBefs16jCk/shr1yInwdDuWg9mmf?viewControls=on"
+          },
+          "owners_report": {
+            "src": "https://airtable.com/embed/appMIfpUBefs16jCk/shr1yInwdDuWg9mmf?viewControls=on" 
+          }
+        }
+      },
+      {
         "name": "Global",
         "image": "/assets/Global.jpg",
         "reports": {
