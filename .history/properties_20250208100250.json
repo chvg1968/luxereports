@@ -12,7 +12,7 @@
     },
     "villas": [
       {
-        "name": "Est. 24 Casa Paraiso",
+        "name": "Casa Paraiso",
         "image": "/assets/Casa Paraiso.jpeg",
         "reports": {
           "expenses": {
@@ -33,7 +33,7 @@
         }
       },
       {
-        "name": "Atl. G7 Casa Prestige",
+        "name": "Casa Prestige",
         "image": "/assets/Casa Prestige.jpeg",
         "reports": {
           "expenses": {
@@ -75,7 +75,7 @@
         }
       },
       {
-        "name": "3325 Villa Clara",
+        "name": "Villa Clara",
         "image": "/assets/Villa Clara.jpg",
         "reports": {
           "expenses": {
@@ -96,7 +96,7 @@
         }
       },
       {
-        "name": "10180 Villa Flora",
+        "name": "Villa Flora",
         "image": "/assets/Villa Flora.jpeg",
         "reports": {
           "expenses": {
@@ -117,7 +117,7 @@
         }
       },
       {
-        "name": "2-102 Villa Ocean Bliss",
+        "name": "Villa Ocean Bliss",
         "image": "/assets/Villa Ocean Bliss.jpg",
         "reports": {
           "expenses": {
@@ -138,7 +138,7 @@
         }
       },
       {
-        "name": "7256 Villa Palacio",
+        "name": "Villa Palacio",
         "image": "/assets/Villa Palacio.jpeg",
         "reports": {
           "expenses": {
@@ -159,7 +159,7 @@
         }
       },
       {
-        "name": "5138 Villa Paloma",
+        "name": "Villa Paloma",
         "image": "/assets/Villa Paloma.jpeg",
         "reports": {
           "expenses": {
@@ -180,7 +180,7 @@
         }
       },
       {
-        "name": "10389 Villa Tiffany",
+        "name": "Villa Tiffany",
         "image": "/assets/Villa Tiffany.jpg",
         "reports": {
           "expenses": {
@@ -201,23 +201,23 @@
         }
       },
       {
-        "name": "2-208 Villa Ocean Haven",
+        "name": "Villa Ocean Haven",
         "image": "/assets/Villa Ocean Haven.jpg",
         "reports": {
           "expenses": {
-            "src": "https://airtable.com/embed/app2zC1KWcNeBXjXp/shr4yaWT2BEW0O20a?viewControls=on"
+            "src": "https://airtable.com/embed/appMIfpUBefs16jCk/shrCLEOGrRayoKle7?viewControls=on"
           },
           "calendar": {
-            "src": "https://airtable.com/embed/app2zC1KWcNeBXjXp/shrNZmvQv4QWsB5mD"
+            "src": "https://airtable.com/embed/appMIfpUBefs16jCk/shrxYjuYkKY5cF4Um" 
           },
           "cleaning": {     
-            "src": "https://airtable.com/embed/app2zC1KWcNeBXjXp/shrQG50l6Vlrw3Tmq"
+            "src": "https://airtable.com/embed/appMIfpUBefs16jCk/shrtM7vcZtuedZjfZ" 
             },
           "payout": {
-            "src": "https://airtable.com/embed/app2zC1KWcNeBXjXp/shr05q0e1Odspivkg?viewControls=on"
+            "src": "https://airtable.com/embed/appMIfpUBefs16jCk/shr1yInwdDuWg9mmf?viewControls=on"
           },
           "owners_report": {
-            "src": "https://airtable.com/embed/app2zC1KWcNeBXjXp/shrEhVSa5CnmOrFaP?viewControls=on"
+            "src": "https://airtable.com/embed/appMIfpUBefs16jCk/shr1yInwdDuWg9mmf?viewControls=on" 
           }
         }
       },

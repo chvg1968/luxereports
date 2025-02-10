@@ -138,7 +138,7 @@
         }
       },
       {
-        "name": "7256 Villa Palacio",
+        "name": "Villa Palacio",
         "image": "/assets/Villa Palacio.jpeg",
         "reports": {
           "expenses": {
@@ -205,19 +205,19 @@
         "image": "/assets/Villa Ocean Haven.jpg",
         "reports": {
           "expenses": {
-            "src": "https://airtable.com/embed/app2zC1KWcNeBXjXp/shr4yaWT2BEW0O20a?viewControls=on"
+            "src": "https://airtable.com/embed/appMIfpUBefs16jCk/shrCLEOGrRayoKle7?viewControls=on"
           },
           "calendar": {
-            "src": "https://airtable.com/embed/app2zC1KWcNeBXjXp/shrNZmvQv4QWsB5mD"
+            "src": "https://airtable.com/embed/appMIfpUBefs16jCk/shrxYjuYkKY5cF4Um" 
           },
           "cleaning": {     
-            "src": "https://airtable.com/embed/app2zC1KWcNeBXjXp/shrQG50l6Vlrw3Tmq"
+            "src": "https://airtable.com/embed/appMIfpUBefs16jCk/shrtM7vcZtuedZjfZ" 
             },
           "payout": {
-            "src": "https://airtable.com/embed/app2zC1KWcNeBXjXp/shr05q0e1Odspivkg?viewControls=on"
+            "src": "https://airtable.com/embed/appMIfpUBefs16jCk/shr1yInwdDuWg9mmf?viewControls=on"
           },
           "owners_report": {
-            "src": "https://airtable.com/embed/app2zC1KWcNeBXjXp/shrEhVSa5CnmOrFaP?viewControls=on"
+            "src": "https://airtable.com/embed/appMIfpUBefs16jCk/shr1yInwdDuWg9mmf?viewControls=on" 
           }
         }
       },
