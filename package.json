@@ -3,9 +3,9 @@
   "version": "1.0.0",
   "description": "Mi proyecto usando ES Modules",
   "type": "module",
-  "main": "login.js",
+  "main": "index.html",
   "scripts": {
-    "start": "node login.js",
+    "start": "npx http-server -o",
     "lint": "eslint .",
     "lint:fix": "eslint --fix .",
     "lint:watch": "eslint --watch ."
@@ -16,12 +16,13 @@
     "eslint-config-standard": "17.1.0",
     "eslint-plugin-import": "2.29.1",
     "eslint-plugin-n": "16.6.2",
-    "eslint-plugin-promise": "6.1.1"
+    "eslint-plugin-promise": "6.1.1",
+    "http-server": "^14.1.1"
   },
   "dependencies": {
     "dotenv": "^16.4.7",
+    "heic-convert": "^1.2.4",
     "netlify-cli": "^18.0.4",
-    "sharp": "^0.33.2",
-    "heic-convert": "^1.2.4"
+    "sharp": "^0.33.2"
   }
 }
