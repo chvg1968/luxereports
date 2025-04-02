@@ -13,9 +13,9 @@
         "role":"viewer"
       },
       {
-        "username": "7256 Beatty",
+        "username": "Beatty",
         "password": "B174",
-        "property": "Villa Palacio",
+        "property": "7256 Villa Palacio",
         "role":"viewer"
       },
       {
@@ -76,7 +76,13 @@
         "username": "Sudman",
         "password": "S487",
         "property": "2-208 Villa Ocean Haven",
-        "role":"Owner"
+        "role":"viewer"
+      }, 
+      {
+        "username": "Sudman",
+        "password": "S103",
+        "property": "2-103 Villa Ocean Sound",
+        "role":"viewer"
       }, 
       {
         "username": "Insp",
