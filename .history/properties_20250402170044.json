@@ -12,7 +12,7 @@
     },
     "villas": [
       {
-        "name": "Casa Paraiso",
+        "name": "Est. 24 Casa Paraiso",
         "image": "/assets/Casa Paraiso.jpeg",
         "reports": {
           "expenses": {
@@ -33,7 +33,7 @@
         }
       },
       {
-        "name": "Casa Prestige",
+        "name": "Atl. G7 Casa Prestige",
         "image": "/assets/Casa Prestige.jpeg",
         "reports": {
           "expenses": {
@@ -75,7 +75,7 @@
         }
       },
       {
-        "name": "Villa Clara",
+        "name": "3325 Villa Clara",
         "image": "/assets/Villa Clara.jpg",
         "reports": {
           "expenses": {
@@ -138,7 +138,7 @@
         }
       },
       {
-        "name": "Villa Palacio",
+        "name": "7256 Villa Palacio",
         "image": "/assets/Villa Palacio.jpeg",
         "reports": {
           "expenses": {
@@ -159,7 +159,7 @@
         }
       },
       {
-        "name": "Villa Paloma",
+        "name": "5138 Villa Paloma",
         "image": "/assets/Villa Paloma.jpeg",
         "reports": {
           "expenses": {
@@ -205,19 +205,40 @@
         "image": "/assets/Villa Ocean Haven.jpg",
         "reports": {
           "expenses": {
-            "src": "https://airtable.com/embed/appMIfpUBefs16jCk/shrCLEOGrRayoKle7?viewControls=on"
+            "src": "https://airtable.com/embed/app2zC1KWcNeBXjXp/shr4yaWT2BEW0O20a?viewControls=on"
           },
           "calendar": {
-            "src": "https://airtable.com/embed/appMIfpUBefs16jCk/shrxYjuYkKY5cF4Um" 
+            "src": "https://airtable.com/embed/app2zC1KWcNeBXjXp/shrNZmvQv4QWsB5mD"
           },
           "cleaning": {     
-            "src": "https://airtable.com/embed/appMIfpUBefs16jCk/shrtM7vcZtuedZjfZ" 
+            "src": "https://airtable.com/embed/app2zC1KWcNeBXjXp/shrQG50l6Vlrw3Tmq"
             },
           "payout": {
-            "src": "https://airtable.com/embed/appMIfpUBefs16jCk/shr1yInwdDuWg9mmf?viewControls=on"
+            "src": "https://airtable.com/embed/app2zC1KWcNeBXjXp/shr05q0e1Odspivkg?viewControls=on"
           },
           "owners_report": {
-            "src": "https://airtable.com/embed/appMIfpUBefs16jCk/shr1yInwdDuWg9mmf?viewControls=on" 
+            "src": "https://airtable.com/embed/app2zC1KWcNeBXjXp/shrEhVSa5CnmOrFaP?viewControls=on"
+          }
+        }
+      },
+      {
+        "name": "2-208 Villa Ocean Sound",
+        "image": "/assets/Villa Ocean Sound.jpg",
+        "reports": {
+          "expenses": {
+            "src": "https://airtable.com/embed/app2zC1KWcNeBXjXp/shrI2SXfYJv8bPhJJ?viewControls=on"
+          },
+          "calendar": {
+            "src": "https://airtable.com/embed/app2zC1KWcNeBXjXp/shrhwhGnVIQQu689q" 
+          },
+          "cleaning": {     
+            "src": "https://airtable.com/embed/app2zC1KWcNeBXjXp/shr4MvbKchMPg5Rj2"
+            },
+          "payout": {
+            "src": "https://airtable.com/embed/app2zC1KWcNeBXjXp/shrNNvEXGZKf2kmnk?viewControls=on"
+          },
+          "owners_report": {
+            "src": "https://airtable.com/embed/app2zC1KWcNeBXjXp/shrH6nwRX1hFoD6nh?viewControls=on"
           }
         }
       },

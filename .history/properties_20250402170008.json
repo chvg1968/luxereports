@@ -222,6 +222,27 @@
         }
       },
       {
+        "name": "2-208 Villa Ocean Sound",
+        "image": "/assets/Villa Ocean Sound.jpg",
+        "reports": {
+          "expenses": {
+            "src": "https://airtable.com/embed/app2zC1KWcNeBXjXp/shrI2SXfYJv8bPhJJ?viewControls=on"
+          },
+          "calendar": {
+            "src": "https://airtable.com/embed/app2zC1KWcNeBXjXp/shrhwhGnVIQQu689q" 
+          },
+          "cleaning": {     
+            "src": "https://airtable.com/embed/app2zC1KWcNeBXjXp/shr4MvbKchMPg5Rj2"
+            },
+          "payout": {
+            "src": "https://airtable.com/embed/app2zC1KWcNeBXjXp/shrNNvEXGZKf2kmnk?viewControls=on"
+          },
+          "owners_report": {
+            "src": "https://airtable.com/embed/app2zC1KWcNeBXjXp/shrEhVSa5CnmOrFaP?viewControls=on"
+          }
+        }
+      },
+      {
         "name": "Global",
         "image": "/assets/Global.jpg",
         "reports": {
