@@ -33,7 +33,7 @@
       --indentacion-titulo: 0;
       --indentacion-subtitulo: 2em;
       --indentacion-subtitulo2: 4em;
-      --indentacion-lista: 4em;
+      --indentacion-lista: 6em;
     }
 
     .titulo-principal {
@@ -48,12 +48,14 @@
       margin-left: var(--indentacion-subtitulo2);
     }∫
 
-    .lista-inspeccion {
-      margin-left: var(--indentacion-lista);
+    ul.lista-inspeccion {
+      list-style-type: disc !important;
+      margin-left: var(--indentacion-lista) !important;
+      padding-left: 2em !important;
+      list-style-position: outside !important;
     }
-
-    .lista-inspeccion li {
-      margin-left: 1em;
+    ul.lista-inspeccion li {
+      margin-left: 0 !important;
     }
   </style>
 

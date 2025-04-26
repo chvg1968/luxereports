@@ -32,7 +32,7 @@
     :root {
       --indentacion-titulo: 0;
       --indentacion-subtitulo: 2em;
-      --indentacion-subtitulo2: 4em;
+      --indentacion-subtitulo2: 6em;
       --indentacion-lista: 4em;
     }
 
@@ -50,10 +50,12 @@
 
     .lista-inspeccion {
       margin-left: var(--indentacion-lista);
+      padding-left: 0 !important;
+      list-style-position: inside;
     }
 
     .lista-inspeccion li {
-      margin-left: 1em;
+      margin-left: 0;
     }
   </style>
 
