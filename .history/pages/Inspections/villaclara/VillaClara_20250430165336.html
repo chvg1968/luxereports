@@ -3,6 +3,50 @@
     <meta content="text/html; charset=UTF-8" http-equiv="content-type" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/style.css"/>
+    <style>
+      .inspection-image {
+        width: 239.4px;
+        height: 160.4px;
+        margin: 0;
+        display: block;
+        overflow: hidden;
+      }
+      .inspection-image img {
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        transform: rotate(0rad) translateZ(0px);
+        -webkit-transform: rotate(0rad) translateZ(0px);
+      }
+
+      /* Reglas de indentación */
+      :root {
+        --indentacion-titulo: 0;
+        --indentacion-subtitulo: 2em;
+        --indentacion-subtitulo2: 4em;
+        --indentacion-lista: 4em;
+      }
+
+      .titulo-principal {
+        margin-left: var(--indentacion-titulo);
+      }
+
+      .subtítulo {
+        margin-left: var(--indentacion-subtitulo);
+      }
+
+      .subtítulo2 {
+        margin-left: var(--indentacion-subtitulo2);
+      }
+
+      .lista-inspeccion {
+        margin-left: var(--indentacion-lista);
+      }
+
+      .lista-inspeccion li {
+        margin-left: 1em;
+      }
+    </style>
   </head>
   <body class="c6 c19 doc-content" id="checklist-page">
     <header class="header-insp">
@@ -18,8 +62,8 @@
     
     <main class="content">
     
-    <h3>General</h3>
-    <ul class="c4 lst-kix_list_5-0 start">
+    <h3 class="titulo-principal">General</h3>
+    <ul class="lista-inspeccion">
       <li class="c9 c2 li-bullet-0">
         <span class="c3"><input type="checkbox" /> Puerta principal y pasillo de entrada limpio</span>
       </li>
@@ -45,9 +89,9 @@
     <div class="foto-section">
       <img src="../villaclara/images/Foto 1.jpg" alt="Foto General" />
     </div>
-    <h3>Áreas Sociales</h3>
-    <h3 style="text-indent: 2em">Entrada</h3>
-    <ul class="c4 lst-kix_list_5-0">
+    <h3 class="titulo-principal">Áreas Sociales</h3>
+    <h3 class="subtítulo">Entrada</h3>
+    <ul class="lista-inspeccion">
       <li class="c9 c2 li-bullet-0">
         <span class="c3"><input type="checkbox" /> Sombrilla</span>
       </li>
@@ -69,8 +113,8 @@
       <img src="../villaclara/images/Foto 2B.jpg" alt="Áreas Sociales Foto 2B" />
     </div>
 
-    <h3 style="text-indent: 2em">Cocina</h3>
-    <ul class="c4 lst-kix_list_5-0">
+    <h3 class="titulo-principal subtítulo">Cocina</h3>
+    <ul class="lista-inspeccion">
       <li class="c9 c2 li-bullet-0">
         <span class="c3"><input type="checkbox" /> Revisar limpieza en vasos, platos, ollas</span>
       </li>
@@ -84,8 +128,8 @@
     <div class="foto-section">
       <img src="../villaclara/images/Foto 3.jpg" alt="Cocina Foto 3" />
     </div>
-    <h3 style="text-indent: 4em">Amenidades de Bienvenida</h3>
-    <ul style="text-indent: 4em" class="c4 lst-kix_list_5-0">
+    <h3 class="subtítulo">Amenidades de Bienvenida</h3>
+    <ul class="lista-inspeccion">
       <li class="c9 c2 li-bullet-0">
         <span class="c3"><input type="checkbox" /> Nota de bienvenida</span>
       </li>
@@ -117,47 +161,43 @@
     <div class="foto-section">
       <img width="200" height="100" src="../villaclara/images/Foto 4.jpg" alt="Amenidades de Bienvenida Foto 4" />
     </div>
-    <ul class="c4 lst-kix_list_5-0">
-      <li class="c9 c2 li-bullet-0">
-    <h3 style="text-indent: 2em"> Área de Estufa</h3>
-    <ul style="text-indent: 2em" class="c4 lst-kix_list_5-0">
+    <h3 class="subtítulo"> Área de Estufa</h3>
+    <ul class="lista-inspeccion">
       <li class="c9 c2 li-bullet-0">
         <span class="c3"><input type="checkbox" /> Limpia</span>
       </li>
       <li class="c0 c2 li-bullet-0">
-        <span class="c3"><input type="checkbox" /> Servilletas de Mano</span>
+        <span class="c3"><input type="checkbox" /> Servilletas</span>
       </li>
     </ul>
     <div class="foto-section">
       <img width="200" height="100" src="../villaclara/images/Foto 5.jpg" alt="Área de Estufa Foto 5" />
     </div>
-    <h3 style="text-indent: 2em">Cajones y Gabinetes de Isla</h3>
-    <h3 style="text-indent: 4em">Primer Cajón Derecha de Estufa en la Esquina</h3>
-    <ul style="text-indent: 4em" class="c4 lst-kix_list_5-0">
+    <h3 class="subtítulo">Cajones y Gabinetes de Isla</h3>
+    <h3 class="subtítulo2">Primer Cajón Derecha de Estufa en la Esquina</h3>
+    <ul class="lista-inspeccion">
       <li class="c9 c2 li-bullet-0">
-        <span class="c3"
-          ><input title="Bolsas Ziplock Pequeñas" type="checkbox" /> Bolsas Ziplock Pequeñas&nbsp;</span
-        >
+        <span class="c3"><input title="Bolsas Ziplock Pequeñas" type="checkbox" /> Bolsas Ziploc pequeñas</span>
       </li>
-    <li class="c9 c2 li-bullet-0">
-      <span class="c3"><input title="Bolsas Ziplock Grandes" type="checkbox" /> Bolsas Ziplock Grandes</span>
-    </li>
-    <li class="c9 c2 li-bullet-0">
-      <span class="c3"><input title="Papel encerado" type="checkbox" /> Papel encerado</span>
-    </li>
-    <li class="c9 c2 li-bullet-0">
-      <span class="c3"><input title="Papel de Aluminio" type="checkbox" /> Papel de Aluminio</span>
-    </li>
-    <li class="c9 c2 li-bullet-0">
-      <span class="c3"><input title="Papel de plástico" type="checkbox" /> Papel de plástico</span>
-    </li>
-    <li class="c9 c2 li-bullet-0">
+      <li class="c9 c2 li-bullet-0">
+        <span class="c3"><input title="Bolsas Ziplock Grandes" type="checkbox" /> Bolsas Ziploc grandes</span>
+      </li>
+      <li class="c9 c2 li-bullet-0">
+        <span class="c3"><input title="Papel encerado" type="checkbox" /> Papel encerado</span>
+      </li>
+      <li class="c9 c2 li-bullet-0">
+        <span class="c3"><input title="Papel de Aluminio" type="checkbox" /> Papel aluminio</span>
+      </li>
+      <li class="c9 c2 li-bullet-0">
+        <span class="c3"><input title="Papel de plástico" type="checkbox" /> Papel plástico</span>
+      </li>
+      <li class="c9 c2 li-bullet-0">
       <span class="c3"><input title="Encendedor" type="checkbox" /> Encendedor</span>
-    </li>
-    <li class="c9 c2 li-bullet-0">
+      </li>
+      <li class="c9 c2 li-bullet-0">
       <span class="c3"><input title="Clips" type="checkbox" /> Clips</span>
-    </li>
-  </ul>
+      </li>
+    </ul>
   <p class="c0 c6">
     <span
       style="
@@ -186,19 +226,17 @@ Description automatically generated"
         title=""
     /></span>
   </p>
-    <h3 style="text-indent: 2em">Segundo Cajón Derecha de Estufa</h3>
-    <ul style="text-indent: 2em"class="c4 lst-kix_list_5-0">
+    <h3 class="subtítulo2">Segundo Cajón Derecha de Estufa</h3>
+    <ul class="lista-inspeccion">
       <li class="c9 c2 li-bullet-0">
-        <span class="c3"
-          ><input title="Guantes y coge olla limpios" type="checkbox" /> Guantes y coge olla limpios</span
-        >
+        <span class="c3"><input type="checkbox" /> Guantes y coge olla limpios</span>
       </li>
     </ul>
     <div class="foto-section">
       <img src="../villaclara/images/Foto 7.jpg" alt="Segundo Cajón Derecha de Estufa Foto 7" />
     </div>
-    <h3 style="text-indent: 2em">Primer Cajón Izquierda de Estufa</h3>
-    <ul style="text-indent: 2em" class="c4 lst-kix_list_5-0">
+    <h3 class="subtítulo2">Primer Cajón Izquierda de Estufa</h3>
+    <ul class="lista-inspeccion">
       <li class="c9 c2 li-bullet-0">
         <span class="c3"
           ><input type="checkbox" /> Utensilios de cocina limpios y organizados</span
@@ -214,8 +252,8 @@ Description automatically generated"
         <span class="c3"><input type="checkbox" /> Sacacorchos</span>
       </li>
     </ul>
-    <h3 style="text-indent: 2em">Segundo cajón de izquierda de estufa antes de vinera</h3>
-    <ul style="text-indent: 2em" class="c4 lst-kix_list_5-0">
+    <h3 class="subtítulo2">Segundo Cajón de Izquierda de Estufa Antes de Vinera</h3>
+    <ul class="lista-inspeccion">
       <li class="c9 c2 li-bullet-0">
         <span class="c3"
           ><input title="Cubiertos organizados por clase y limpios" type="checkbox" /> Cubiertos organizados por clase y limpios</span
@@ -231,8 +269,8 @@ Description automatically generated"
       <img src="../villaclara/images/Foto 8.jpg" alt="Primer Cajón Izquierda de Estufa Foto 8" />
     </div>
     
-    <h3 style="text-indent: 2em">Primer gabinete derecho debajo de estufa</h3>
-    <ul style="text-indent: 2em" class="c4 lst-kix_list_5-0">
+    <h3 class="subtítulo2">Primer Gabinete Derecho Debajo de Estufa</h3>
+    <ul class="lista-inspeccion">
       <li class="c9 c2 li-bullet-0">
         <span class="c3"
           ><input title="Kit de BBQ limpio y completo" type="checkbox" /> Kit de BBQ limpio y completo</span
@@ -252,8 +290,8 @@ Description automatically generated"
     <div class="foto-section">
       <img width="200" height="100" src="../villaclara/images/Foto 9.jpg" alt="Primer Gabinete Derecho Debajo de Estufa Foto 9" />
     </div>
-    <h3 style="text-indent: 2em">Gabinete debajo de estufa</h3>
-    <ul style="text-indent: 2em" class="c4 lst-kix_list_5-0">
+    <h3 class="subtítulo2">Gabinetes Debajo de la Estufa</h3>
+    <ul class="lista-inspeccion">
       <li class="c9 c2 li-bullet-0">
         <span class="c3"
           ><input title="Revisar que las ollas y sartenes estén limpios y organizados" type="checkbox" /> Revisar que las ollas y sartenes estén limpios y organizados</span
@@ -263,8 +301,8 @@ Description automatically generated"
     <div class="foto-section">
       <img src="../villaclara/images/Foto 10.jpg" alt="gabinetes debajo de la estufa Foto 10" />
     </div>
-    <h3 style="text-indent: 2em">Gabinete izquierdo debajo de estufa</h3>
-    <ul style="text-indent: 2em" class="c4 lst-kix_list_5-0">
+    <h3 class="subtítulo2">Gabinetes Izquierdo Debajo de la Estufa</h3>
+    <ul class="lista-inspeccion">
       <li class="c9 c2 li-bullet-0">
         <span class="c3"
           ><input type="checkbox" /> Refractarias de cocina</span
@@ -291,8 +329,8 @@ Description automatically generated"
     </div>
   </div>  
 
-  <h3 style="text-indent: 2em">Vinera</h3>
-  <ul style="text-indent: 2em" class="c4 lst-kix_list_5-0">
+  <h3 class="subtítulo">Vinera</h3>
+  <ul class="lista-inspeccion">
     <li class="c9 c2 li-bullet-0">
       <span class="c3"
         ><input type="checkbox" /> Vacía y limpia</span
@@ -302,8 +340,8 @@ Description automatically generated"
   <div class="foto-section">
     <img src="../villaclara/images/Foto 12.jpg" alt="Vinera Foto 12" />
   </div>
-  <h3 style="text-indent: 2em">Refrigerador</h3>
-  <ul style="text-indent: 2em" class="c4 lst-kix_list_5-0">
+  <h3 class="subtítulo">Refrigerador</h3>
+  <ul class="lista-inspeccion">
     <li class="c9 c2 li-bullet-0">
       <span class="c3"
         ><input type="checkbox" /> Revisar que no haya sucio ni migajas</span
@@ -338,8 +376,8 @@ Description automatically generated"
   <div class="foto-section">
     <img src="../villaclara/images/Foto 13.jpg" alt="Refrigerador Foto 13" />
   </div>
-  <h3 style="text-indent: 2em">Congelador</h3>
-  <ul style="text-indent: 2em" class="c4 lst-kix_list_5-0">
+  <h3 class="titulo-principal subtítulo"">Congelador</h3>
+  <ul class="lista-inspeccion">
     <li class="c9 c2 li-bullet-0">
       <span class="c3"
         ><input type="checkbox" /> Revisar que no haya sucio ni migajas en el congelador</span
@@ -359,8 +397,8 @@ Description automatically generated"
   <div class="foto-section">
     <img src="../villaclara/images/Foto 14.jpg" alt="Congelador Foto 14" />
   </div>
-  <h3 style="text-indent: 2em">Topes de cocina</h3>
-  <ul style="text-indent: 2em" class="c4 lst-kix_list_5-0">
+  <h3 class="subtítulo">Topes de Cocina</h3>
+  <ul class="lista-inspeccion">
     <li class="c9 c2 li-bullet-0">
       <span class="c3"
         ><input type="checkbox" /> Papel toalla</span
@@ -402,8 +440,8 @@ Description automatically generated"
     <img src="../villaclara/images/Foto 15B.jpg" alt="Topes de Cocina Foto 15B" />
   </div>
 
-  <h3 style="text-indent: 2em">Fregadero</h3>
-  <ul style="text-indent: 2em" class="c4 lst-kix_list_5-0">
+  <h3 class="subtítulo">Fregadero</h3>
+  <ul class="lista-inspeccion">
     <li class="c9 c2 li-bullet-0">
       <span class="c3"><input type="checkbox" /> Jabón lavaplatos lleno</span>
     </li>
@@ -414,15 +452,14 @@ Description automatically generated"
         <span class="c3"><input type="checkbox" /> Escurreplatos</span>
       </li>
       <li class="c9 c2 li-bullet-0">
-        <span class="c3"><input type="checkbox" /> Jabón de Manos Lleno</span>
+        <span class="c3"><input type="checkbox" /> Jabón de manos lleno</span>
       </li>
-    </ul>
-
-    <h3 style="text-indent: 2em">Triturador de Basura</h3>
-    <ul style="text-indent: 2em" class="c4 lst-kix_list_5-0">
-      <li class="c9 c2 li-bullet-0">
-        <span class="c3"
-          ><input type="checkbox" /> Ponerlo a funcionar con agua</span
+  </ul>
+  <h3 class="subtítulo">Triturador de Basura</h3>
+  <ul class="lista-inspeccion">
+    <li class="c9 c2 li-bullet-0">
+      <span class="c3"
+        ><input type="checkbox" /> Ponerlo a funcionar con agua</span
         >
       </li>
       <li class="c0 c2 li-bullet-0">
@@ -430,207 +467,195 @@ Description automatically generated"
           ><input type="checkbox" /> No olores</span
         >
       </li>
-    </ul>
-    <div class="foto-section">
-      <img src="../villaclara/images/Foto 16.jpg" alt="Triturador de Basura Foto 16" />
-    </div>
-    <h3 style="text-indent: 2em">Gabinetes Encima de Fregadero</h3>
-    <ul style="text-indent: 2em" class="c4 lst-kix_list_5-0">
-      <li class="c9 c2 li-bullet-0">
-    <h3 style="text-indent: 2em">Primer Gabinete a la Izquierda del Refrigerador</h3>
-      </li>
-      <ul class="c4 lst-kix_list_5-0">
-        <li class="c9 c2 li-bullet-0">
-          <span class="c3"
-            ><input type="checkbox" /> Azúcar</span
-          >
-        </li>
-        <li class="c0 c2 li-bullet-0">
-          <span class="c3"
-            ><input type="checkbox" /> Sal</span
-          >
-        </li>
-        <li class="c0 c2 li-bullet-0">
-          <span class="c3"
-            ><input type="checkbox" /> Pimienta</span
-          >
-        </li>
-        <li class="c0 c2 li-bullet-0">
-          <span class="c3"
-            ><input type="checkbox" /> Filtros de café</span
-          >
-        </li>
-        <li class="c0 c2 li-bullet-0">
-          <span class="c3"
-            ><input type="checkbox" /> Condimentos</span
-          >
-        </li>
-        <li class="c0 c2 li-bullet-0">
-          <span class="c3"
-            ><input type="checkbox" /> Aceite</span
-          >
-        </li>
-        <li class="c0 c2 li-bullet-0">
-          <span class="c3"
-            ><input type="checkbox" /> Revisar que no haya nada de comida abierto</span
-          >
-        </li>
-      </ul>
-      <li class="c9 c2 li-bullet-0">
-      <h3 style="text-indent: 2em">Gabinetes de Tazas, Vasos, Copas, Platos y Bandejas</h3>
-      </li>
-      <ul class="c4 lst-kix_list_5-0">
-        <li class="c9 c2 li-bullet-0">
-          <span class="c3"
-            ><input type="checkbox" /> Revisar que haya suficiente para 8 personas</span
-          >
-        </li>
-        <li class="c0 c2 li-bullet-0">
-          <span class="c3"
-            ><input type="checkbox" /> Revisar que estén organizados por clase y limpios</span
-          >
-        </li>
-        <li class="c0 c2 li-bullet-0">
-          <span class="c3"
-            ><input type="checkbox" /> Tazas</span
-          >
-        </li>
-        <li class="c0 c2 li-bullet-0">
-          <span class="c3"
-            ><input type="checkbox" /> Platos</span
-          >
-        </li>
-        <li class="c0 c2 li-bullet-0">
-          <span class="c3"
-            ><input type="checkbox" /> Copas y vasos</span
-          >
-        </li>
-        <li class="c0 c2 li-bullet-0">
-          <span class="c3"
-            ><input type="checkbox" /> Bandejas de servir</span
-          >
-        </li>
-      </ul>
-    </ul>
-    <div class="foto-section">
-      <img src="../villaclara/images/Foto 18A.jpg" alt="Gabinetes de Tazas, Vasos, Copas, Platos y Bandejas Foto 18A" />
-      <img src="../villaclara/images/Foto 18B.jpg" alt="Gabinetes de Tazas, Vasos, Copas, Platos y Bandejas Foto 18B" />
-      <img src="../villaclara/images/Foto 18C.jpg" alt="Gabinetes de Tazas, Vasos, Copas, Platos y Bandejas Foto 18C" />
-      <img src="../villaclara/images/Foto 18D.jpg" alt="Gabinetes de Tazas, Vasos, Copas, Platos y Bandejas Foto 18D" />
-    </div>
-    <h3 style="text-indent: 2em">Gabinetes y cajones inferiores tope de cocina</h3>
-    <ul style="text-indent: 2em" class="c4 lst-kix_list_5-0">
-      <li class="c9 c2 li-bullet-0">
-        <h3 style="text-indent: 2em">Gabinete Izquierda de Refrigerador</h3>
-      </li>
-      <ul class="c4 lst-kix_list_5-0">
-        <li class="c9 c2 li-bullet-0">
-          <span class="c3"
-            ><input type="checkbox" /> Vacío y limpio</span
-          >
-        </li>
-      </ul>
-      <li class="c9 c2 li-bullet-0">
-        <h3>Gabinete con Repisas Rotatorias</h3>
-      </li>
-      <ul class="c4 lst-kix_list_5-0">
-        <li class="c9 c2 li-bullet-0">
-          <span class="c3"
-            ><input type="checkbox" /> Electrodomésticos limpios</span
-          >
-        </li>
-        <li class="c0 c2 li-bullet-0">
-          <span class="c3"
-            ><input type="checkbox" /> Escurridos de pasta organizados y limpios</span
-          >
-        </li>
-      </ul>
-    </ul>
-    <div class="foto-section">
-      <img src="../villaclara/images/Foto 19.jpg" alt="Gabinete Izquierda de Refrigerador Foto 19" />
-      <img src="../villaclara/images/Foto 20.jpg" alt="Gabinete con Repisas Rotatorias Foto 20" />
-    </div>
-    <h3 style="text-indent: 2em">Gabinete de fregadero de la cocina</h3>
-    <ul style="text-indent: 2em" class="c4 lst-kix_list_5-0">
-      <li class="c9 c2 li-bullet-0">
-        <span class="c3"
-          ><input type="checkbox" /> Rinse aid</span
-        >
-      </li>
-      <li class="c0 c2 li-bullet-0">
-        <span class="c3"
-          ><input type="checkbox" /> Jabón máquina de platos</span
-        >
-      </li>
-      <li class="c0 c2 li-bullet-0">
-        <span class="c3"
-          ><input type="checkbox" /> Papel toalla</span
-        >
-      </li>
-      <li class="c0 c2 li-bullet-0">
-        <span class="c3"
-          ><input type="checkbox" /> Servilletas </span
-        >
-      </li>
-      <li class="c0 c2 li-bullet-0">
-        <span class="c3"
-          ><input type="checkbox" /> Bolsas de basura grandes</span
-        >
-      </li>
-      <li class="c0 c2 li-bullet-0">
-        <span class="c3"
-          ><input type="checkbox" /> Bolsas de basura pequeñas</span
-        >
-      </li>
-    </ul>
-    <div class="foto-section">
-      <img src="../villaclara/images/Foto 21.jpg" alt="Gabinete de Fregadero de la Cocina Foto 21" />
-    </div>
-   <h3 style="text-indent: 2em">Gabinete de lavadora</h3>
-    <h3 style="text-indent: 2em">Lavaplatos</h3>
-    <ul style="text-indent: 2em" class="c4 lst-kix_list_5-0">
-      <li class="c9 c2 li-bullet-0">
-        <span class="c3"
-          ><input type="checkbox" /> Sin agua en el fondo</span
-        >
-      </li>
-      <li class="c0 c2 li-bullet-0">
-        <span class="c3"
-          ><input type="checkbox" /> Todos los platos y utensilios removidos</span
-        >
-      </li>
-      <li class="c0 c2 li-bullet-0">
-        <span class="c3"
-          ><input type="checkbox" /> No olores </span
-        >
-      </li>
-      <li class="c0 c2 li-bullet-0">
-        <span class="c3"
-          ><input type="checkbox" /> Filtro limpio</span
-        >
-      </li>
-      <li class="c0 c2 li-bullet-0">
-        <span class="c3"
-          ><input type="checkbox" /> Reponer abrillantador "Rinse Aid"</span
-        >
-      </li>
-    </ul>
-    <div class="foto-section">
-      <img src="../villaclara/images/Foto 22.jpg" alt="Lavaplatos Foto 22" />
-    </div>
-    <h3 style="text-indent: 2em">Basura</h3>
-    <ul style="text-indent: 2em" class="c4 lst-kix_list_5-0">
-      <li class="c9 c2 li-bullet-0">
-        <span class="c3"
-          ><input type="checkbox" /> Limpia</span
-        >
-      </li>
-    </ul>
-    <div class="foto-section">
-      <img src="../villaclara/images/Foto 23.jpg" alt="Basura Foto 23" />
-    </div>
-    <h3 style="text-indent: 2em">Encima de microondas</h3>
-    <ul style="text-indent: 2em" class="c4 lst-kix_list_5-0">
+  </ul>
+  <div class="foto-section">
+    <img src="../villaclara/images/Foto 16.jpg" alt="Triturador de Basura Foto 16" />
+  </div>
+  <h3 class="subtítulo">Gabinetes Encima de Fregadero</h3>
+  <h3 class="subtítulo2">Primer Gabinete a la Izquierda del Refrigerador</h3>
+  <ul class="lista-inspeccion">
+    <li class="c9 c2 li-bullet-0">
+      <span class="c3"
+        ><input type="checkbox" /> Azúcar</span
+      >
+    </li>
+    <li class="c0 c2 li-bullet-0">
+      <span class="c3"
+        ><input type="checkbox" /> Sal</span
+      >
+    </li>
+    <li class="c0 c2 li-bullet-0">
+      <span class="c3"
+        ><input type="checkbox" /> Pimienta</span
+      >
+    </li>
+    <li class="c0 c2 li-bullet-0">
+      <span class="c3"
+        ><input type="checkbox" /> Filtros de café</span
+      >
+    </li>
+    <li class="c0 c2 li-bullet-0">
+      <span class="c3"
+        ><input type="checkbox" /> Condimentos</span
+      >
+    </li>
+    <li class="c0 c2 li-bullet-0">
+      <span class="c3"
+        ><input type="checkbox" /> Aceite</span
+      >
+    </li>
+    <li class="c0 c2 li-bullet-0">
+      <span class="c3"
+        ><input type="checkbox" /> Revisar que no haya nada de comida abierto</span
+      >
+    </li>
+  </ul>
+  <h3 class="subtítulo2">Gabinetes de Tazas, Vasos, Copas, Platos y Bandejas</h3>
+  <ul class="lista-inspeccion">
+    <li class="c9 c2 li-bullet-0">
+      <span class="c3"
+        ><input type="checkbox" /> Revisar que haya suficiente para 8 personas</span
+      >
+    </li>
+    <li class="c0 c2 li-bullet-0">
+      <span class="c3"
+        ><input type="checkbox" /> Revisar que estén organizados por clase y limpios</span
+      >
+    </li>
+    <li class="c0 c2 li-bullet-0">
+      <span class="c3"
+        ><input type="checkbox" /> Tazas</span
+      >
+    </li>
+    <li class="c0 c2 li-bullet-0">
+      <span class="c3"
+        ><input type="checkbox" /> Platos</span
+      >
+    </li>
+    <li class="c0 c2 li-bullet-0">
+      <span class="c3"
+        ><input type="checkbox" /> Copas y vasos</span
+      >
+    </li>
+    <li class="c0 c2 li-bullet-0">
+      <span class="c3"
+        ><input type="checkbox" /> Bandejas de servir</span
+      >
+    </li>
+  </ul>
+  <div class="foto-section">
+    <img src="../villaclara/images/Foto 18A.jpg" alt="Gabinetes de Tazas, Vasos, Copas, Platos y Bandejas Foto 18A" />
+    <img src="../villaclara/images/Foto 18B.jpg" alt="Gabinetes de Tazas, Vasos, Copas, Platos y Bandejas Foto 18B" />
+    <img src="../villaclara/images/Foto 18C.jpg" alt="Gabinetes de Tazas, Vasos, Copas, Platos y Bandejas Foto 18C" />
+    <img src="../villaclara/images/Foto 18D.jpg" alt="Gabinetes de Tazas, Vasos, Copas, Platos y Bandejas Foto 18D" />
+  </div>
+  <h3 class="subtítulo">Gabinetes y Cajones Inferiores Tope de Cocina</h3>
+  <h3 class="subtítulo2">Gabinete Izquierda de Refrigerador</h3>
+  <ul class="lista-inspeccion">
+    <li class="c9 c2 li-bullet-0">
+      <span class="c3"
+        ><input type="checkbox" /> Vacío y limpio</span
+      >
+    </li>
+  </ul>
+  <h3 class="subtítulo2">Gabinete con Repisas Rotatorias</h3>
+  <ul class="lista-inspeccion">
+    <li class="c9 c2 li-bullet-0">
+      <span class="c3"
+        ><input type="checkbox" /> Electrodomésticos limpios</span
+      >
+    </li>
+    <li class="c0 c2 li-bullet-0">
+      <span class="c3"
+        ><input type="checkbox" /> Escurridos de pasta organizados y limpios</span
+      >
+    </li>
+  </ul>
+  <div class="foto-section">
+    <img src="../villaclara/images/Foto 19.jpg" alt="Gabinete Izquierda de Refrigerador Foto 19" />
+    <img src="../villaclara/images/Foto 20.jpg" alt="Gabinete con Repisas Rotatorias Foto 20" />
+  </div>
+  <h3 class="subtítulo">Gabinete de fregadero de la cocina</h3>
+  <ul class="lista-inspeccion">
+    <li class="c9 c2 li-bullet-0">
+      <span class="c3"
+        ><input type="checkbox" /> Rinse aid</span
+      >
+    </li>
+    <li class="c0 c2 li-bullet-0">
+      <span class="c3"
+        ><input type="checkbox" /> Jabón máquina de platos</span
+      >
+    </li>
+    <li class="c0 c2 li-bullet-0">
+      <span class="c3"
+        ><input type="checkbox" /> Papel toalla</span
+      >
+    </li>
+    <li class="c0 c2 li-bullet-0">
+      <span class="c3"
+        ><input type="checkbox" /> Servilletas </span
+      >
+    </li>
+    <li class="c0 c2 li-bullet-0">
+      <span class="c3"
+        ><input type="checkbox" /> Bolsas de basura grandes</span
+      >
+    </li>
+    <li class="c0 c2 li-bullet-0">
+      <span class="c3"
+        ><input type="checkbox" /> Bolsas de basura pequeñas</span
+      >
+    </li>
+  </ul>
+  <div class="foto-section">
+    <img src="../villaclara/images/Foto 21.jpg" alt="Gabinete de Fregadero de la Cocina Foto 21" />
+  </div>
+  <h3 class="subtítulo">Gabinete de lavadora</h3>
+  <h3 class="subtítulo">Lavaplatos</h3>
+  <ul class="lista-inspeccion">
+    <li class="c9 c2 li-bullet-0">
+      <span class="c3"
+        ><input type="checkbox" /> Sin agua en el fondo</span
+      >
+    </li>
+    <li class="c0 c2 li-bullet-0">
+      <span class="c3"
+        ><input type="checkbox" /> Todos los platos y utensilios removidos</span
+      >
+    </li>
+    <li class="c0 c2 li-bullet-0">
+      <span class="c3"
+        ><input type="checkbox" /> No olores </span
+      >
+    </li>
+    <li class="c0 c2 li-bullet-0">
+      <span class="c3"
+        ><input type="checkbox" /> Filtro limpio</span
+      >
+    </li>
+    <li class="c0 c2 li-bullet-0">
+      <span class="c3"
+        ><input type="checkbox" /> Reponer abrillantador "Rinse Aid"</span
+      >
+    </li>
+  </ul>
+  <div class="foto-section">
+    <img src="../villaclara/images/Foto 22.jpg" alt="Lavaplatos Foto 22" />
+  </div>
+  <h3 class="titulo-principal subtítulo">Basura</h3>
+  <ul class="lista-inspeccion">
+    <li class="c9 c2 li-bullet-0">
+      <span class="c3"
+        ><input type="checkbox" /> Limpia</span
+      >
+    </li>
+  </ul>
+  <div class="foto-section">
+    <img src="../villaclara/images/Foto 23.jpg" alt="Basura Foto 23" />
+  </div>
+  <h3 class="titulo-principal subtítulo">Encima de microondas</h3>
+    <ul class="lista-inspeccion">
       <li class="c9 c2 li-bullet-0">
         <span class="c3"
           ><input type="checkbox" /> Vacío y limpio</span
@@ -645,8 +670,8 @@ Description automatically generated"
     <div class="foto-section">
       <img src="../villaclara/images/Foto 24.jpg" alt="Encima de Microondas Foto 24" />
     </div>
-    <h3 style="text-indent: 2em">Microondas</h3>
-    <ul style="text-indent: 2em" class="c4 lst-kix_list_5-0">
+    <h3 class="titulo-principal subtítulo"">Microondas</h3>
+    <ul class="lista-inspeccion">
       <li class="c9 c2 li-bullet-0">
         <span class="c3"
           ><input type="checkbox" /> Funciona</span
@@ -666,8 +691,8 @@ Description automatically generated"
     <div class="foto-section">
       <img src="../villaclara/images/Foto 25.jpg" alt="Microondas Foto 25" />
     </div>
-    <h3 style="text-indent: 2em">Horno</h3>
-    <ul style="text-indent: 2em" class="c4 lst-kix_list_5-0">
+    <h3 class="titulo-principal subtítulo"">Horno</h3>
+    <ul class="lista-inspeccion">
       <li class="c9 c2 li-bullet-0">
         <span class="c3"
           ><input type="checkbox" /> Funciona</span
@@ -687,8 +712,8 @@ Description automatically generated"
     <div class="foto-section">
       <img src="../villaclara/images/Foto 26.jpg" alt="Horno Foto 26" />
     </div>
-    <h3 style="text-indent: 2em">Cajón Debajo del Horno</h3>
-    <ul style="text-indent: 2em" class="c4 lst-kix_list_5-0">
+    <h3 class="titulo-principal subtítulo"">Cajón Debajo del Horno</h3>
+    <ul class="lista-inspeccion">
       <li class="c9 c2 li-bullet-0">
         <span class="c3"
           ><input type="checkbox" /> Bandejas de hornear limpias y organizadas</span
@@ -698,8 +723,8 @@ Description automatically generated"
     <div class="foto-section">
       <img src="../villaclara/images/Foto 27.jpg" alt="Cajón Debajo del Horno Foto 27" />
     </div>
-    <h3 style="text-indent: 2em">Despensa</h3>
-    <ul style="text-indent: 2em" class="c4 lst-kix_list_5-0">
+    <h3 class="titulo-principal subtítulo"">Despensa</h3>
+    <ul class="lista-inspeccion">
       <li class="c9 c2 li-bullet-0">
         <span class="c3"
           ><input type="checkbox" /> Vacía y limpia</span
@@ -709,8 +734,8 @@ Description automatically generated"
     <div class="foto-section">
       <img src="../villaclara/images/Foto 28.jpg" alt="Despensa Foto 28" />
     </div>
-    <h3 style="text-indent: 2em">Luces Debajo de Gabinetes</h3>
-    <ul style="text-indent: 2em" class="c4 lst-kix_list_5-0">
+    <h3 class="titulo-principal subtítulo"">Luces Debajo de Gabinetes</h3>
+    <ul class="lista-inspeccion">
       <li class="c9 c2 li-bullet-0">
         <span class="c3"
           ><input type="checkbox" /> Todas funcionando</span
@@ -725,122 +750,106 @@ Description automatically generated"
     <div class="foto-section">
       <img src="../villaclara/images/Foto 29.jpg" alt="Luces Debajo de Gabinetes Foto 29" />
     </div>
-    <h3>Sala/Comedor</h3>
-    <ul class="c4 lst-kix_list_5-0">
+    <h3 class="titulo-principal">Sala/Comedor</h3>
+    <h3 class="subtítulo">Candelabros </h3>
+    <ul class="lista-inspeccion">
       <li class="c9 c2 li-bullet-0">
-        <h3>Candelabros </h3>
-        <ul class="c4 lst-kix_list_5-0">
-          <li class="c9 c2 li-bullet-0">
-            <span class="c3"
-              ><input type="checkbox" /> Limpios</span
-            >
-          </li>
-          <li class="c0 c2 li-bullet-0">
-            <span class="c3"
-              ><input type="checkbox" /> Bombillos encendidos</span
-            >
-          </li>
-        </ul>
+        <span class="c3"
+          ><input type="checkbox" /> Limpios</span
+        >
       </li>
-      <div class="foto-section">
-        <img src="../villaclara/images/Foto 30.jpg" alt="Candelabros Foto 30" />
-      </div>
       <li class="c0 c2 li-bullet-0">
-        <h3>Comedor</h3>
-        <ul class="c4 lst-kix_list_5-0">
-          <li class="c0 c2 li-bullet-0">
-            <span class="c3"
-              ><input type="checkbox" /> Mesa limpia</span
-            >
-          </li>
-          <li class="c0 c2 li-bullet-0">
-            <span class="c3"
-              ><input type="checkbox" /> Sillas organizadas</span
-            >
-          </li>
-          <li class="c0 c2 li-bullet-0">
-            <span class="c3"
-              ><input type="checkbox" /> Sillas fuertes</span
-            >
-          </li>
-          <li class="c0 c2 li-bullet-0">
-            <span class="c3"
-              ><input type="checkbox" /> Sillas limpias</span
-            >
-          </li>
-        </ul>
+        <span class="c3"
+          ><input type="checkbox" /> Bombillos encendidos</span
+        >
       </li>
-       <div class="foto-section">
-        <img src="../villaclara/images/Foto 31.jpg" alt="Comedor Foto 31" />
-      </div>
-      <li class="c0 c2 li-bullet-0">
-        <h3>Sala</h3>
-        <ul class="c4 lst-kix_list_5-0">
-          <li class="c0 c2 li-bullet-0">
-            <span class="c3"
-              ><input type="checkbox" /> Revisar debajo de la alfombra</span
-            >
-          </li>
-          <li class="c0 c2 li-bullet-0">
-            <span class="c3"
-              ><input type="checkbox" /> Quitar cojines y revisar que no haya comida debajo</span
-            >
-          </li>
-          <li class="c0 c2 li-bullet-0">
-            <span class="c3"
-              ><input type="checkbox" /> Todas las almohadas decorativas limpias y en dirección correcta</span
-            >
-          </li>
-          <li class="c0 c2 li-bullet-0">
-            <span class="c3"
-              ><input type="checkbox" /> Sofá limpio</span
-            >
-          </li>
-          <li class="c0 c2 li-bullet-0">
-            <span class="c3"
-              ><input type="checkbox" /> Mirar debajo del sofá</span
-            >
-          </li>
-          <li class="c0 c2 li-bullet-0">
-            <span class="c3"
-              ><input type="checkbox" /> Encender televisor y verificar internet</span
-            >
-          </li>
-          <li class="c0 c2 li-bullet-0">
-            <span class="c3"
-              ><input type="checkbox" /> Control en mueble de TV</span
-            >
-          </li>
-          <li class="c0 c2 li-bullet-0">
-            <span class="c3"
-              ><input type="checkbox" /> Abrir cajones de gabinete</span
-            >
-          </li>
-          <li class="c0 c2 li-bullet-0">
-            <span class="c3"
-              ><input type="checkbox" /> Libros y juegos de mesa organizados y limpios</span
-            >
-          </li>
-          <li class="c0 c2 li-bullet-0">
-            <span class="c3"
-              ><input type="checkbox" /> Revisar detrás de las cortinas</span
-            >
-          </li>
-        </ul>
-      </li>
-      <div class="foto-section">
-        <img src="../villaclara/images/Foto 32A.jpg" alt="Sala Foto 32A" />
-        <img src="../villaclara/images/Foto 32B.jpg" alt="Sala Foto 32B" />
-        <img src="../villaclara/images/Foto 32C.jpg" alt="Sala Foto 32C" />
-        <img src="../villaclara/images/Foto 32D.jpg" alt="Sala Foto 32D" />
-        <img src="../villaclara/images/Foto 32E.jpg" alt="Sala Foto 32E" />
-      </div>
     </ul>
-  </li>
-  
-  <li class="c1 c2 li-bullet-0">
-    <h3 style="text-indent: 2em">Balcón</h3>
-    <ul style="text-indent: 2em" class="c4 lst-kix_list_5-0">
+    <div class="foto-section">
+      <img src="../villaclara/images/Foto 30.jpg" alt="Candelabros Foto 30" />
+    </div>
+    <h3 class="subtítulo">Comedor</h3>
+    <ul class="lista-inspeccion">
+      <li class="c0 c2 li-bullet-0">
+        <span class="c3"
+          ><input type="checkbox" /> Mesa limpia</span
+        >
+      </li>
+      <li class="c0 c2 li-bullet-0">
+        <span class="c3"
+          ><input type="checkbox" /> Sillas organizadas</span
+        >
+      </li>
+      <li class="c0 c2 li-bullet-0">
+        <span class="c3"
+          ><input type="checkbox" /> Sillas limpias</span
+        >
+      </li>
+    </ul>
+    <div class="foto-section">
+      <img src="../villaclara/images/Foto 31.jpg" alt="Comedor Foto 31" />
+    </div>
+    <h3 class="titulo-principal">Sala</h3>
+    <ul class="lista-inspeccion">
+      <li class="c0 c2 li-bullet-0">
+        <span class="c3"
+          ><input type="checkbox" /> Revisar debajo de la alfombra</span
+        >
+      </li>
+      <li class="c0 c2 li-bullet-0">
+        <span class="c3"
+          ><input type="checkbox" /> Quitar cojines y revisar que no haya comida debajo</span
+        >
+      </li>
+      <li class="c0 c2 li-bullet-0">
+        <span class="c3"
+          ><input type="checkbox" /> Todas las almohadas decorativas limpias y en dirección correcta</span
+        >
+      </li>
+      <li class="c0 c2 li-bullet-0">
+        <span class="c3"
+          ><input type="checkbox" /> Sofá limpio</span
+        >
+      </li>
+      <li class="c0 c2 li-bullet-0">
+        <span class="c3"
+          ><input type="checkbox" /> Mirar debajo del sofá</span
+        >
+      </li>
+      <li class="c0 c2 li-bullet-0">
+        <span class="c3"
+          ><input type="checkbox" /> Encender televisor y verificar internet</span
+        >
+      </li>
+      <li class="c0 c2 li-bullet-0">
+        <span class="c3"
+          ><input type="checkbox" /> Control en mueble de TV</span
+        >
+      </li>
+      <li class="c0 c2 li-bullet-0">
+        <span class="c3"
+          ><input type="checkbox" /> Abrir cajones de gabinete</span
+        >
+      </li>
+      <li class="c0 c2 li-bullet-0">
+        <span class="c3"
+          ><input type="checkbox" /> Libros y juegos de mesa organizados y limpios</span
+        >
+      </li>
+      <li class="c0 c2 li-bullet-0">
+        <span class="c3"
+          ><input type="checkbox" /> Revisar detrás de las cortinas</span
+        >
+      </li>
+    </ul>
+    <div class="foto-section">
+      <img src="../villaclara/images/Foto 32A.jpg" alt="Sala Foto 32A" />
+      <img src="../villaclara/images/Foto 32B.jpg" alt="Sala Foto 32B" />
+      <img src="../villaclara/images/Foto 32C.jpg" alt="Sala Foto 32C" />
+      <img src="../villaclara/images/Foto 32D.jpg" alt="Sala Foto 32D" />
+      <img src="../villaclara/images/Foto 32E.jpg" alt="Sala Foto 32E" />
+    </div>
+    <h3 class="titulo-principal">Balcón</h3>
+    <ul class="lista-inspeccion">
       <li class="c9 c2 li-bullet-0">
         <span class="c3"><input type="checkbox" /> Puertas y vidrios limpios</span>
       </li>
@@ -867,7 +876,7 @@ Description automatically generated"
       </li>
       <li class="c9 c2 li-bullet-0">
         <span class="c3"><input type="checkbox" /> Parrilla de Gas/ BBQ</span>
-        <ul class="c4 lst-kix_list_5-0">
+        <ul class="lista-inspeccion">
           <li class="c9 c2 li-bullet-0">
             <span class="c3"><input type="checkbox" /> Grill limpio</span>
           </li>
@@ -880,7 +889,6 @@ Description automatically generated"
         </ul>
       </li>
     </ul>
-  </li>
   <div class="foto-section">
     <img src="../villaclara/images/Foto 33A.jpg" alt="Sala Foto 33A" />
     <img src="../villaclara/images/Foto 33B.jpg" alt="Sala Foto 33B" />
@@ -890,14 +898,14 @@ Description automatically generated"
     <img src="../villaclara/images/Foto 33F.jpg" alt="Sala Foto 33F" />
   </div>
   <li class="c1 c2 li-bullet-0">
-    <h3>Pasillo a la Derecha de la Cocina (Desde Puerta de Entrada)</h3>
+    <h3 class="titulo-principal">Pasillo a la Derecha de la Cocina (Desde Puerta de Entrada)</h3>
   </li>
   <div class="foto-section">
     <img width="100" height="200"  src="../villaclara/images/Foto 34.jpg" alt="Pasillo a la Derecha de la Cocina Foto 34" />
   </div>
   <li class="c1 c2 li-bullet-0">
-    <h3>Closet de Aire Acondicionado</h3>
-    <ul class="c4 lst-kix_list_5-0">
+    <h3 class="titulo-principal">Closet de Aire Acondicionado</h3>
+    <ul class="lista-inspeccion">
       <li class="c9 c2 li-bullet-0">
         <span class="c3"><input type="checkbox" /> Closet limpio y organizado</span>
       </li>
@@ -913,9 +921,9 @@ Description automatically generated"
     <img src="../villaclara/images/Foto 35A.jpg" alt="Closet de Aire Acondicionado Foto 35A" />
     <img src="../villaclara/images/Foto 35B.jpg" alt="Closet de Aire Acondicionado Foto 35B" />
   </div>
-  <li class="c1 c2 li-bullet-0">
-    <h3>Primer Baño en el Pasillo a la Derecha</h3>
-    <ul class="c4 lst-kix_list_5-0">
+
+    <h3 class="titulo-principal">Primer baño en el pasillo a la derecha</h3>
+    <ul class="lista-inspeccion">
       <li class="c9 c2 li-bullet-0">
         <span class="c3"><input type="checkbox" /> Revisar bombillos</span>
       </li>
@@ -943,12 +951,12 @@ Description automatically generated"
       <li class="c9 c2 li-bullet-0">
         <span class="c3"><input type="checkbox" /> 1 washcloth</span>
       </li>
+      </ul>
       <div class="foto-section">
         <img src="../villaclara/images/Foto 36.jpg" alt="Primer Baño en el Pasillo a la Derecha Foto 36" />
       </div>
-      <li class="c9 c2 li-bullet-0">
-        <h3>Tope de Lavamanos</h3>
-        <ul class="c4 lst-kix_list_5-0">
+        <h3 class="subtítulo">Tope de Lavamanos</h3>
+        <ul class="lista-inspeccion">
           <li class="c9 c2 li-bullet-0">
             <span class="c3"><input type="checkbox" /> Lavamanos funcionando y limpio</span>
           </li>
@@ -991,9 +999,8 @@ Description automatically generated"
           <img src="../villaclara/images/Foto 37B.jpg" alt="Tope de Lavamanos Foto 37B" />
         </div>
       </li>
-      <li class="c9 c2 li-bullet-0">
-        <h3>Gabinete</h3>
-        <ul class="c4 lst-kix_list_5-0">
+        <h3 class="subtítulo">Gabinete</h3>
+        <ul class="lista-inspeccion">
           <li class="c9 c2 li-bullet-0">
             <span class="c3"><input type="checkbox" /> Abrir los gabinetes</span>
           </li>
@@ -1008,82 +1015,76 @@ Description automatically generated"
           <img src="../villaclara/images/Foto 38.jpg" alt="Gabinete Foto 38" />
         </div>
       </li>
-    </ul>
-
-    <ul class="c4 lst-kix_list_5-0">
+    </>
+    <h3 class="titulo-principal">Primer Dormitorio Frente a Baño de Pasillo</h3>
+    <ul class="lista-inspeccion">
       <li class="c9 c2 li-bullet-0">
-        <h3>Primer Dormitorio Frente a Baño de Pasillo</h3>
-        <ul class="c4 lst-kix_list_5-0">
-          <li class="c9 c2 li-bullet-0">
-            <span class="c3"><input type="checkbox" /> Puerta limpia</span>
-          </li>
-          <li class="c9 c2 li-bullet-0">
-            <span class="c3"><input type="checkbox" /> Cortina limpia</span>
-          </li>
-          <li class="c9 c2 li-bullet-0">
-            <span class="c3"><input type="checkbox" /> Revisar detrás de la cortina</span>
-          </li>
-          <li class="c9 c2 li-bullet-0">
-            <span class="c3"><input type="checkbox" /> Revisar bombillos techo</span>
-          </li>
-          <li class="c9 c2 li-bullet-0">
-            <span class="c3"><input type="checkbox" /> 4 almohadas standard con pillow cover</span>
-          </li>
-          <div class="foto-section">
-            <img src="../villaclara/images/Foto 39.jpg" alt="Primer Dormitorio Frente a Baño de Pasillo Foto 39" />
-          </div>
-          <li class="c9 c2 li-bullet-0">
-            <h3>Mueble de T.V.</h3>
-            <ul class="c4 lst-kix_list_5-0">
-              <li class="c9 c2 li-bullet-0">
-                <span class="c3"><input type="checkbox" /> 2 botellas de agua sobre mueble de T.V.</span>
-              </li>
-              <li class="c9 c2 li-bullet-0">
-                <span class="c3"><input type="checkbox" /> Abrir cajones y puertas</span>
-              </li>
-              <li class="c9 c2 li-bullet-0">
-                <span class="c3"><input type="checkbox" /> Cajones vacíos y limpios</span>
-              </li>
-              <li class="c9 c2 li-bullet-0">
-                <span class="c3"><input type="checkbox" /> Verificar que T.V. esté funcionando</span>
-              </li>
-              <li class="c9 c2 li-bullet-0">
-                <span class="c3"><input type="checkbox" /> Control de T.V. sobre mueble</span>
-              </li>
-            </ul>
-            <div class="foto-section">
-              <img src="../villaclara/images/Foto 40A.jpg" alt="Mueble de T.V. Foto 40A" />
-              <img src="../villaclara/images/Foto 40B.jpg" alt="Mueble de T.V. Foto 40B" />
-            </div>
-          </li>
-          <li class="c9 c2 li-bullet-0">
-            <h3>Armario del Tercer Dormitorio al Inicio del Pasillo- Foto 41</h3>
-            <ul class="c4 lst-kix_list_5-0">
-              <li class="c9 c2 li-bullet-0">
-                <span class="c3"><input type="checkbox" /> Revisar Bombillos</span>
-              </li>
-              <li class="c9 c2 li-bullet-0">
-                <span class="c3"><input type="checkbox" /> Maletero</span>
-              </li>
-              <li class="c9 c2 li-bullet-0">
-                <span class="c3"><input type="checkbox" /> Ganchos organizados por clase</span>
-              </li>
-              <li class="c9 c2 li-bullet-0">
-                <span class="c3"><input type="checkbox" /> Paquete de 2 almohadas standard con pillow cases, covers y frisa limpia</span>
-              </li>
-              <li class="c9 c2 li-bullet-0">
-                <span class="c3"><input type="checkbox" /> Revisar que los cajones y repisas estén vacíos y limpios</span>
-              </li>
-            </ul>
-            <div class="foto-section">
-              <img src="../villaclara/images/Foto 41.jpg" alt="Armario del Tercer Dormitorio al Inicio del Pasillo- Foto 41" />
-            </div>
-          </li>
-        </ul>
+        <span class="c3"><input type="checkbox" /> Puerta limpia</span>
       </li>
       <li class="c9 c2 li-bullet-0">
-        <h3>Dormitorio Principal</h3>
-        <ul class="c4 lst-kix_list_5-0">
+        <span class="c3"><input type="checkbox" /> Cortina limpia</span>
+      </li>
+      <li class="c9 c2 li-bullet-0">
+        <span class="c3"><input type="checkbox" /> Revisar detrás de la cortina</span>
+      </li>
+      <li class="c9 c2 li-bullet-0">
+        <span class="c3"><input type="checkbox" /> Revisar bombillos techo</span>
+      </li>
+      <li class="c9 c2 li-bullet-0">
+        <span class="c3"><input type="checkbox" /> 4 almohadas standard con pillow cover</span>
+      </li>
+    </ul>
+    <div class="foto-section">
+      <img src="../villaclara/images/Foto 39.jpg" alt="Primer Dormitorio Frente a Baño de Pasillo Foto 39" />
+    </div>
+    <h3 class="subtítulo">Mueble de T.v.</h3>
+    <ul class="lista-inspeccion">
+      <li class="c9 c2 li-bullet-0">
+        <span class="c3"><input type="checkbox" /> 2 botellas de agua sobre mueble de T.v.</span>
+      </li>
+      <li class="c9 c2 li-bullet-0">
+        <span class="c3"><input type="checkbox" /> Abrir cajones y puertas</span>
+      </li>
+        <li class="c9 c2 li-bullet-0">
+          <span class="c3"><input type="checkbox" /> Cajones vacíos y limpios</span>
+        </li>
+        <li class="c9 c2 li-bullet-0">
+          <span class="c3"><input type="checkbox" /> Verificar que T.V. esté funcionando</span>
+        </li>
+        <li class="c9 c2 li-bullet-0">
+          <span class="c3"><input type="checkbox" /> Control de T.V. sobre mueble</span>
+        </li>
+      </ul>
+      <div class="foto-section">
+        <img src="../villaclara/images/Foto 40A.jpg" alt="Mueble de T.v. Foto 40A" />
+        <img src="../villaclara/images/Foto 40B.jpg" alt="Mueble de T.v. Foto 40B" />
+      </div>
+    </li>
+        </ul>
+        <h3 class="titulo-principal">Armario del Tercer Dormitorio al Inicio del Pasillo</h3>
+        <ul class="lista-inspeccion">
+          <li class="c9 c2 li-bullet-0">
+            <span class="c3"><input type="checkbox" /> Revisar bombillos</span>
+          </li>
+          <li class="c9 c2 li-bullet-0">
+            <span class="c3"><input type="checkbox" /> Maletero</span>
+          </li>
+          <li class="c9 c2 li-bullet-0">
+            <span class="c3"><input type="checkbox" /> Ganchos organizados por clase</span>
+          </li>
+          <li class="c9 c2 li-bullet-0">
+            <span class="c3"><input type="checkbox" /> Paquete de 2 almohadas standard con pillow cases, covers y frisa limpia</span>
+          </li>
+          <li class="c9 c2 li-bullet-0">
+            <span class="c3"><input type="checkbox" /> Revisar que los cajones y repisas estén vacíos y limpios</span>
+          </li>
+        </ul>
+        <div class="foto-section">
+          <img src="../villaclara/images/Foto 41.jpg" alt="Armario del Tercer Dormitorio al Inicio del Pasillo- Foto 41" />
+        </div>
+      </li>
+        <h3 class="titulo-principal">Dormitorio Principal</h3>
+        <ul class="lista-inspeccion">
           <li class="c9 c2 li-bullet-0">
             <span class="c3"><input type="checkbox" /> Puerta y pasillo limpio</span>
           </li>
@@ -1093,128 +1094,125 @@ Description automatically generated"
           <li class="c9 c2 li-bullet-0">
             <span class="c3"><input type="checkbox" /> Mueble limpio y vacío. Abrir todos los cajones</span>
           </li>
-          <div class="foto-section">
-            <img src="../villaclara/images/Foto 42.jpg" alt="Dormitorio Principal- Foto 42" />
-          </div>
+        </ul>
+        <div class="foto-section">
+          <img src="../villaclara/images/Foto 42.jpg" alt="Dormitorio Principal- Foto 42" />
+        </div>
+        <h3 class="subtítulo">Ducha</h3>
+        <ul class="lista-inspeccion">
           <li class="c9 c2 li-bullet-0">
-            <h3>Ducha</h3>
-            <ul class="c4 lst-kix_list_5-0">
-              <li class="c9 c2 li-bullet-0">
-                <span class="c3"><input type="checkbox" /> Jabonera limpia</span>
-              </li>
-              <li class="c9 c2 li-bullet-0">
-                <span class="c3"><input type="checkbox" /> 1 toalla de pies</span>
-              </li>
-              <li class="c9 c2 li-bullet-0">
-                <span class="c3"><input type="checkbox" /> 2 toallas de baño</span>
-              </li>
-              <li class="c9 c2 li-bullet-0">
-                <span class="c3"><input type="checkbox" /> 2 toallas pequeñas (washcloths)</span>
-              </li>
-            </ul>
-            <div class="foto-section">
-              <img src="../villaclara/images/Foto 43.jpg" alt="Ducha- Foto 43" />
-            </div>
+            <span class="c3"><input type="checkbox" /> Jabonera limpia</span>
           </li>
           <li class="c9 c2 li-bullet-0">
-            <h3>Área de Inodoro</h3>
-            <ul class="c4 lst-kix_list_5-0">
-              <li class="c9 c2 li-bullet-0">
-                <span class="c3"><input type="checkbox" /> Revisar bombillos</span>
-              </li>
-              <li class="c9 c2 li-bullet-0">
-                <span class="c3"><input type="checkbox" /> Revisar abanico</span>
-              </li>
-              <li class="c9 c2 li-bullet-0">
-                <span class="c3"><input type="checkbox" /> Inodoro limpio y funcionando</span>
-              </li>
-              <li class="c9 c2 li-bullet-0">
-                <span class="c3"><input type="checkbox" /> Zafacón limpio y vacío</span>
-              </li>
-              <li class="c9 c2 li-bullet-0">
-                <span class="c3"><input type="checkbox" /> Pararse en pesa</span>
-              </li>
-              <li class="c9 c2 li-bullet-0">
-                <span class="c3"><input type="checkbox" /> Cepillo de limpiar inodoro</span>
-              </li>
-              <li class="c9 c2 li-bullet-0">
-                <span class="c3"><input type="checkbox" /> Bidet limpio y funcionando</span>
-              </li>
-            </ul>
-            <div class="foto-section">
-              <img src="../villaclara/images/Foto 44.jpg" alt="Área de Inodoro- Foto 44" />
-            </div>
+            <span class="c3"><input type="checkbox" /> 1 toalla de pies</span>
           </li>
           <li class="c9 c2 li-bullet-0">
-            <h3>Tope de Lavamanos</h3>
-            <ul class="c4 lst-kix_list_5-0">
-              <li class="c9 c2 li-bullet-0">
-                <span class="c3"><input type="checkbox" /> Revisar bombillos</span>
-              </li>
-              <li class="c9 c2 li-bullet-0">
-                <span class="c3"><input type="checkbox" /> Lavamanos funcionando y limpios</span>
-              </li>
-              <li class="c9 c2 li-bullet-0">
-                <span class="c3"><input type="checkbox" /> 2 jabones</span>
-              </li>
-              <li class="c9 c2 li-bullet-0">
-                <span class="c3"><input type="checkbox" /> 1 shampoo</span>
-              </li>
-              <li class="c9 c2 li-bullet-0">
-                <span class="c3"><input type="checkbox" /> 1 acondicionador</span>
-              </li>
-              <li class="c9 c2 li-bullet-0">
-                <span class="c3"><input type="checkbox" /> 1 gel de cuerpo</span>
-              </li>
-              <li class="c9 c2 li-bullet-0">
-                <span class="c3"><input type="checkbox" /> 1 loción corporal</span>
-              </li>
-              <li class="c9 c2 li-bullet-0">
-                <span class="c3"><input type="checkbox" /> Kleenex</span>
-              </li>
-              <li class="c9 c2 li-bullet-0">
-                <span class="c3"><input type="checkbox" /> 2 kits dentales</span>
-              </li>
-              <li class="c9 c2 li-bullet-0">
-                <span class="c3"><input type="checkbox" /> 2 aguas </span>
-              </li>
-              <li class="c9 c2 li-bullet-0">
-                <span class="c3"><input type="checkbox" /> Jabón líquido lleno</span>
-              </li>
-              <li class="c9 c2 li-bullet-0">
-                <span class="c3"><input type="checkbox" /> Vasitos limpios</span>
-              </li>
-              <li class="c9 c2 li-bullet-0">
-                <span class="c3"><input type="checkbox" /> 1 toalla de maquillaje</span>
-              </li>
-              <li class="c9 c2 li-bullet-0">
-                <span class="c3"><input type="checkbox" /> 2 toallas de mano</span>
-              </li>
-            </ul>
-            <div class="foto-section">
-              <img src="../villaclara/images/Foto 45.jpg" alt="Tope de Lavamanos- Foto 45" />
-            </div>
+            <span class="c3"><input type="checkbox" /> 2 toallas de baño</span>
           </li>
           <li class="c9 c2 li-bullet-0">
-            <h3>Gabinetes</h3>
-            <ul class="c4 lst-kix_list_5-0">
-              <li class="c9 c2 li-bullet-0">
-                <span class="c3"><input type="checkbox" /> First Aid Kit</span>
-              </li>
-              <li class="c9 c2 li-bullet-0">
-                <span class="c3"><input type="checkbox" /> 2 papeles higiénicos extra</span>
-              </li>
-              <li class="c9 c2 li-bullet-0">
-                <span class="c3"><input type="checkbox" /> Abrir todos los gabinetes</span>
-              </li>
-            </ul>
-            <div class="foto-section">
-              <img src="../villaclara/images/Foto 46.jpg" alt="Gabinetes- Foto 46" />
-            </div>
+            <span class="c3"><input type="checkbox" /> 2 toallas pequeñas (washcloths)</span>
+          </li>
+        </ul>
+        <div class="foto-section">
+          <img src="../villaclara/images/Foto 43.jpg" alt="Ducha- Foto 43" />
+        </div>
+      </li>
+      <li class="c9 c2 li-bullet-0">
+        <h3 class="subtítulo">Área de Inodoro</h3>
+        <ul class="lista-inspeccion">
+          <li class="c9 c2 li-bullet-0">
+            <span class="c3"><input type="checkbox" /> Revisar bombillos</span>
           </li>
           <li class="c9 c2 li-bullet-0">
-            <h3>Cajones</h3>
-            <ul class="c4 lst-kix_list_5-0">
+            <span class="c3"><input type="checkbox" /> Revisar abanico</span>
+          </li>
+          <li class="c9 c2 li-bullet-0">
+            <span class="c3"><input type="checkbox" /> Inodoro limpio y funcionando</span>
+          </li>
+          <li class="c9 c2 li-bullet-0">
+            <span class="c3"><input type="checkbox" /> Zafacón limpio y vacío</span>
+          </li>
+          <li class="c9 c2 li-bullet-0">
+            <span class="c3"><input type="checkbox" /> Pararse en pesa</span>
+          </li>
+          <li class="c9 c2 li-bullet-0">
+            <span class="c3"><input type="checkbox" /> Cepillo de limpiar inodoro</span>
+          </li>
+          <li class="c9 c2 li-bullet-0">
+            <span class="c3"><input type="checkbox" /> Bidet limpio y funcionando</span>
+          </li>
+        </ul>
+        <div class="foto-section">
+          <img src="../villaclara/images/Foto 44.jpg" alt="Área de Inodoro- Foto 44" />
+        </div>
+        <h3 class="titulo-principal">Tope de Lavamanos</h3>
+        <ul class="lista-inspeccion">
+          <li class="c9 c2 li-bullet-0">
+            <span class="c3"><input type="checkbox" /> Revisar bombillos</span>
+          </li>
+          <li class="c9 c2 li-bullet-0">
+            <span class="c3"><input type="checkbox" /> Lavamanos funcionando y limpios</span>
+          </li>
+          <li class="c9 c2 li-bullet-0">
+            <span class="c3"><input type="checkbox" /> 2 jabones</span>
+          </li>
+          <li class="c9 c2 li-bullet-0">
+            <span class="c3"><input type="checkbox" /> 1 shampoo</span>
+          </li>
+          <li class="c9 c2 li-bullet-0">
+            <span class="c3"><input type="checkbox" /> 1 acondicionador</span>
+          </li>
+          <li class="c9 c2 li-bullet-0">
+            <span class="c3"><input type="checkbox" /> 1 gel de cuerpo</span>
+          </li>
+          <li class="c9 c2 li-bullet-0">
+            <span class="c3"><input type="checkbox" /> 1 loción corporal</span>
+          </li>
+          <li class="c9 c2 li-bullet-0">
+            <span class="c3"><input type="checkbox" /> Kleenex</span>
+          </li>
+          <li class="c9 c2 li-bullet-0">
+            <span class="c3"><input type="checkbox" /> 2 kits dentales</span>
+          </li>
+          <li class="c9 c2 li-bullet-0">
+            <span class="c3"><input type="checkbox" /> 2 aguas </span>
+          </li>
+          <li class="c9 c2 li-bullet-0">
+            <span class="c3"><input type="checkbox" /> Jabón líquido lleno</span>
+          </li>
+          <li class="c9 c2 li-bullet-0">
+            <span class="c3"><input type="checkbox" /> Vasitos limpios</span>
+          </li>
+          <li class="c9 c2 li-bullet-0">
+            <span class="c3"><input type="checkbox" /> 1 toalla de maquillaje</span>
+          </li>
+          <li class="c9 c2 li-bullet-0">
+            <span class="c3"><input type="checkbox" /> 2 toallas de mano</span>
+          </li>
+        </ul>
+        <div class="foto-section">
+          <img src="../villaclara/images/Foto 45.jpg" alt="Tope de Lavamanos- Foto 45" />
+        </div>
+      </li>
+      <li class="c9 c2 li-bullet-0">
+        <h3 class="subtítulo">Gabinetes</h3>
+        <ul class="lista-inspeccion">
+          <li class="c9 c2 li-bullet-0">
+            <span class="c3"><input type="checkbox" /> First Aid Kit</span>
+          </li>
+          <li class="c9 c2 li-bullet-0">
+            <span class="c3"><input type="checkbox" /> 2 papeles higiénicos extra</span>
+          </li>
+          <li class="c9 c2 li-bullet-0">
+            <span class="c3"><input type="checkbox" /> Abrir todos los gabinetes</span>
+          </li>
+        </ul>
+        <div class="foto-section">
+          <img src="../villaclara/images/Foto 46.jpg" alt="Gabinetes- Foto 46" />
+        </div>
+          </li>
+            <h3 class="subtítulo">Cajones</h3>
+            <ul class="lista-inspeccion">
               <li class="c9 c2 li-bullet-0">
                 <span class="c3"><input type="checkbox" /> Secador de cabello</span>
               </li>
@@ -1227,8 +1225,8 @@ Description automatically generated"
             </div>
           </li>
           <li class="c9 c2 li-bullet-0">
-            <h3>Bañera</h3>
-            <ul class="c4 lst-kix_list_5-0">
+            <h3 class="subtítulo">Bañera</h3>
+            <ul class="lista-inspeccion">
               <li class="c9 c2 li-bullet-0">
                 <span class="c3"><input type="checkbox" /> Prenderla</span>
               </li>
@@ -1259,10 +1257,10 @@ Description automatically generated"
             </div>
           </li>
           <li class="c9 c2 li-bullet-0">
-            <h3>Armario Principal</h3>
-            <ul class="c4 lst-kix_list_5-0">
+            <h3 class="subtítulo">Armario Principal</h3>
+            <ul class="lista-inspeccion">
               <li class="c9 c2 li-bullet-0">
-                <span class="c3"><input type="checkbox" /> Revisar Bombillos</span>
+                <span class="c3"><input type="checkbox" /> Revisar bombillos</span>
               </li>
               <li class="c9 c2 li-bullet-0">
                 <span class="c3"><input type="checkbox" /> Maletero</span>
@@ -1285,10 +1283,10 @@ Description automatically generated"
             </div>
           </li>
           <li class="c9 c2 li-bullet-0">
-            <h3>Área de Cama</h3>
-            <ul class="c4 lst-kix_list_5-0">
+            <h3 class="subtítulo">Área de Cama</h3>
+            <ul class="lista-inspeccion">
               <li class="c9 c2 li-bullet-0">
-                <span class="c3"><input type="checkbox" /> Revisar bombillos techo</span>
+                <span class="c3"><input type="checkbox" /> Revisar bombillos</span>
               </li>
               <li class="c9 c2 li-bullet-0">
                 <span class="c3"><input type="checkbox" /> Cortinas limpias</span>
@@ -1327,8 +1325,8 @@ Description automatically generated"
             </div>
           </li>
           <li class="c9 c2 li-bullet-0">
-            <h3>Balcón Dormitorio Principal</h3>
-            <ul class="c4 lst-kix_list_5-0">
+            <h3 class="subtítulo">Balcón Dormitorio Principal</h3>
+            <ul class="lista-inspeccion">
               <li class="c9 c2 li-bullet-0">
                 <span class="c3"><input type="checkbox" /> Piso limpio y sin arena</span>
               </li>
@@ -1346,14 +1344,13 @@ Description automatically generated"
               <img src="../villaclara/images/Foto 51.jpg" alt="Balcón Dormitorio Principal- Foto 51" />
             </div>
           </li>
-
-          <li class="c9 c2 li-bullet-0">
-            <h3>Pasillo de Habitaciones de Invitados</h3>
-            <ul class="c4 lst-kix_list_5-0">
-              <li class="c9 c2 li-bullet-0">
-                <span class="c3"><input type="checkbox" /> Armario de dueño cerrado</span>
-              </li>
-              <li class="c9 c2 li-bullet-0">
+        </ul>
+        <h3 class="titulo-principal">Pasillo de Habitaciones de Invitados</h3>
+          <ul class="lista-inspeccion">
+            <li class="c9 c2 li-bullet-0">
+              <span class="c3"><input type="checkbox" /> Armario de dueño cerrado</span>
+            </li>
+            <li class="c9 c2 li-bullet-0">
                 <span class="c3"><input type="checkbox" /> Revisar bombillos</span>
               </li>
               <li class="c9 c2 li-bullet-0">
@@ -1363,15 +1360,14 @@ Description automatically generated"
             <div class="foto-section">
               <img src="../villaclara/images/Foto 52.jpg" alt="Pasillo de Habitaciones de Invitados- Foto 52" />
             </div>
-          </li>
           <li class="c9 c2 li-bullet-0">
-            <h3>Tercer Dormitorio al Inicio del Pasillo</h3>
-            <ul class="c4 lst-kix_list_5-0">
+        <h3 class="titulo-principal">Tercer Dormitorio al Inicio del Pasillo</h3>
+            <ul class="lista-inspeccion">
               <li class="c9 c2 li-bullet-0">
                 <span class="c3"><input type="checkbox" /> Puerta limpia</span>
               </li>
               <li class="c9 c2 li-bullet-0">
-                <span class="c3"><input type="checkbox" /> Revisar bombillos techo </span>
+                <span class="c3"><input type="checkbox" /> Revisar bombillos</span>
               </li>
               <li class="c9 c2 li-bullet-0">
                 <span class="c3"><input type="checkbox" /> Abrir cajones de mesitas de noche</span>
@@ -1380,7 +1376,7 @@ Description automatically generated"
                 <span class="c3"><input type="checkbox" /> Revisar bombillos mesitas de noche</span>
               </li>
               <li class="c9 c2 li-bullet-0">
-                <span class="c3"><input type="checkbox" /> 4 almohadas King con pillow covers</span>
+                <span class="c3"><input type="checkbox" /> 4 almohadas king con pillow covers</span>
               </li>
               <li class="c9 c2 li-bullet-0">
                 <span class="c3"><input type="checkbox" /> 1 botella de agua en cada mesita de noche (2 total)</span>
@@ -1406,10 +1402,10 @@ Description automatically generated"
             </div>
           </li>
           <li class="c9 c2 li-bullet-0">
-            <h3>Armario del Tercer Dormitorio al Inicio del Pasillo</h3>
-            <ul class="c4 lst-kix_list_5-0">
+            <h3 class="subtítulo">Armario del Tercer Dormitorio al Inicio del Pasillo</h3>
+            <ul class="lista-inspeccion">
               <li class="c9 c2 li-bullet-0">
-                <span class="c3"><input type="checkbox" /> Revisar Bombillos</span>
+                <span class="c3"><input type="checkbox" /> Revisar bombillos</span>
               </li>
               <li class="c9 c2 li-bullet-0">
                 <span class="c3"><input type="checkbox" /> Maletero</span>
@@ -1428,9 +1424,9 @@ Description automatically generated"
               <img src="../villaclara/images/Foto 54.jpg" alt="Armario del Tercer Dormitorio al Inicio del Pasillo- Foto 54" />
             </div>
           </li>
-          <li class="c9 c2 li-bullet-0">
-            <h3>Tercer Baño</h3>
-            <ul class="c4 lst-kix_list_5-0">
+        <li class="c9 c2 li-bullet-0">
+            <h3 class="titulo-principal">Tercer Baño</h3>
+            <ul class="lista-inspeccion">
               <li class="c9 c2 li-bullet-0">
                 <span class="c3"><input type="checkbox" /> Revisar bombillos</span>
               </li>
@@ -1465,8 +1461,8 @@ Description automatically generated"
             </div>
           </li>
           <li class="c9 c2 li-bullet-0">
-            <h3>Tope de Lavamanos</h3>
-            <ul class="c4 lst-kix_list_5-0">
+            <h3 class="subtítulo">Tope de Lavamanos</h3>
+            <ul class="lista-inspeccion">
               <li class="c9 c2 li-bullet-0">
                 <span class="c3"><input type="checkbox" /> Tope de Lavamanos- Foto 56 </span>
               </li>
@@ -1474,7 +1470,7 @@ Description automatically generated"
                 <span class="c3"><input type="checkbox" /> Lavamanos funcionando y limpio</span>
               </li>
               <li class="c9 c2 li-bullet-0">
-                <span class="c3"><input type="checkbox" /> 1 jab&oacute;n</span>
+                <span class="c3"><input type="checkbox" /> 1 jabón</span>
               </li>
               <li class="c9 c2 li-bullet-0">
                 <span class="c3"><input type="checkbox" /> 1 shampoo</span>
@@ -1486,7 +1482,7 @@ Description automatically generated"
                 <span class="c3"><input type="checkbox" /> 1 gel para cuerpo</span>
               </li>
               <li class="c9 c2 li-bullet-0">
-                <span class="c3"><input type="checkbox" /> 1 loci&oacute;n corporal</span>
+                <span class="c3"><input type="checkbox" /> 1 loción corporal</span>
               </li>
               <li class="c9 c2 li-bullet-0">
                 <span class="c3"><input type="checkbox" /> 2 aguas</span>
@@ -1495,7 +1491,7 @@ Description automatically generated"
                 <span class="c3"><input type="checkbox" /> Vasito limpio</span>
               </li>
               <li class="c9 c2 li-bullet-0">
-                <span class="c3"><input type="checkbox" /> Jab&oacute;n l&iacute;quido lleno</span>
+                <span class="c3"><input type="checkbox" /> Jabón líquido lleno</span>
               </li>
               <li class="c9 c2 li-bullet-0">
                 <span class="c3"><input type="checkbox" /> Kleenex</span>
@@ -1508,98 +1504,95 @@ Description automatically generated"
               </li>
             </ul>
             <div class="foto-section">
-              <img src="../villaclara/images/Foto 57.jpg" alt="Gabinete- Foto 57" />
+              <img src="../villaclara/images/Foto 56.jpg" alt="Tope de Lavamanos- Foto 56" />
             </div>
           </li>
+        </ul>
+        <h3 class="subtítulo">Gabinete</h3>
+        <ul class="lista-inspeccion">
           <li class="c9 c2 li-bullet-0">
-            <h3>Gabinete</h3>
-            <ul class="c4 lst-kix_list_5-0">
-              <li class="c9 c2 li-bullet-0">
-                <span class="c3"><input type="checkbox" /> Abrir los gabinetes</span>
-              </li>
-              <li class="c9 c2 li-bullet-0">
-                <span class="c3"><input type="checkbox" /> 2 papeles higi&eacute;nicos extras</span>
-              </li>
-            </ul>
-            <div class="foto-section">
-              <img src="../villaclara/images/Foto 58.jpg" alt="Gabinete- Foto 58" />
-            </div>
+            <span class="c3"><input type="checkbox" /> Abrir los gabinetes</span>
           </li>
           <li class="c9 c2 li-bullet-0">
-            <h3>Cuarto de Lavado (Laundry)</h3>
-            <ul class="c4 lst-kix_list_5-0">
-              <li class="c9 c2 li-bullet-0">
-                <span class="c3"><input type="checkbox" /> Revisar bombillos</span>
-              </li>
-              <li class="c9 c2 li-bullet-0">
-                <span class="c3"><input type="checkbox" /> Abrir gabinetes y que est&eacute;n limpios y organizados</span>
-              </li>
-              <li class="c9 c2 li-bullet-0">
-                <span class="c3"><input type="checkbox" /> Revisar encima de gabinetes</span>
-              </li>
-              <li class="c9 c2 li-bullet-0">
-                <span class="c3"><input type="checkbox" /> Jab&oacute;n de ropa</span>
-              </li>
-              <li class="c9 c2 li-bullet-0">
-                <span class="c3"><input type="checkbox" /> Plancha</span>
-              </li>
-              <li class="c9 c2 li-bullet-0">
-              <h3>Lavadora y Secadora</h3>
-              </li>
-              <li class="c9 c2 li-bullet-0">
-                <span class="c3"><input type="checkbox" /> Revisi&oacute;n del interior de las m&aacute;quinas</span>
-              </li>
-              <li class="c9 c2 li-bullet-0">
-                <span class="c3"><input type="checkbox" /> Revisar filtro de secadora</span>
-              </li>
-              <li class="c9 c2 li-bullet-0">
-                <span class="c3"><input type="checkbox" /> Revisar compartimiento de jab&oacute;n de lavadora</span>
-              </li>
-              <li class="c9 c2 li-bullet-0">
-                <span class="c3"><input type="checkbox" /> Revisar detr&aacute;s de lavadora</span>
-              </li>
-              <li class="c9 c2 li-bullet-0">
-                <span class="c3"><input type="checkbox" /> Revisar encima de secadora</span>
-              </li>
-            </ul>
-            <div class="foto-section">
-              <img src="../villaclara/images/Foto 59.jpg" alt="Cuarto de Lavado- Foto 59" />
-            </div>
+            <span class="c3"><input type="checkbox" /> 2 papeles higiénicos extras</span>
+          </li>
+        </ul>
+        <div class="foto-section">
+          <img src="../villaclara/images/Foto 57.jpg" alt="Gabinete- Foto 57" />
+        </div>
+        <h3 class="titulo-principal">Cuarto de Lavado (Laundry)</h3>
+        <ul class="lista-inspeccion">
+          <li class="c9 c2 li-bullet-0">
+            <span class="c3"><input type="checkbox" /> Revisar bombillos</span>
           </li>
           <li class="c9 c2 li-bullet-0">
-            <h3>Closet Aire Acondicionado</h3>
-            <ul class="c4 lst-kix_list_5-0">
-              <li class="c9 c2 li-bullet-0">
-                <span class="c3"><input type="checkbox" /> Escoba limpia</span>
-              </li>
-              <li class="c9 c2 li-bullet-0">
-                <span class="c3"><input type="checkbox" /> Recogedor limpio</span>
-              </li>
-              <li class="c9 c2 li-bullet-0">
-                <span class="c3"><input type="checkbox" /> Mapo limpio</span>
-              </li>
-              <li class="c9 c2 li-bullet-0">
-                <span class="c3"><input type="checkbox" /> Tabla de planchar</span>
-              </li>
-              <li class="c9 c2 li-bullet-0">
-                <span class="c3"><input type="checkbox" /> Valde</span>
-              </li>
-              <li class="c9 c2 li-bullet-0">
-                <span class="c3"><input type="checkbox" /> Escalera</span>
-              </li>
-            </ul>
-            <div class="foto-section">
-              <img src="../villaclara/images/Foto 60.jpg" alt="Closet Aire Acondicionado- Foto 60" />
-            </div>
+            <span class="c3"><input type="checkbox" /> Abrir gabinetes y que estén limpios y organizados</span>
           </li>
           <li class="c9 c2 li-bullet-0">
-            <h3>Cuarto Dormitorio al Final del Pasillo</h3>
-            <ul class="c4 lst-kix_list_5-0">
+            <span class="c3"><input type="checkbox" /> Revisar encima de gabinetes</span>
+          </li>
+          <li class="c9 c2 li-bullet-0">
+            <span class="c3"><input type="checkbox" /> Jab&oacute;n de ropa</span>
+          </li>
+          <li class="c9 c2 li-bullet-0">
+            <span class="c3"><input type="checkbox" /> Plancha</span>
+          </li>
+        </ul>
+        <div class="foto-section">
+          <img src="../villaclara/images/Foto 58.jpg" alt="Cuarto de Lavado- Foto 58" />
+        </div>
+        <h3 class="subtítulo">Lavadora y Secadora</h3>
+        <ul class="lista-inspeccion">
+          <li class="c9 c2 li-bullet-0">
+            <span class="c3"><input type="checkbox" /> Revisión del interior de las máquinas</span>
+          </li>
+          <li class="c9 c2 li-bullet-0">
+            <span class="c3"><input type="checkbox" /> Revisar filtro de secadora</span>
+          </li>
+          <li class="c9 c2 li-bullet-0">
+            <span class="c3"><input type="checkbox" /> Revisar compartimiento de jabón de lavadora</span>
+          </li>
+          <li class="c9 c2 li-bullet-0">
+            <span class="c3"><input type="checkbox" /> Revisar detrás de lavadora</span>
+          </li>
+          <li class="c9 c2 li-bullet-0">
+            <span class="c3"><input type="checkbox" /> Revisar encima de secadora</span>
+          </li>
+        </ul>
+        <div class="foto-section">
+          <img src="../villaclara/images/Foto 59.jpg" alt="Cuarto de Lavado- Foto 59" />
+        </div>
+        <h3 class="titulo-principal">Closet Aire Acondicionado</h3>
+        <ul class="lista-inspeccion">
+          <li class="c9 c2 li-bullet-0">
+            <span class="c3"><input type="checkbox" /> Escoba limpia</span>
+          </li>
+          <li class="c9 c2 li-bullet-0">
+            <span class="c3"><input type="checkbox" /> Recogedor limpio</span>
+          </li>
+          <li class="c9 c2 li-bullet-0">
+            <span class="c3"><input type="checkbox" /> Mapo limpio</span>
+          </li>
+          <li class="c9 c2 li-bullet-0">
+            <span class="c3"><input type="checkbox" /> Tabla de planchar</span>
+          </li>
+          <li class="c9 c2 li-bullet-0">
+            <span class="c3"><input type="checkbox" /> Valde</span>
+          </li>
+          <li class="c9 c2 li-bullet-0">
+            <span class="c3"><input type="checkbox" /> Escalera</span>
+          </li>
+        </ul>
+        <div class="foto-section">
+          <img src="../villaclara/images/Foto 60.jpg" alt="Closet Aire Acondicionado- Foto 60" />
+        </div>
+            <h3 class="titulo-principal">Cuarto Dormitorio al Final del Pasillo</h3>
+            <ul class="lista-inspeccion">
               <li class="c9 c2 li-bullet-0">
                 <span class="c3"><input type="checkbox" /> Puerta limpia</span>
               </li>
               <li class="c9 c2 li-bullet-0">
-                <span class="c3"><input type="checkbox" /> Revisar bombillos techo</span>
+                <span class="c3"><input type="checkbox" /> Revisar bombillos</span>
               </li>
               <li class="c9 c2 li-bullet-0">
                 <span class="c3"><input type="checkbox" /> Abrir cajones de mesitas de noche</span>
@@ -1631,8 +1624,8 @@ Description automatically generated"
             </div>
           </li>
           <li class="c9 c2 li-bullet-0">
-            <h3>Balcón de Cuarto Dormitorio</h3>
-            <ul class="c4 lst-kix_list_5-0">
+            <h3 class="titulo-principal subtítulo">Balcón de Cuarto Dormitorio</h3>
+            <ul class="lista-inspeccion">
               <li class="c9 c2 li-bullet-0">
                 <span class="c3"><input type="checkbox" /> Piso limpio y sin arena</span>
               </li>
@@ -1651,10 +1644,10 @@ Description automatically generated"
             </div>
           </li>
           <li class="c9 c2 li-bullet-0">
-            <h3>Armario del Cuarto Dormitorio</h3>
-            <ul class="c4 lst-kix_list_5-0">
+            <h3 class="subtítulo">Armario del Cuarto Dormitorio</h3>
+            <ul class="lista-inspeccion">
               <li class="c9 c2 li-bullet-0">
-                <span class="c3"><input type="checkbox" /> Revisar Bombillos</span>
+                <span class="c3"><input type="checkbox" /> Revisar bombillos</span>
               </li>
               <li class="c9 c2 li-bullet-0">
                 <span class="c3"><input type="checkbox" /> Maletero</span>
@@ -1675,8 +1668,8 @@ Description automatically generated"
             </div>
           </li>
           <li class="c9 c2 li-bullet-0">
-            <h3>Cuarto Baño</h3>
-            <ul class="c4 lst-kix_list_5-0">
+            <h3 class="titulo-principal subtítulo">Cuarto de Baño</h3>
+            <ul class="lista-inspeccion">
               <li class="c9 c2 li-bullet-0">
                 <span class="c3"><input type="checkbox" /> Revisar bombillos</span>
               </li>
@@ -1711,8 +1704,8 @@ Description automatically generated"
             </div>
           </li>
           <li class="c9 c2 li-bullet-0">
-            <h3>Tope de Lavamanos</h3>
-            <ul class="c4 lst-kix_list_5-0">
+            <h3 class="titulo-principal subtítulo">Tope de Lavamanos</h3>
+            <ul class="lista-inspeccion">
               <li class="c9 c2 li-bullet-0">
                 <span class="c3"><input type="checkbox" /> Lavamanos funcionando y limpio</span>
               </li>
@@ -1754,9 +1747,9 @@ Description automatically generated"
               <img src="../villaclara/images/Foto 65.jpg" alt="Tope de Lavamanos- Foto 65" />
             </div>
           </li>
-          <li class="c9 c2 li-bullet-0">
-            <h3>Gabinete</h3>
-            <ul class="c4 lst-kix_list_5-0">
+          
+            <h3 class="titulo-principal subtítulo"">Gabinete</h3>
+            <ul class="lista-inspeccion">
               <li class="c9 c2 li-bullet-0">
                 <span class="c3"><input type="checkbox" /> Abrir los gabinetes</span>
               </li>
@@ -1767,16 +1760,8 @@ Description automatically generated"
             <div class="foto-section">
               <img src="../villaclara/images/Foto 66.jpg" alt="Gabinete- Foto 66" />
             </div>
-          </li>
-        </ul>
-      </li>
-    </ul>
-  </li>
-</ul>
-
-<li class="c9 c2 li-bullet-0">
-  <h3>Carro de golf</h3>
-  <ul class="c4 lst-kix_list_5-0">
+  <h3 class="titulo-principal">Carro de golf</h3>
+  <ul class="lista-inspeccion">
     <li class="c9 c2 li-bullet-0">
       <span class="c3"><input type="checkbox" /> Conectado</span>
     </li>
@@ -1788,14 +1773,13 @@ Description automatically generated"
     </li>
     <li class="c0 c2 li-bullet-0">
       <span class="c3"
-        ><input type="checkbox" /> Llenar Papel de Inspeccion y Enviarlo</span
+        ><input type="checkbox" /> Llenar papel de inspección y enviarlo</span
       >
     </li>
   </ul>
   <div class="foto-section">
     <img src="../villaclara/images/foto 67.jpg" alt="Carro de golf- Foto 67" />
   </div>
-</li>
   </main>
   </body>
 </html>
