@@ -1,0 +1,2048 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Villa Tiffany - Inspección</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <style>
+     
+       /* Reglas de indentación */
+    :root {
+      --indentacion-titulo: 0;
+      --indentacion-subtitulo: 2em;
+      --indentacion-subtitulo2: 4em;
+      --indentacion-lista: 4em;
+    }
+
+    .titulo-principal {
+      margin-left: var(--indentacion-titulo);
+    }
+
+    .subtitulo {
+      margin-left: var(--indentacion-subtitulo);
+    }
+
+    .subtitulo2 {
+      margin-left: var(--indentacion-subtitulo2);
+    }
+
+    .lista-inspeccion {
+      text-indent: var(--indentacion-lista);
+    }
+     
+      /* Imágenes */
+      .images-container {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 10px;
+        margin: 10px 0;
+      }
+      
+      .inspection-image {
+        width: 239.4px;
+        height: 160.4px;
+        margin: 0;
+        overflow: hidden;
+        flex-shrink: 0;
+      }
+      
+      .inspection-image img {
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        transform: rotate(0rad) translateZ(0px);
+        -webkit-transform: rotate(0rad) translateZ(0px);
+        object-fit: cover;
+      }
+    </style>
+  </head>
+  <body class="c4 c23 doc-content" id="checklist-page">
+    <header class="header-insp">
+      <div class="banner">
+        <img src="../villatiffany/images/Villa Tiffany.jpg">
+        <div class="home"><a href="/pages/inspecciones.html">Menu principal</a>
+        <h1 class="title_inspect">
+          Inspección 10389 Villa Tiffany
+        </h1>
+        </div>
+      </div>
+    </header>
+
+    <main class="content">
+      <!-- 1. General -->
+      <h3 class="titulo-principal">General</h3>
+      <ul class="lista-inspeccion">
+        <li class="c10 li-bullet-0">
+          <span class="c1"><input type="checkbox" id="entrada-limpia" /> <label for="entrada-limpia">Puerta principal y pasillo de entrada limpio</label></span>
+        </li>
+        <li class="c2 li-bullet-0">
+          <span class="c1"><input type="checkbox" id="bombillo-exterior" /> <label for="bombillo-exterior">Revisar bombillo exterior</label></span>
+        </li>
+        <li class="c2 li-bullet-0">
+          <span class="c1"><input type="checkbox" id="timbre-funciona" /> <label for="timbre-funciona">Timbre funciona</label></span>
+        </li>
+        <li class="c2 li-bullet-0">
+          <span class="c1"><input type="checkbox" id="trapo-limpiar" /> <label for="trapo-limpiar">Entrar preparado con trapo para limpiar y secar</label></span>
+        </li>
+        <li class="c13 li-bullet-0">
+          <span class="c1"><input type="checkbox" id="wifi-funcionando" /> <label for="wifi-funcionando">Wifi funcionando, abrir página nueva</label></span>
+        </li>
+        <li class="c13 li-bullet-0">
+          <span class="c1"><input type="checkbox" id="lockbox-llave" /> <label for="lockbox-llave">Lockbox con llave adentro</label></span>
+        </li>
+      </ul>
+      <div class="images-container">
+        <div class="inspection-image">
+          <img
+            alt="General"
+            src="../villatiffany/images/10389 Villa Tiffany Foto 1.jpeg"
+            title=""
+          />
+        </div>
+      </div>
+
+      <!-- 2. Áreas Sociales -->
+      <h3 class="titulo-principal">Áreas Sociales</h3>
+      
+      <!-- 2.a. Entrada -->
+      <h3 class="subtitulo">Entrada</h3>
+      <ul class="lista-inspeccion">
+        <li class="c5 c16 li-bullet-0">
+          <span class="c1"><input type="checkbox" id="sombrilla" /> <label for="sombrilla">Sombrilla</label></span>
+        </li>
+        <li class="c5 c16 li-bullet-0">
+          <span class="c1"><input type="checkbox" id="revisar-bombillos" /> <label for="revisar-bombillos">Revisar Bombillos</label></span>
+        </li>
+        <li class="c5 c16 li-bullet-0">
+          <span class="c1"><input type="checkbox" id="extintor" /> <label for="extintor">Extintor</label></span>
+        </li>
+      </ul>
+      <div class="images-container">
+        <div class="inspection-image">
+          <img
+            alt="Entrada"
+            src="../villatiffany/images/10389 Villa Tiffany Foto 2.jpg"
+            title="">
+        </div>
+      </div>
+
+      <!-- 2.b. Cocina -->
+      <h3 class="subtitulo">Cocina</h3>
+      <ul class="lista-inspeccion">
+        <li class="c5 c16 li-bullet-0">
+          <span class="c1"><input type="checkbox" id="limpieza-vasos" /> <label for="limpieza-vasos">Revisar limpieza en vasos, platos, ollas</label></span>
+        </li>
+        <li class="c5 c16 li-bullet-0">
+          <span class="c1"><input type="checkbox" id="bombillas-cocina" /> <label for="bombillas-cocina">Revisar bombillas</label></span>
+        </li>
+        <li class="c5 c16 li-bullet-0">
+          <span class="c1"><input type="checkbox" id="toallas-mano" /> <label for="toallas-mano">2 toallas de mano</label></span>
+        </li>
+        <li class="c5 c16 li-bullet-0">
+          <span class="c1"><input type="checkbox" id="alarma-monoxido" /> <label for="alarma-monoxido">Alarma de monóxido</label></span>
+        </li>
+      </ul>
+      <div class="images-container">
+        <div class="inspection-image">
+          <img
+            alt="Cocina"
+            src="../villatiffany/images/10389 Villa Tiffany Foto 3.jpeg"
+            title=""
+          />
+        </div>
+      </div>
+
+      <!-- 2.c. Amenidades de Bienvenida -->
+      <h3 class="subtitulo">Amenidades de Bienvenida</h3>
+      <ul class="lista-inspeccion">
+        <li class="c5 c16 li-bullet-0">
+          <span class="c1"><input type="checkbox" id="nota-bienvenida" /> <label for="nota-bienvenida">Nota de bienvenida</label></span>
+        </li>
+        <li class="c5 c16 li-bullet-0">
+          <span class="c1"><input type="checkbox" id="agua-fiji" /> <label for="agua-fiji">Agua Fiji o similar</label></span>
+        </li>
+        <li class="c5 c16 li-bullet-0">
+          <span class="c1"><input type="checkbox" id="vino" /> <label for="vino">Vino o vino espumoso</label></span>
+        </li>
+        <li class="c5 c16 li-bullet-0">
+          <span class="c1"><input type="checkbox" id="flautas" /> <label for="flautas">Flautas o copas</label></span>
+        </li>
+        <li class="c5 c16 li-bullet-0">
+          <span class="c1"><input type="checkbox" id="amenidad-bienvenida" /> <label for="amenidad-bienvenida">Amenidad de bienvenida (Treats)</label></span>
+        </li>
+        <li class="c5 c16 li-bullet-0">
+          <span class="c1"><input type="checkbox" id="amenidad-especial" /> <label for="amenidad-especial">Amenidad de ocasión especial</label></span>
+        </li>
+        <li class="c5 c16 li-bullet-0">
+          <span class="c1"><input type="checkbox" id="pases" /> <label for="pases">Pases físicos (De ser necesarios)</label></span>
+        </li>
+        <li class="c5 c16 li-bullet-0">
+          <span class="c1"><input type="checkbox" id="sacacorchos" /> <label for="sacacorchos">Sacacorchos (De ser necesario)</label></span>
+        </li>
+        <li class="c5 c16 li-bullet-0">
+          <span class="c1"><input type="checkbox" id="hielo" /> <label for="hielo">Hielo para CI</label></span>
+        </li>
+      </ul>
+      <div class="images-container">
+        <div class="inspection-image">
+          <img
+            alt="Amenidades de bienvenida"
+            src="../villatiffany/images/10389 Villa Tiffany Foto 4.jpg"
+            title=""
+          />
+        </div>
+      </div>
+
+      <!-- 2.d. Área de Estufa -->
+      <h3 class="subtitulo">Área de Estufa</h3>
+      <ul class="lista-inspeccion">
+        <li class="c5 c16 li-bullet-0">
+          <span class="c1"><input type="checkbox" id="estufa-limpia" /> <label for="estufa-limpia">Limpia</label></span>
+        </li>
+        <li class="c5 c16 li-bullet-0">
+          <span class="c1"><input type="checkbox" id="servilletas" /> <label for="servilletas">Servilletas</label></span>
+        </li>
+        <li class="c5 c16 li-bullet-0">
+          <span class="c1"><input type="checkbox" id="salero-pimentero" /> <label for="salero-pimentero">Salero y pimentero</label></span>
+        </li>
+      </ul>
+      <div class="images-container">
+        <div class="inspection-image">
+          <img
+            alt="Área de estufa"
+            src="../villatiffany/images/10389 Villa Tiffany Foto 5.jpg"
+            title=""
+          />
+        </div>
+      </div>
+
+      <!-- 2.e. Cajones y Gabinetes de Isla -->
+      <h3 class="subtitulo">Cajones y Gabinetes de Isla</h3>
+      <h3 class="subtitulo2">Primer Cajón Derecha de Estufa en la Esquina</h3>
+      <ul class="lista-inspeccion">
+        <li class="c5 c16 li-bullet-0">
+          <span class="c1"><input type="checkbox" id="ziploc-pequenas" /> <label for="ziploc-pequenas">Bolsas Ziploc pequeñas</label></span>
+        </li>
+        <li class="c5 c16 li-bullet-0">
+          <span class="c1"><input type="checkbox" id="ziploc-grandes" /> <label for="ziploc-grandes">Bolsas Ziploc grandes</label></span>
+        </li>
+        <li class="c5 c16 li-bullet-0">
+          <span class="c1"><input type="checkbox" id="papel-encerado" /> <label for="papel-encerado">Papel encerado</label></span>
+        </li>
+        <li class="c5 c16 li-bullet-0">
+          <span class="c1"><input type="checkbox" id="papel-aluminio" /> <label for="papel-aluminio">Papel aluminio</label></span>
+        </li>
+        <li class="c5 c16 li-bullet-0">
+          <span class="c1"><input type="checkbox" id="papel-plastico" /> <label for="papel-plastico">Papel plástico</label></span>
+        </li>
+        <li class="c5 c16 li-bullet-0">
+          <span class="c1"><input type="checkbox" id="encendedor" /> <label for="encendedor">Encendedor</label></span>
+        </li>
+        <li class="c5 c16 li-bullet-0">
+          <span class="c1"><input type="checkbox" id="clips" /> <label for="clips">Clips</label></span>
+        </li>
+      </ul>
+      <div class="images-container">
+        <div class="inspection-image">
+          <img
+            alt="Primer cajón derecha"
+            src="../villatiffany/images/10389 Villa Tiffany Foto 6.jpg"
+            title=""
+          />
+        </div>
+      </div>
+
+      <h3 class="subtitulo2">Segundo Cajón Derecha de Estufa</h3>
+      <ul class="lista-inspeccion">
+        <li class="c5 c16 li-bullet-0">
+          <span class="c1"><input type="checkbox" id="guantes-coge-olla" /> <label for="guantes-coge-olla">Guantes y coge olla limpios</label></span>
+        </li>
+      </ul>
+      <div class="images-container">
+        <div class="inspection-image">
+          <img
+            alt="Segundo cajón derecha"
+            src="../villatiffany/images/10389 Villa Tiffany Foto 7.jpg"
+            title=""
+          />
+        </div>
+      </div>
+
+      <h3 class="subtitulo2">Primer Cajón Izquierda de Estufa</h3>
+      <ul class="lista-inspeccion">
+        <li class="c5 c16 li-bullet-0">
+          <span class="c1"><input type="checkbox" id="utensilios-cocina" /> <label for="utensilios-cocina">Utensilios de cocina, tazas/cucharas medidoras y sacacorchos limpios y organizados</label></span>
+        </li>
+      </ul>
+      <div class="images-container">
+        <div class="inspection-image">
+          <img
+            alt="Primer cajón izquierda"
+            src="../villatiffany/images/10389 Villa Tiffany Foto 8.jpg"
+            title=""
+          />
+        </div>
+      </div>
+
+      <h3 class="subtitulo2">Segundo Cajón de Izquierda de Estufa Antes de Vinera</h3>
+      <ul class="lista-inspeccion">
+        <li class="c5 c16 li-bullet-0">
+          <span class="c1"><input type="checkbox" id="cubiertos-organizados" /> <label for="cubiertos-organizados">Cubiertos organizados por clase y limpios</label></span>
+        </li>
+        <li class="c5 c16 li-bullet-0">
+          <span class="c1"><input type="checkbox" id="cubiertos-suficientes" /> <label for="cubiertos-suficientes">Contabilizar que haya suficientes cubiertos para 8 personas</label></span>
+        </li>
+      </ul>
+      <div class="images-container">
+        <div class="inspection-image">
+          <img
+            alt="Segundo cajón izquierda"
+            src="../villatiffany/images/10389 Villa Tiffany Foto 9.jpg"
+            title=""
+          />
+        </div>
+      </div>
+
+      <h3 class="subtitulo2">Primer Gabinete Derecho Debajo de Estufa</h3>
+      <ul class="lista-inspeccion">
+        <li class="c5 c16 li-bullet-0">
+          <span class="c1"><input type="checkbox" id="kit-bbq" /> <label for="kit-bbq">Kit de BBQ limpio y completo</label></span>
+        </li>
+        <li class="c5 c16 li-bullet-0">
+          <span class="c1"><input type="checkbox" id="tablas-cortar" /> <label for="tablas-cortar">Tablas de cortar</label></span>
+        </li>
+      </ul>
+      <div class="images-container">
+        <div class="inspection-image">
+          <img
+            alt="Primer gabinete derecho"
+            src="../villatiffany/images/10389 Villa Tiffany Foto 10.jpg"
+            title=""
+          />
+        </div>
+      </div>
+
+      <h3 class="subtitulo2">Gabinete Debajo de Estufa</h3>
+      <ul class="lista-inspeccion">
+        <li class="c5 c16 li-bullet-0">
+          <span class="c1"><input type="checkbox" id="ollas-sartenes" /> <label for="ollas-sartenes">Revisar que las ollas y sartenes estén limpios y organizados</label></span>
+        </li>
+      </ul>
+      <div class="images-container">
+        <div class="inspection-image">
+          <img
+            alt="Gabinete debajo de estufa"
+            src="../villatiffany/images/10389 Villa Tiffany Foto 11.jpg"
+            title=""
+          />
+        </div>
+      </div>
+
+      <h3 class="subtitulo2">Gabinete Izquierdo Debajo de Estufa</h3>
+      <ul class="lista-inspeccion">
+        <li class="c5 c16 li-bullet-0">
+          <span class="c1"><input type="checkbox" id="refractarias" /> <label for="refractarias">Refractarias de cocina</label></span>
+        </li>
+        <li class="c5 c16 li-bullet-0">
+          <span class="c1"><input type="checkbox" id="coladores" /> <label for="coladores">Coladores de pasta</label></span>
+        </li>
+        <li class="c5 c16 li-bullet-0">
+          <span class="c1"><input type="checkbox" id="tazas-medidoras" /> <label for="tazas-medidoras">Tazas medidoras</label></span>
+        </li>
+      </ul>
+      <div class="images-container">
+        <div class="inspection-image">
+          <img
+            alt="Gabinete izquierdo"
+            src="../villatiffany/images/10389 Villa Tiffany Foto 12.jpg"
+            title=""
+          />
+        </div>
+      </div>
+
+      <h3 class="subtitulo">Vinera</h3>
+      <ul class="lista-inspeccion">
+        <li class="c5 c16 li-bullet-0">
+          <span class="c1"><input type="checkbox" id="nevera-vacia" /> <label for="nevera-vacia">Vacía y limpia</label></span>
+        </li>
+      </ul>
+      <div class="images-container">
+        <div class="inspection-image">
+          <img
+            alt="Vinera"
+            src="../villatiffany/images/10389 Villa Tiffany Foto 13.jpg"
+            title=""
+          />
+        </div>
+      </div>
+
+      <!-- 2.f. Refrigerador -->
+      <h3 class="subtitulo">Refrigerador</h3>
+      <ul class="lista-inspeccion">
+        <li class="c5 c16 li-bullet-0">
+          <span class="c1"><input type="checkbox" id="nevera-sucia" /> <label for="nevera-sucia">Revisar que no haya sucio ni migajas</label></span>
+        </li>
+        <li class="c5 c16 li-bullet-0">
+          <span class="c1"><input type="checkbox" id="nevera-enfriando" /> <label for="nevera-enfriando">Enfriando correctamente</label></span>
+        </li>
+        <li class="c5 c16 li-bullet-0">
+          <span class="c1"><input type="checkbox" id="nevera-cajones" /> <label for="nevera-cajones">Cajones y repisas de nevera limpios</label></span>
+        </li>
+        <li class="c5 c16 li-bullet-0">
+          <span class="c1"><input type="checkbox" id="aguas-regulares" /> <label for="aguas-regulares">6 aguas regulares</label></span>
+        </li>
+        <li class="c5 c16 li-bullet-0">
+          <span class="c1"><input type="checkbox" id="leche" /> <label for="leche">1 leche</label></span>
+        </li>
+        <li class="c5 c16 li-bullet-0">
+          <span class="c1"><input type="checkbox" id="medallas" /> <label for="medallas">6 medallas</label></span>
+        </li>
+      </ul>
+
+      <!-- 2.g. Congelador -->
+      <h3 class="subtitulo">Congelador</h3>
+      <ul class="lista-inspeccion">
+        <li class="c5 c16 li-bullet-0">
+          <span class="c1"><input type="checkbox" id="congelador-sucia" /> <label for="congelador-sucia">Revisar que no haya sucio ni migajas en el congelador</label></span>
+        </li>
+        <li class="c5 c16 li-bullet-0">
+          <span class="c1"><input type="checkbox" id="congelador-enfriando" /> <label for="congelador-enfriando">Verificar que esté enfriando correctamente</label></span>
+        </li>
+        <li class="c5 c16 li-bullet-0">
+          <span class="c1"><input type="checkbox" id="fabrica-hielo" /> <label for="fabrica-hielo">Fábrica de hielo funcionando</label></span>
+        </li>
+      </ul>
+      <p class="c9">
+        <div class="inspection-image">
+          <img
+            alt="Refrigerador"
+            src="../villatiffany/images/10389 Villa Tiffany Foto 14.jpg"
+            title=""
+          />
+        </div>
+      </p>
+      <!-- 2.h. Topes de Cocina -->
+      <h3 class="subtitulo">Topes de Cocina</h3>
+      <ul class="lista-inspeccion">
+        <li class="c5 c16 li-bullet-0">
+          <span class="c1"><input type="checkbox" id="papel-toalla" /> <label for="papel-toalla">Papel toalla</label></span>
+        </li>
+        <li class="c5 c16 li-bullet-0">
+          <span class="c1"><input type="checkbox" id="utensilios-limpios" /> <label for="utensilios-limpios">Revisar que los utensilios de cocina estén limpios</label></span>
+        </li>
+        <li class="c5 c16 li-bullet-0">
+          <span class="c1"><input type="checkbox" id="luces-prendidas" /> <label for="luces-prendidas">Luces prendidas</label></span>
+        </li>
+        <li class="c5 c16 li-bullet-0">
+          <span class="c1"><input type="checkbox" id="cafetera-limpia" /> <label for="cafetera-limpia">Cafetera limpia</label></span>
+        </li>
+        <li class="c5 c16 li-bullet-0">
+          <span class="c1"><input type="checkbox" id="licuadora-limpia" /> <label for="licuadora-limpia">Licuadora limpia</label></span>
+        </li>
+        <li class="c5 c16 li-bullet-0">
+          <span class="c1"><input type="checkbox" id="tostadora-limpia" /> <label for="tostadora-limpia">Tostadora limpia y sin migajas</label></span>
+        </li>
+        <li class="c5 c16 li-bullet-0">
+          <span class="c1"><input type="checkbox" id="cuchillos-limpios" /> <label for="cuchillos-limpios">Revisar que todos los cuchillos de cocina estén limpios</label></span>
+        </li>
+        <li class="c5 c16 li-bullet-0">
+          <span class="c1"><input type="checkbox" id="cuchillos-limpios" /> <label for="cuchillos-limpios">Café</label></span>
+        </li>
+        <li class="c5 c16 li-bullet-0">
+          <span class="c1"><input type="checkbox" id="cuchillos-limpios" /> <label for="cuchillos-limpios">Sobres de Splenda</label></span>
+        </li>
+      </ul>
+      <div class="images-container">
+      <div class="inspection-image">
+          <img
+            alt="Topes de cocina vista 1"
+            src="../villatiffany/images/10389 Villa Tiffany Foto 15A.jpg"
+            title=""
+          />
+        </div>
+      <div class="inspection-image">
+        <img
+          alt="Topes de cocina vista 2"
+          src="../villatiffany/images/10389 Villa Tiffany Foto 15B.jpg"
+            title=""
+          />
+        </div>
+      </div>
+      <!-- 2.i. Fregadero -->
+      <h3 class="subtitulo">Fregadero</h3>
+      <ul class="lista-inspeccion">
+        <li class="c5 c16 li-bullet-0">
+          <span class="c1"><input type="checkbox" id="jabon-lavaplatos" /> <label for="jabon-lavaplatos">Jabón lavaplatos lleno</label></span>
+        </li>
+        <li class="c5 c16 li-bullet-0">
+          <span class="c1"><input type="checkbox" id="esponja-lavaplatos" /> <label for="esponja-lavaplatos">Esponja lavaplatos</label></span>
+        </li>
+        <li class="c5 c16 li-bullet-0">
+          <span class="c1"><input type="checkbox" id="escurreplatos" /> <label for="escurreplatos">Escurreplatos</label></span>
+        </li>
+        <li class="c5 c16 li-bullet-0">
+          <span class="c1"><input type="checkbox" id="jabon-manos" /> <label for="jabon-manos">Jabón de manos lleno</label></span>
+        </li>
+      </ul>
+      <!-- 2.j. Triturador de Basura -->
+      <h3 class="subtitulo">Triturador de Basura</h3>
+      <ul class="lista-inspeccion">
+        <li class="c5 c16 li-bullet-0">
+          <span class="c1"><input type="checkbox" id="triturador-funcionar" /> <label for="triturador-funcionar">Ponerlo a funcionar con agua</label></span>
+        </li>
+        <li class="c5 c16 li-bullet-0">
+          <span class="c1"><input type="checkbox" id="triturador-olores" /> <label for="triturador-olores">No olores</label></span>
+        </li>
+      </ul>
+      <div class="inspection-image">
+          <img
+            alt="Fregadero vista 1"
+            src="../villatiffany/images/10389 Villa Tiffany Foto 16.jpg"
+            title=""
+          />
+        </div>
+
+
+      <h3 style="text-indent: 2em">Gabinetes encima de fregadero</h3>
+      <h3 style="text-indent: 4em">Primer gabinete a la izquierda del refrigerador</h3>
+      <ul class="lista-inspeccion">
+        <li class="c5 c16 li-bullet-0">
+          <span class="c1"><input type="checkbox" id="azucar" /> <label for="azucar">Azúcar</label></span>
+        </li>
+        <li class="c5 c16 li-bullet-0">
+          <span class="c1"><input type="checkbox" id="sal" /> <label for="sal">Sal</label></span>
+        </li>
+        <li class="c5 c16 li-bullet-0">
+          <span class="c1"><input type="checkbox" id="pimienta" /> <label for="pimienta">Pimienta</label></span>
+        </li>
+        <li class="c5 c16 li-bullet-0">
+          <span class="c1"><input type="checkbox" id="filtros-cafe" /> <label for="filtros-cafe">Filtros de café</label></span>
+        </li>
+        <li class="c5 c16 li-bullet-0">
+          <span class="c1"><input type="checkbox" id="condimentos" /> <label for="condimentos">Condimentos</label></span>
+        </li>
+        <li class="c5 c16 li-bullet-0">
+          <span class="c1"><input type="checkbox" id="aceite" /> <label for="aceite">Aceite</label></span>
+        </li>
+        <li class="c5 c16 li-bullet-0">
+          <span class="c1"><input type="checkbox" id="comida-abierta" /> <label for="comida-abierta">Revisar que no haya nada de comida abierto</label></span>
+        </li>
+      </ul>
+      <p class="c9 c4">
+        <div class="inspection-image">
+          <img
+            alt=""
+            src="../villatiffany/images/10389 Villa Tiffany Foto 17.jpg"
+            title=""
+          />
+        </div>
+      </p>
+
+      <h3 style="text-indent: 4em">Gabinetes de tazas, vasos, copas, platos y bandejas</h3>
+      <ul class="lista-inspeccion">
+        <li class="c5 c16 li-bullet-0">
+          <span class="c1"><input type="checkbox" id="suficiente-8" /> <label for="suficiente-8">Revisar que haya suficiente para 8 personas</label></span>
+        </li>
+        <li class="c5 c16 li-bullet-0">
+          <span class="c1"><input type="checkbox" id="organizados-limpios" /> <label for="organizados-limpios">Revisar que estén organizados por clase y limpios</label></span>
+        </li>
+        <li class="c5 c16 li-bullet-0">
+          <span class="c1"><input type="checkbox" id="tazas" /> <label for="tazas">Tazas</label></span>
+        </li>
+        <li class="c5 c16 li-bullet-0">
+          <span class="c1"><input type="checkbox" id="platos" /> <label for="platos">Platos</label></span>
+        </li>
+        <li class="c5 c16 li-bullet-0">
+          <span class="c1"><input type="checkbox" id="copas-vasos" /> <label for="copas-vasos">Copas y vasos</label></span>
+        </li>
+        <li class="c5 c16 li-bullet-0">
+          <span class="c1"><input type="checkbox" id="bandejas-servir" /> <label for="bandejas-servir">Bandejas de servir</label></span>
+        </li>
+      </ul>
+      <div class="images-container">
+        <div class="inspection-image">
+          <img
+            alt="Gabinete de tazas"
+            src="../villatiffany/images/10389 Villa Tiffany Foto 18A.jpg"
+            title=""
+          />
+        </div>
+        <div class="inspection-image">
+          <img
+            alt="Gabinete de vasos"
+            src="../villatiffany/images/10389 Villa Tiffany Foto 18B.jpg"
+            title=""
+          />
+        </div>
+        <div class="inspection-image">
+          <img
+            alt="Gabinete de copas"
+            src="../villatiffany/images/10389 Villa Tiffany Foto 18C.jpg"
+            title=""
+          />
+        </div>
+        <div class="inspection-image">
+          <img
+            alt="Gabinete de platos y bandejas"
+            src="../villatiffany/images/10389 Villa Tiffany Foto 18D.jpg"
+            title=""
+          />
+        </div>
+      </div>
+
+      <h3 style="text-indent: 4em">Gabinetes y cajones inferiores tope de cocina</h3>
+      <h3 style="text-indent: 6em">Gabinete izquierda de refrigerador</h3>
+      <ul class="lista-inspeccion">
+        <li class="c5 c16 li-bullet-0">
+          <span class="c1"><input type="checkbox" id="jarra" /> <label for="jarra">Jarra</label></span>
+        </li>
+        <li class="c5 c16 li-bullet-0">
+          <span class="c1"><input type="checkbox" id="tetera" /> <label for="tetera">Tetera</label></span>
+        </li>
+        <li class="c5 c16 li-bullet-0">
+          <span class="c1"><input type="checkbox" id="bowl" /> <label for="bowl">Bowl</label></span>
+        </li>
+      </ul>
+      <div class="images-container">
+        <div class="inspection-image">
+          <img
+            alt="Gabinete izquierda de refrigerador"
+            src="../villatiffany/images/10389 Villa Tiffany Foto 19.jpg"
+            title=""
+          />
+        </div>
+      </div>
+
+      <h3 style="text-indent: 6em">Gabinete con repisas rotatorias</h3>
+      <ul class="lista-inspeccion">
+        <li class="c5 c16 li-bullet-0">
+          <span class="c1"><input type="checkbox" id="electrodomesticos-limpios" /> <label for="electrodomesticos-limpios">Electrodomésticos limpios</label></span>
+        </li>
+      </ul>
+      <div class="images-container">
+        <div class="inspection-image">
+          <img
+            alt="Gabinete con repisas rotatorias"
+            src="../villatiffany/images/10389 Villa Tiffany Foto 20.jpg"
+            title=""
+          />
+        </div>
+      </div>
+
+      <h3 style="text-indent: 6em">Gabinete de fregadero de la cocina</h3>
+      <ul class="lista-inspeccion">
+        <li class="c5 c16 li-bullet-0">
+          <span class="c1"><input type="checkbox" id="rinse-aid" /> <label for="rinse-aid">Rinse Aid</label></span>
+        </li>
+        <li class="c5 c16 li-bullet-0">
+          <span class="c1"><input type="checkbox" id="jabon-maquina-platos" /> <label for="jabon-maquina-platos">Jabón máquina de platos</label></span>
+        </li>
+        <li class="c5 c16 li-bullet-0">
+          <span class="c1"><input type="checkbox" id="papel-toalla" /> <label for="papel-toalla">Papel toalla</label></span>
+        </li>
+        <li class="c5 c16 li-bullet-0">
+          <span class="c1"><input type="checkbox" id="servilletas" /> <label for="servilletas">Servilletas</label></span>
+        </li>
+        <li class="c5 c16 li-bullet-0">
+          <span class="c1"><input type="checkbox" id="bolsas-basura-grandes" /> <label for="bolsas-basura-grandes">Bolsas de basura grandes</label></span>
+        </li>
+        <li class="c5 c16 li-bullet-0">
+          <span class="c1"><input type="checkbox" id="bolsas-basura-pequenas" /> <label for="bolsas-basura-pequenas">Bolsas de basura pequeñas</label></span>
+        </li>
+      </ul>
+      <div class="images-container">
+        <div class="inspection-image">
+          <img
+            alt="Gabinete de fregadero"
+            src="../villatiffany/images/10389 Villa Tiffany Foto 21.jpg"
+            title=""
+          />
+        </div>
+      </div>
+
+      <h3 style="text-indent: 4em">Lavaplatos</h3>
+      <ul class="lista-inspeccion">
+        <li class="c5 c16 li-bullet-0"><span class="c1"><input type="checkbox" id="sin-agua-fondo" /> <label for="sin-agua-fondo">Sin agua en el fondo</label></span></li>
+        <li class="c5 c16 li-bullet-0"><span class="c1"><input type="checkbox" id="platos-utensilios-removidos" /> <label for="platos-utensilios-removidos">Todos los platos y utensilios removidos</label></span></li>
+        <li class="c5 c16 li-bullet-0"><span class="c1"><input type="checkbox" id="no-olores" /> <label for="no-olores">No olores</label></span></li>
+        <li class="c5 c16 li-bullet-0"><span class="c1"><input type="checkbox" id="filtro-limpio" /> <label for="filtro-limpio">Filtro limpio</label></span></li>
+        <li class="c5 c16 li-bullet-0"><span class="c1"><input type="checkbox" id="reponer-rinse-aid" /> <label for="reponer-rinse-aid">Reponer abrillantador "Rinse Aid"</label></span></li>
+      </ul>
+      <div class="images-container">
+        <div class="inspection-image">
+          <img
+            alt="Lavaplatos"
+            src="../villatiffany/images/10389 Villa Tiffany Foto 22.jpg"
+            title=""
+          />
+        </div>
+      </div>
+
+      <h3 style="text-indent: 4em">Basura</h3>
+      <ul class="lista-inspeccion">
+        <li class="c5 c16 li-bullet-0"><span class="c1"><input type="checkbox" id="basura-limpia" /> <label for="basura-limpia">Limpia</label></span></li>
+      </ul>
+      <div class="images-container">
+        <div class="inspection-image">
+          <img
+            alt="Basura"
+            src="../villatiffany/images/10389 Villa Tiffany Foto 23.jpeg"
+            title=""
+          />
+        </div>
+      </div>
+
+      <h3 style="text-indent: 4em">Primer cajón debajo de tope de cocina</h3>
+      <ul class="lista-inspeccion">
+        <li class="c5 c16 li-bullet-0"><span class="c1"><input type="checkbox" id="manteles-individuales" /> <label for="manteles-individuales">Revisar que haya suficientes manteles individuales para 8 personas</label></span></li>
+      </ul>
+      <div class="inspection-image">
+          <img
+            alt="Primer cajón debajo de tope de cocina"
+            src="../villatiffany/images/10389 Villa Tiffany Foto 24.jpeg"
+            title=""
+          />
+        </div>
+
+      <h3 style="text-indent: 4em">Encima de microondas</h3>
+      <ul class="lista-inspeccion">
+        <li class="c5 c16 li-bullet-0"><span class="c1"><input type="checkbox" id="vacio-limpio" /> <label for="vacio-limpio">Vacío y limpio</label></span></li>
+      </ul>
+      <div class="inspection-image">
+          <img
+            alt="Encima de microondas"
+            src="../villatiffany/images/10389 Villa Tiffany Foto 25.jpg"
+            title=""
+          />
+        </div>
+      <h3 style="text-indent: 4em">Microondas</h3>
+      <ul class="lista-inspeccion">
+        <li class="c5 c16 li-bullet-0"><span class="c1"><input type="checkbox" id="microondas-funciona" /> <label for="microondas-funciona">Funciona</label></span></li>
+        <li class="c5 c16 li-bullet-0"><span class="c1"><input type="checkbox" id="microondas-hora" /> <label for="microondas-hora">Hora</label></span></li>
+        <li class="c5 c16 li-bullet-0"><span class="c1"><input type="checkbox" id="microondas-limpio" /> <label for="microondas-limpio">Limpio</label></span></li>
+      </ul>     
+      
+        <div class="inspection-image">
+          <img
+            alt="Microondas"
+            src="../villatiffany/images/10389 Villa Tiffany Foto 26.jpg"
+            title=""
+          />
+        </div>
+      
+      <h3 style="text-indent: 4em">Horno</h3>
+      <ul class="lista-inspeccion">
+        <li class="c5 c16 li-bullet-0"><span class="c1"><input type="checkbox" id="horno-funciona" /> <label for="horno-funciona">Funciona</label></span></li>
+        <li class="c5 c16 li-bullet-0"><span class="c1"><input type="checkbox" id="horno-hora" /> <label for="horno-hora">Hora</label></span></li>
+        <li class="c5 c16 li-bullet-0"><span class="c1"><input type="checkbox" id="horno-limpio" /> <label for="horno-limpio">Limpio</label></span></li>
+      </ul>     
+      
+        <div class="inspection-image">
+          <img
+            alt="Horno"
+            src="../villatiffany/images/10389 Villa Tiffany Foto 27.jpg"
+            title=""
+          />
+        </div>
+
+      <h3 style="text-indent: 4em">Cajón debajo del horno</h3>
+      <ul class="lista-inspeccion">
+        <li class="c5 c16 li-bullet-0"><span class="c1"><input type="checkbox" id="bandejas-hornear" /> <label for="bandejas-hornear">Bandejas de hornear limpias y organizadas</label></span></li>
+      </ul>     
+      
+        <div class="inspection-image">
+          <img
+            alt="Cajón debajo del horno"
+            src="../villatiffany/images/10389 Villa Tiffany Foto 28.jpg"
+            title=""
+          />
+        </div>
+      
+
+      <h3 style="text-indent: 4em">Despensa</h3>
+      <ul class="lista-inspeccion">
+        <li class="c5 c16 li-bullet-0"><span class="c1"><input type="checkbox" id="despensa-vacia-limpia" /> <label for="despensa-vacia-limpia">Vacía y limpia</label></span></li>
+      </ul>     
+      <p class="c9">  
+        <div class="inspection-image">
+          <img
+            alt="Despensa"
+            src="../villatiffany/images/10389 Villa Tiffany Foto 29.jpg"
+            title=""
+          />
+        </div>
+      </p>
+
+      <h3 style="text-indent: 4em">Luces debajo de gabinetes</h3>
+      <ul class="lista-inspeccion">
+        <li class="c5 c16 li-bullet-0"><span class="c1"><input type="checkbox" id="luces-funcionando" /> <label for="luces-funcionando">Todas funcionando</label></span></li>
+        <li class="c5 c16 li-bullet-0"><span class="c1"><input type="checkbox" id="limpio-debajo-gabinetes" /> <label for="limpio-debajo-gabinetes">Limpio debajo de los gabinetes</label></span></li>
+      </ul>
+      <div class="inspection-image">
+          <img
+            alt="Luces debajo de gabinetes"
+            src="../villatiffany/images/10389 Villa Tiffany Foto 29.jpg"
+            title=""
+          />
+        </div>
+
+      <h3>Sala/Comedor</h3>
+      <ul class="lista-inspeccion">
+        <li class="c5 c16 li-bullet-0">
+          <h3 class="c1">Candelabros</h3>
+          <ul class="lista-inspeccion">
+            <li class="c5 c16 li-bullet-1"><span class="c1"><input type="checkbox" id="candelabros-limpios" /> <label for="candelabros-limpios">Limpios</label></span></li>
+            <li class="c5 c16 li-bullet-1"><span class="c1"><input type="checkbox" id="bombillos-encendidos" /> <label for="bombillos-encendidos">Bombillos Encendidos</label></span></li>
+          </ul>
+        </li>
+        <li class="c5 c16 li-bullet-0">
+          <h3 class="c1">Comedor</h3>
+          <ul class="lista-inspeccion">
+            <li class="c5 c16 li-bullet-1"><span class="c1"><input type="checkbox" id="mesa-limpia" /> <label for="mesa-limpia">Mesa limpia</label></span></li>
+            <li class="c5 c16 li-bullet-1"><span class="c1"><input type="checkbox" id="sillas-organizadas" /> <label for="sillas-organizadas">Sillas organizadas</label></span></li>
+            <li class="c5 c16 li-bullet-1"><span class="c1"><input type="checkbox" id="sillas-fuertes" /> <label for="sillas-fuertes">Sillas fuertes</label></span></li>
+            <li class="c5 c16 li-bullet-1"><span class="c1"><input type="checkbox" id="sillas-limpias" /> <label for="sillas-limpias">Sillas limpias</label></span></li>
+          </ul>
+        </li>
+      </ul>
+      <p class="c9">
+        <div class="inspection-image">
+          <img
+          alt="Sala/Comedor"
+          src="../villatiffany/images/10389 Villa Tiffany Foto 31.jpg"
+          title=""
+          />
+        </div>
+      </p>
+
+      <h3 style="text-indent: 2em">Sala</h3>
+      <ul class="lista-inspeccion">
+        <li class="c5 c16 li-bullet-0"><span class="c1"><input type="checkbox" id="revisar-alfombra" /> <label for="revisar-alfombra">Revisar debajo de la alfombra</label></span></li>
+        <li class="c5 c16 li-bullet-0"><span class="c1"><input type="checkbox" id="quitar-cojines" /> <label for="quitar-cojines">Quitar cojines y revisar que no haya comida debajo</label></span></li>
+        <li class="c5 c16 li-bullet-0"><span class="c1"><input type="checkbox" id="almohadas-decorativas" /> <label for="almohadas-decorativas">Todas las almohadas decorativas limpias y en dirección correcta</label></span></li>
+        <li class="c5 c16 li-bullet-0"><span class="c1"><input type="checkbox" id="sofa-limpio" /> <label for="sofa-limpio">Sofá limpio</label></span></li>
+        <li class="c5 c16 li-bullet-0"><span class="c1"><input type="checkbox" id="mirar-sofa" /> <label for="mirar-sofa">Mirar debajo del sofá</label></span></li>
+        <li class="c5 c16 li-bullet-0"><span class="c1"><input type="checkbox" id="toallas-piscina" /> <label for="toallas-piscina">4 toallas de piscina con aviso</label></span></li>
+      </ul>
+      <div class="inspection-image">
+          <img
+          alt="Sala"
+          src="../villatiffany/images/10389 Villa Tiffany Foto 32.jpg"
+          title=""
+          />
+        </div>
+
+      <h3 style="text-indent: 2em">Balcón</h3>
+      <ul class="lista-inspeccion">
+        <li class="c5 c16 li-bullet-0">
+          <span class="c1"><input type="checkbox" id="puertas-vidrios-limpios" /> <label for="puertas-vidrios-limpios">Puertas y vidrios limpios</label></span>
+        </li>
+        <li class="c5 c16 li-bullet-0">
+          <span class="c1"><input type="checkbox" id="puertas-abren" /> <label for="puertas-abren">Puertas abren sin problema</label></span>
+        </li>
+        <li class="c5 c16 li-bullet-0">
+          <span class="c1"><input type="checkbox" id="piso-limpio" /> <label for="piso-limpio">Piso limpio sin arena</label></span>
+        </li>
+        <li class="c5 c16 li-bullet-0">
+          <span class="c1"><input type="checkbox" id="muebles-limpios" /> <label for="muebles-limpios">Muebles limpios</label></span>
+        </li>
+        <li class="c5 c16 li-bullet-0">
+          <span class="c1"><input type="checkbox" id="muebles-puesto" /> <label for="muebles-puesto">Muebles en puesto correcto</label></span>
+        </li>
+        <li class="c5 c16 li-bullet-0">
+          <span class="c1"><input type="checkbox" id="revisar-bombillos" /> <label for="revisar-bombillos">Revisar bombillos</label></span>
+        </li>
+        <li class="c5 c16 li-bullet-0">
+          <span class="c1"><input type="checkbox" id="barandales-fuertes" /> <label for="barandales-fuertes">Barandales fuertes</label></span>
+        </li>
+        <li class="c5 c16 li-bullet-0">
+          <span class="c1"><input type="checkbox" id="cojines-exterior" /> <label for="cojines-exterior">Cojines de exterior: CO Interior/ CI Exterior</label></span>
+        </li>
+      </ul>
+      <div class="images-container">
+        <div class="inspection-image">
+          <img
+            alt="Balcón vista 1"
+            src="../villatiffany/images/10389 Villa Tiffany Foto 33A.jpg"
+            title=""
+          />
+        </div>
+        <div class="inspection-image">
+          <img
+            alt="Balcón vista 4"
+            src="../villatiffany/images/10389 Villa Tiffany Foto 33D.jpg"
+            title=""
+          />
+        </div>
+      </div>
+      <h3 style="text-indent: 2em">Parrilla de Gas/BBQ</h3>
+      <ul class="lista-inspeccion">
+        <li class="c5 c16 li-bullet-0">
+          <span class="c1"><input type="checkbox" id="grill-limpio" /> <label for="grill-limpio">Grill limpio</label></span>
+        </li>
+        <li class="c5 c16 li-bullet-0">
+          <span class="c1"><input type="checkbox" id="verificar-gas" /> <label for="verificar-gas">Verificar que no haya escape de gas y encender</label></span>
+        </li>
+        <li class="c5 c16 li-bullet-0">
+          <span class="c1"><input type="checkbox" id="dejar-gas-cerrado" /> <label for="dejar-gas-cerrado">Dejar gas cerrado</label></span>
+        </li>
+      </ul>
+      
+      <div class="images-container">
+      <div class="inspection-image">
+          <img
+            alt="Balcón vista 2"
+            src="../villatiffany/images/10389 Villa Tiffany Foto 33B.jpg"
+            title=""
+          />
+        </div>
+        <div class="inspection-image">
+          <img
+            alt="Balcón vista 3"
+            src="../villatiffany/images/10389 Villa Tiffany Foto 33C.jpg"
+              title=""
+          />
+        </div>
+      </div>
+    
+      <h3 >Pasillo a la Derecha de la Cocina (Desde Puerta de Entrada)</h3>
+      <ul class="lista-inspeccion">
+        <li class="c5 c16 li-bullet-0">
+          <span class="c1"><input type="checkbox" id="revisar-limpieza-pasillo" /> <label for="revisar-limpieza-pasillo">Revisar limpieza general del pasillo</label></span>
+        </li>
+      </ul>
+      <p class="c9">
+        <div class="inspection-image">
+          <img
+            alt="Pasillo a la derecha de la cocina"
+            src="../villatiffany/images/10389 Villa Tiffany Foto 66.jpg"
+            title=""
+          />
+        </div>
+      </p>
+
+      <h3 class="subtitulo">Closet de Aire Acondicionado</h3>
+      <ul class="lista-inspeccion">
+        <li class="c5 c16 li-bullet-0">
+          <span class="c1"><input type="checkbox" id="closet-limpio-organizado" /> <label for="closet-limpio-organizado">Closet limpio y organizado</label></span>
+        </li>
+        <li class="c5 c16 li-bullet-0">
+          <span class="c1"><input type="checkbox" id="revisar-bombillos" /> <label for="revisar-bombillos">Revisar bombillos</label></span>
+        </li>
+        <li class="c5 c16 li-bullet-0">
+          <span class="c1"><input type="checkbox" id="termostato" /> <label for="termostato">Termostato: 77 CO/ 72 CI</label></span>
+        </li>
+        <li class="c5 c16 li-bullet-0">
+          <span class="c1"><input type="checkbox" id="escaleras" /> <label for="escaleras">Escaleras</label></span>
+        </li>
+        <li class="c5 c16 li-bullet-0">
+          <span class="c1"><input type="checkbox" id="deshumidificador" /> <label for="deshumidificador">Deshumidificador</label></span>
+        </li>
+      </ul>
+      <div class="images-container">
+        <div class="inspection-image">
+          <img
+            alt="Closet de aire acondicionado vista 1"
+            src="../villatiffany/images/10389 Villa Tiffany Foto 34A.jpg"
+            title=""
+          />
+        </div>
+        <div class="inspection-image">
+          <img
+            alt="Closet de aire acondicionado vista 2"
+            src="../villatiffany/images/10389 Villa Tiffany Foto 34B.jpg"
+            title=""
+          />
+        </div>
+      </div>
+      
+
+      <h3 class="subtitulo">Primer Baño en el Pasillo a la Derecha</h3>
+      <ul class="lista-inspeccion">
+        <li class="c5 c16 li-bullet-0">
+          <span class="c1"><input type="checkbox" id="revisar-bombillos" /> <label for="revisar-bombillos">Revisar bombillos</label></span>
+        </li>
+        <li class="c5 c16 li-bullet-0">
+          <span class="c1"><input type="checkbox" id="revisar-abanico" /> <label for="revisar-abanico">Revisar abanico</label></span>
+        </li>
+        <li class="c5 c16 li-bullet-0">
+          <span class="c1"><input type="checkbox" id="toalla-pies" /> <label for="toalla-pies">1 toalla para pies</label></span>
+        </li>
+        <li class="c5 c16 li-bullet-0">
+          <span class="c1"><input type="checkbox" id="jabonera-limpia" /> <label for="jabonera-limpia">Jabonera limpia</label></span>
+        </li>
+        <li class="c5 c16 li-bullet-0">
+          <span class="c1"><input type="checkbox" id="inodoro-limpio" /> <label for="inodoro-limpio">Inodoro limpio y funcionando</label></span>
+        </li>
+        <li class="c5 c16 li-bullet-0">
+          <span class="c1"><input type="checkbox" id="zafacon-limpio" /> <label for="zafacon-limpio">Zafacón limpio</label></span>
+        </li>
+        <li class="c5 c16 li-bullet-0">
+          <span class="c1"><input type="checkbox" id="cepillo-inodoro" /> <label for="cepillo-inodoro">Cepillo de inodoro</label></span>
+        </li>
+        <li class="c5 c16 li-bullet-0">
+          <span class="c1"><input type="checkbox" id="toallas-bano" /> <label for="toallas-bano">2 toallas de baño</label></span>
+        </li>
+        <li class="c5 c16 li-bullet-0">
+          <span class="c1"><input type="checkbox" id="washcloth" /> <label for="washcloth">1 washcloth</label></span>
+        </li>
+      </ul>
+      <div class="images-container">
+        <div class="inspection-image">
+          <img
+            alt="Primer baño vista 1"
+            src="../villatiffany/images/10389 Villa Tiffany Foto 35A.jpg"
+            title=""
+          />
+        </div>
+        <div class="inspection-image">
+          <img
+            alt="Primer baño vista 2"
+            src="../villatiffany/images/10389 Villa Tiffany Foto 35B.jpg"
+            title=""
+          />
+        </div>
+      </div>  
+
+      <h3 class="subtitulo2">Tope de Lavamanos</h3>
+      <ul class="lista-inspeccion">
+        <li class="c5 c16 li-bullet-0">
+          <span class="c1"><input type="checkbox" id="lavamanos-funcionando" /> <label for="lavamanos-funcionando">Lavamanos funcionando y limpio</label></span>
+        </li>
+        <li class="c5 c16 li-bullet-0">
+          <span class="c1"><input type="checkbox" id="jabon" /> <label for="jabon">1 jabón</label></span>
+        </li>
+        <li class="c5 c16 li-bullet-0">
+          <span class="c1"><input type="checkbox" id="shampoo" /> <label for="shampoo">1 shampoo</label></span>
+        </li>
+        <li class="c5 c16 li-bullet-0">
+          <span class="c1"><input type="checkbox" id="acondicionador" /> <label for="acondicionador">1 acondicionador</label></span>
+        </li>
+        <li class="c5 c16 li-bullet-0">
+          <span class="c1"><input type="checkbox" id="gel-cuerpo" /> <label for="gel-cuerpo">1 gel para cuerpo</label></span>
+        </li>
+        <li class="c5 c16 li-bullet-0">
+          <span class="c1"><input type="checkbox" id="lotion-corporal" /> <label for="lotion-corporal">1 loción corporal</label></span>
+        </li>
+        <li class="c5 c16 li-bullet-0">
+          <span class="c1"><input type="checkbox" id="aguas" /> <label for="aguas">2 aguas</label></span>
+        </li>
+        <li class="c5 c16 li-bullet-0">
+          <span class="c1"><input type="checkbox" id="vasito-limpio" /> <label for="vasito-limpio">Vasito limpio</label></span>
+        </li>
+        <li class="c5 c16 li-bullet-0">
+          <span class="c1"><input type="checkbox" id="jabon-liquido" /> <label for="jabon-liquido">Jabón líquido lleno</label></span>
+        </li>
+        <li class="c5 c16 li-bullet-0">
+          <span class="c1"><input type="checkbox" id="kleenex" /> <label for="kleenex">Kleenex</label></span>
+        </li>
+        <li class="c5 c16 li-bullet-0">
+          <span class="c1"><input type="checkbox" id="toalla-mano" /> <label for="toalla-mano">1 toalla de mano</label></span>
+        </li>
+        <li class="c5 c16 li-bullet-0">
+          <span class="c1"><input type="checkbox" id="toalla-maquillaje" /> <label for="toalla-maquillaje">1 toalla de maquillaje</label></span>
+        </li>
+        <li class="c5 c16 li-bullet-0">
+          <span class="c1"><input type="checkbox" id="tope-lavamanos-limpio" /> <label for="tope-lavamanos-limpio">Tope de lavamanos limpio</label></span>
+        </li>
+        <li class="c5 c16 li-bullet-0">
+          <span class="c1"><input type="checkbox" id="espejo-limpio" /> <label for="espejo-limpio">Espejo limpio</label></span>
+        </li>
+        <li class="c5 c16 li-bullet-0">
+          <span class="c1"><input type="checkbox" id="dispensador-jabon" /> <label for="dispensador-jabon">Dispensador de jabón lleno</label></span>
+        </li>
+        <li class="c5 c16 li-bullet-0">
+          <span class="c1"><input type="checkbox" id="toallas-limpias" /> <label for="toallas-limpias">2 toallas limpias</label></span>
+        </li>
+        <li class="c5 c16 li-bullet-0">
+          <span class="c1"><input type="checkbox" id="toallas-mano" /> <label for="toallas-mano">2 toallas de mano</label></span>
+        </li>
+        <li class="c5 c16 li-bullet-0">
+          <span class="c1"><input type="checkbox" id="washcloths" /> <label for="washcloths">2 washcloths</label></span>
+        </li>
+      </ul>
+      <p class="c9">
+        <div class="inspection-image">
+          <img
+            alt="Tope de lavamanos"
+            src="../villatiffany/images/10389 Villa Tiffany Foto 36.jpg"
+            title=""
+          />
+        </div>
+      </p>
+
+      <h3 class="subtitulo2">Gabinete</h3>
+      <ul class="lista-inspeccion">
+        <li class="c5 c16 li-bullet-0">
+          <span class="c1"><input type="checkbox" id="abrir-gabinetes" /> <label for="abrir-gabinetes">Abrir los Gabinetes</label></span>
+        </li>
+        <li class="c5 c16 li-bullet-0">
+          <span class="c1"><input type="checkbox" id="papeles-higienicos" /> <label for="papeles-higienicos">2 Papeles Higiénicos Extras</label></span>
+        </li>
+      </ul>
+     
+    
+      <div class="inspection-image">
+          <img
+            alt="Gabinete"
+            src="../villatiffany/images/10389 Villa Tiffany Foto 37.jpg"
+            title=""
+          />
+      </div>
+
+      <h3 class="subtitulo">Primer Dormitorio Frente a Baño de Pasillo</h3>
+      <ul class="lista-inspeccion">
+        <li class="c5 c16 li-bullet-0">
+          <span class="c1"><input type="checkbox" id="puerta-limpia" /> <label for="puerta-limpia">Puerta limpia</label></span>
+        </li>
+        <li class="c5 c16 li-bullet-0">
+          <span class="c1"><input type="checkbox" id="bombillos-techo" /> <label for="bombillos-techo">Revisar bombillos techo</label></span>
+        </li>
+        <li class="c5 c16 li-bullet-0">
+          <span class="c1"><input type="checkbox" id="cajones-mesitas" /> <label for="cajones-mesitas">Abrir cajones de mesitas de noche</label></span>
+        </li>
+        <li class="c5 c16 li-bullet-0">
+          <span class="c1"><input type="checkbox" id="cortina-limpia" /> <label for="cortina-limpia">Cortina limpia</label></span>
+        </li>
+        <li class="c5 c16 li-bullet-0">
+          <span class="c1"><input type="checkbox" id="revisar-detras-cortina" /> <label for="revisar-detras-cortina">Revisar detrás de la cortina</label></span>
+        </li>
+        <li class="c5 c16 li-bullet-0">
+          <span class="c1"><input type="checkbox" id="revisar-bombillos-techo" /> <label for="revisar-bombillos-techo">Revisar bombillos techo</label></span>
+        </li>
+        <li class="c5 c16 li-bullet-0">
+          <span class="c1"><input type="checkbox" id="almohadas-standard" /> <label for="almohadas-standard">4 almohadas standard con pillow cover</label></span>
+        </li>
+      </ul>
+      <p class="c9">
+        <div class="inspection-image">
+          <img
+            alt="Primer dormitorio"
+            src="../villatiffany/images/10389 Villa Tiffany Foto 38.jpg"
+            title=""
+          />
+        </div>
+      </p>
+
+      <h3 class="subtitulo2">Mueble de TV</h3>
+      <ul class="lista-inspeccion">
+        <li class="c5 c16 li-bullet-0">
+          <span class="c1"><input type="checkbox" id="botellas-agua-tv" /> <label for="botellas-agua-tv">2 botellas de agua sobre mueble de TV</label></span>
+        </li>
+        <li class="c5 c16 li-bullet-0">
+          <span class="c1"><input type="checkbox" id="abrir-cajones-puertas" /> <label for="abrir-cajones-puertas">Abrir cajones y puertas</label></span>
+        </li>
+        <li class="c5 c16 li-bullet-0">
+          <span class="c1"><input type="checkbox" id="cajones-vacios-limpios" /> <label for="cajones-vacios-limpios">Cajones vacíos y limpios</label></span>
+        </li>
+        <li class="c5 c16 li-bullet-0">
+          <span class="c1"><input type="checkbox" id="juegos-mesa" /> <label for="juegos-mesa">Juegos de mesa organizados</label></span>
+        </li>
+        <li class="c5 c16 li-bullet-0">
+          <span class="c1"><input type="checkbox" id="verificar-tv" /> <label for="verificar-tv">Verificar que TV esté funcionando</label></span>
+        </li>
+        <li class="c5 c16 li-bullet-0">
+          <span class="c1"><input type="checkbox" id="control-tv" /> <label for="control-tv">Control de TV sobre mueble</label></span>
+        </li>
+      </ul>
+      <div class="inspection-image">
+          <img
+            alt="Mueble de TV"
+            src="../villatiffany/images/10389 Villa Tiffany Foto 39.jpg"
+            title=""
+          />
+        </div>
+      <h3 class="subtitulo">Dormitorio Principal</h3>
+      <ul class="lista-inspeccion">
+        <li class="c5 c16 li-bullet-0">
+          <span class="c1"><input type="checkbox" id="puerta-pasillo" /> <label for="puerta-pasillo">Puerta y pasillo limpio</label></span>
+        </li>
+        <li class="c5 c16 li-bullet-0">
+          <span class="c1"><input type="checkbox" id="bombillos-funcionando" /> <label for="bombillos-funcionando">Bombillos funcionando</label></span>
+        </li>
+      </ul>
+      <div class="inspection-image">
+          <img
+            alt="Dormitorio Principal"
+            src="../villatiffany/images/10389 Villa Tiffany Foto 40.jpeg"
+            title=""
+          />
+      </div>
+
+      <h3 class="subtitulo2">Baño del Dormitorio Principal</h3>
+      <h3 class="subtitulo2">Ducha</h3>
+      <ul class="lista-inspeccion">
+        <li class="c5 c16 li-bullet-0">
+          <span class="c1"><input type="checkbox" id="jabonera-limpia-2" /> <label for="jabonera-limpia-2">Jabonera limpia</label></span>
+        </li>
+        <li class="c5 c16 li-bullet-0">
+          <span class="c1"><input type="checkbox" id="toalla-pies-2" /> <label for="toalla-pies-2">1 toalla de pies</label></span>
+        </li>
+        <li class="c5 c16 li-bullet-0">
+          <span class="c1"><input type="checkbox" id="toallas-bano-2" /> <label for="toallas-bano-2">2 toallas de baño</label></span>
+        </li>
+        <li class="c5 c16 li-bullet-0">
+          <span class="c1"><input type="checkbox" id="toallas-pequenas" /> <label for="toallas-pequenas">2 toallas pequeñas (washcloths)</label></span>
+        </li>
+      </ul>
+      <div class="inspection-image">
+          <img
+          alt="Ducha"
+          src="../villatiffany/images/10389 Villa Tiffany Foto 41.jpg"
+          title=""
+          />
+      </div>
+
+      <h3 class="subtitulo2">Área de Inodoro</h3>
+      <ul class="lista-inspeccion">
+        <li class="c5 c16 li-bullet-0">
+          <span class="c1"><input type="checkbox" id="revisar-bombillos-2" /> <label for="revisar-bombillos-2">Revisar bombillos</label></span>
+        </li>
+        <li class="c5 c16 li-bullet-0">
+          <span class="c1"><input type="checkbox" id="revisar-abanico-2" /> <label for="revisar-abanico-2">Revisar abanico</label></span>
+        </li>
+        <li class="c5 c16 li-bullet-0">
+          <span class="c1"><input type="checkbox" id="inodoro-limpio-2" /> <label for="inodoro-limpio-2">Inodoro limpio y funcionando</label></span>
+        </li>
+        <li class="c5 c16 li-bullet-0">
+          <span class="c1"><input type="checkbox" id="zafacon-limpio-2" /> <label for="zafacon-limpio-2">Zafacón limpio y vacío</label></span>
+        </li>
+        <li class="c5 c16 li-bullet-0">
+          <span class="c1"><input type="checkbox" id="pararse-en-pesa" /> <label for="pararse-en-pesa">Pararse en pesa</label></span>
+        </li>
+        <li class="c5 c16 li-bullet-0">
+          <span class="c1"><input type="checkbox" id="cepillo-inodoro-2" /> <label for="cepillo-inodoro-2">Cepillo de inodoro</label></span>
+        </li>
+        <li class="c5 c16 li-bullet-0">
+          <span class="c1"><input type="checkbox" id="bidet-limpio" /> <label for="bidet-limpio">Bidet limpio y funcionando</label></span>
+        </li>
+      </ul>
+      <div class="inspection-image">
+          <img
+          alt="Inodoro"
+          src="../villatiffany/images/10389 Villa Tiffany Foto 42.jpg"
+          title=""
+          />
+      </div>
+
+      <h3 class="subtitulo2">Tope de Lavamanos</h3>
+      <ul class="lista-inspeccion">
+        <li class="c5 c16 li-bullet-0">
+          <span class="c1"><input type="checkbox" id="revisar-bombillos-3" /> <label for="revisar-bombillos-3">Revisar bombillos</label></span>
+        </li>
+        <li class="c5 c16 li-bullet-0">
+          <span class="c1"><input type="checkbox" id="lavamanos-funcionando-2" /> <label for="lavamanos-funcionando-2">Lavamanos funcionando y limpios</label></span>
+        </li>
+        <li class="c5 c16 li-bullet-0">
+          <span class="c1"><input type="checkbox" id="jabones" /> <label for="jabones">2 jabones</label></span>
+        </li>
+        <li class="c5 c16 li-bullet-0">
+          <span class="c1"><input type="checkbox" id="shampoo-2" /> <label for="shampoo-2">1 shampoo</label></span>
+        </li>
+        <li class="c5 c16 li-bullet-0">
+          <span class="c1"><input type="checkbox" id="acondicionador-2" /> <label for="acondicionador-2">1 acondicionador</label></span>
+        </li>
+        <li class="c5 c16 li-bullet-0">
+          <span class="c1"><input type="checkbox" id="gel-cuerpo-2" /> <label for="gel-cuerpo-2">1 gel de cuerpo</label></span>
+        </li>
+        <li class="c5 c16 li-bullet-0">
+          <span class="c1"><input type="checkbox" id="locion-corporal" /> <label for="locion-corporal">1 loción corporal</label></span>
+        </li>
+        <li class="c5 c16 li-bullet-0">
+          <span class="c1"><input type="checkbox" id="kleenex-2" /> <label for="kleenex-2">Kleenex</label></span>
+        </li>
+        <li class="c5 c16 li-bullet-0">
+          <span class="c1"><input type="checkbox" id="kits-dentales" /> <label for="kits-dentales">2 kits dentales</label></span>
+        </li>
+        <li class="c5 c16 li-bullet-0">
+          <span class="c1"><input type="checkbox" id="aguas-2" /> <label for="aguas-2">2 aguas</label></span>
+        </li>
+        <li class="c5 c16 li-bullet-0">
+          <span class="c1"><input type="checkbox" id="jabon-liquido-2" /> <label for="jabon-liquido-2">Jabón líquido lleno</label></span>
+        </li>
+        <li class="c5 c16 li-bullet-0">
+          <span class="c1"><input type="checkbox" id="vasitos-limpios" /> <label for="vasitos-limpios">Vasitos limpios</label></span>
+        </li>
+        <li class="c5 c16 li-bullet-0">
+          <span class="c1"><input type="checkbox" id="toalla-maquillaje-2" /> <label for="toalla-maquillaje-2">1 toalla de maquillaje</label></span>
+        </li>
+        <li class="c5 c16 li-bullet-0">
+          <span class="c1"><input type="checkbox" id="toallas-mano-2" /> <label for="toallas-mano-2">2 toallas de mano</label></span>
+        </li>
+      </ul>
+      <div class="inspection-image">
+          <img
+          alt="Inodoro"
+          src="../villatiffany/images/10389 Villa Tiffany Foto 43.JPG"
+          title=""
+          />
+      </div>
+      <h3 class="subtitulo2">Gabinetes</h3>
+      <ul class="lista-inspeccion">
+        <li class="c5 c16 li-bullet-0">
+          <span class="c1"><input type="checkbox" id="first-aid-kit" /> <label for="first-aid-kit">First Aid Kit</label></span>
+        </li>
+        <li class="c5 c16 li-bullet-0">
+          <span class="c1"><input type="checkbox" id="papeles-higienicos" /> <label for="papeles-higienicos">2 papeles higiénicos extra</label></span>
+        </li>
+        <li class="c5 c16 li-bullet-0">
+          <span class="c1"><input type="checkbox" id="revisar-bombillos-2" /> <label for="revisar-bombillos-2">Revisar bombillos</label></span>
+        </li>
+        <li class="c5 c16 li-bullet-0">
+          <span class="c1"><input type="checkbox" id="revisar-abanico-2" /> <label for="revisar-abanico-2">Revisar abanico</label></span>
+        </li>
+        <li class="c5 c16 li-bullet-0">
+          <span class="c1"><input type="checkbox" id="inodoro-limpio-2" /> <label for="inodoro-limpio-2">Inodoro limpio y funcionando</label></span>
+        </li>
+        <li class="c5 c16 li-bullet-0">
+          <span class="c1"><input type="checkbox" id="zafacon-limpio-2" /> <label for="zafacon-limpio-2">Zafacón limpio y vacío</label></span>
+        </li>
+        <li class="c5 c16 li-bullet-0">
+          <span class="c1"><input type="checkbox" id="pararse-pesa" /> <label for="pararse-pesa">Pararse en pesa</label></span>
+        </li>
+        <li class="c5 c16 li-bullet-0">
+          <span class="c1"><input type="checkbox" id="cepillo-inodoro-2" /> <label for="cepillo-inodoro-2">Cepillo de inodoro</label></span>
+        </li>
+        <li class="c5 c16 li-bullet-0">
+          <span class="c1"><input type="checkbox" id="bidet-limpio" /> <label for="bidet-limpio">Bidet limpio y funcionando</label></span>
+        </li>
+      </ul>
+      <div class="inspection-image">
+          <img
+          alt="Gabinetes"
+          src="../villatiffany/images/10389 Villa Tiffany Foto 44.JPG"
+          title=""  
+          />
+      </div>
+
+      <h3 class="subtitulo2">Cajones</h3>
+      <ul class="lista-inspeccion">
+        <li class="c5 c16 li-bullet-0">
+          <span class="c1"><input type="checkbox" id="secador-cabello" /> <label for="secador-cabello">Secador de cabello</label></span>
+        </li>
+        <li class="c5 c16 li-bullet-0">
+          <span class="c1"><input type="checkbox" id="abrir-cajones" /> <label for="abrir-cajones">Abrir todos los cajones</label></span>
+        </li>
+      </ul>
+      <div class="inspection-image">
+          <img
+          alt="Gabinetes"
+          src="../villatiffany/images/10389 Villa Tiffany Foto 45.JPG"
+          title=""  
+          />
+      </div>
+
+      <h3 class="subtitulo2">Bañera</h3>
+      <ul class="lista-inspeccion">
+        <li class="c5 c16 li-bullet-0">
+          <span class="c1"><input type="checkbox" id="prender-banera" /> <label for="prender-banera">Prenderla</label></span>
+        </li>
+        <li class="c5 c16 li-bullet-0">
+          <span class="c1"><input type="checkbox" id="banera-limpia" /> <label for="banera-limpia">Limpia</label></span>
+        </li>
+        <li class="c5 c16 li-bullet-0">
+          <span class="c1"><input type="checkbox" id="pantuflas" /> <label for="pantuflas">2 Sets de pantuflas</label></span>
+        </li>
+        <li class="c5 c16 li-bullet-0">
+          <span class="c1"><input type="checkbox" id="repelente-mosquitos" /> <label for="repelente-mosquitos">Repelente de mosquitos /Off</label></span>
+        </li>
+        <li class="c5 c16 li-bullet-0">
+          <span class="c1"><input type="checkbox" id="bloqueador-solar" /> <label for="bloqueador-solar">Bloqueador solar</label></span>
+        </li>
+        <li class="c5 c16 li-bullet-0">
+          <span class="c1"><input type="checkbox" id="toallas-banio" /> <label for="toallas-banio">2 toallas de baño</label></span>
+        </li>
+        <li class="c5 c16 li-bullet-0">
+          <span class="c1"><input type="checkbox" id="toallitas" /> <label for="toallitas">2 toallitas (washcloths)</label></span>
+        </li>
+        <li class="c5 c16 li-bullet-0">
+          <span class="c1"><input type="checkbox" id="toalla-pies" /> <label for="toalla-pies">1 Toalla de Pies</label></span>
+        </li>
+      </ul>
+      <div class="inspection-image">
+          <img
+          alt="Gabinetes"
+          src="../villatiffany/images/10389 Villa Tiffany Foto 46.JPG"
+          title=""  
+          />
+      </div>
+
+      <h3 class="subtitulo">Armario Principal</h3>
+      <ul class="lista-inspeccion">
+        <li class="c5 c16 li-bullet-0">
+          <span class="c1"><input type="checkbox" id="revisar-bombillos-armario" /> <label for="revisar-bombillos-armario">Revisar Bombillos</label></span>
+        </li>
+        <li class="c5 c16 li-bullet-0">
+          <span class="c1"><input type="checkbox" id="maletero" /> <label for="maletero">Maletero</label></span>
+        </li>
+        <li class="c5 c16 li-bullet-0">
+          <span class="c1"><input type="checkbox" id="ganchos-organizados" /> <label for="ganchos-organizados">Ganchos organizados por clase</label></span>
+        </li>
+        <li class="c5 c16 li-bullet-0">
+          <span class="c1"><input type="checkbox" id="almohadas-standard" /> <label for="almohadas-standard">Paquete de 2 almohadas standard con pillow cases, covers y frisa limpia</label></span>
+        </li>
+        <li class="c5 c16 li-bullet-0">
+          <span class="c1"><input type="checkbox" id="cajones-repisas-limpios" /> <label for="cajones-repisas-limpios">Revisar que los cajones y repisas estén vacíos y limpios</label></span>
+        </li>
+      </ul>
+      <div class="inspection-image">
+          <img
+          alt="Gabinetes"
+          src="../villatiffany/images/10389 Villa Tiffany Foto 47.JPG"
+          title=""  
+          />
+      </div>
+
+      <h3 class="subtitulo">Área de Cama y 48B</h3>
+      <ul class="lista-inspeccion">
+        <li class="c5 c16 li-bullet-0">
+          <span class="c1"><input type="checkbox" id="revisar-bombillos-techo" /> <label for="revisar-bombillos-techo">Revisar bombillos techo</label></span>
+        </li>
+        <li class="c5 c16 li-bullet-0">
+          <span class="c1"><input type="checkbox" id="cortinas-limpias" /> <label for="cortinas-limpias">Cortinas limpias</label></span>
+        </li>
+        <li class="c5 c16 li-bullet-0">
+          <span class="c1"><input type="checkbox" id="revisar-detras-cortinas" /> <label for="revisar-detras-cortinas">Revisar detrás de las cortinas</label></span>
+        </li>
+        <li class="c5 c16 li-bullet-0">
+          <span class="c1"><input type="checkbox" id="botellas-agua" /> <label for="botellas-agua">1 botella de agua en cada mesita de noche (2 total)</label></span>
+        </li>
+        <li class="c5 c16 li-bullet-0">
+          <span class="c1"><input type="checkbox" id="revisar-bombillos-mesitas" /> <label for="revisar-bombillos-mesitas">Revisar bombillos mesitas de noche</label></span>
+        </li>
+        <li class="c5 c16 li-bullet-0">
+          <span class="c1"><input type="checkbox" id="almohadas-king" /> <label for="almohadas-king">4 almohadas king con pillow cover</label></span>
+        </li>
+        <li class="c5 c16 li-bullet-0">
+          <span class="c1"><input type="checkbox" id="mirar-debajo-cama" /> <label for="mirar-debajo-cama">Mirar debajo de la cama</label></span>
+        </li>
+        <li class="c5 c16 li-bullet-0">
+          <span class="c1"><input type="checkbox" id="gabinete-limpio" /> <label for="gabinete-limpio">Gabinete limpio y vacío</label></span>
+        </li>
+        <li class="c5 c16 li-bullet-0">
+          <span class="c1"><input type="checkbox" id="revisar-tv" /> <label for="revisar-tv">Revisar que la TV esté funcionando</label></span>
+        </li>
+        <li class="c5 c16 li-bullet-0">
+          <span class="c1"><input type="checkbox" id="libreta-notas" /> <label for="libreta-notas">Libreta de notas y lapicero sobre escritorio</label></span>
+        </li>
+        <li class="c5 c16 li-bullet-0">
+          <span class="c1"><input type="checkbox" id="libreta-notas" /> <label for="libreta-notas">Nota de QR codes para tips y sobres</label></span>
+        </li>
+      </ul>
+      <div class="images-container">
+        <div class="inspection-image">
+          <img
+          alt="Gabinetes"
+          src="../villatiffany/images/10389 Villa Tiffany Foto 48A.JPG"
+          title=""  
+          />
+      </div>
+      <div class="inspection-image">
+          <img
+          alt="Gabinetes"
+          src="../villatiffany/images/10389 Villa Tiffany Foto 48B.JPG"
+          title=""  
+          />
+        </div>
+        <div class="inspection-image">
+          <img
+          alt="Gabinetes"
+          src="../villatiffany/images/10389 Villa Tiffany Foto 48C.JPG"
+          title=""  
+          />
+        </div>
+      </div>
+
+      <h3 class="subtitulo">Balcón Dormitorio Principal</h3>
+      <ul class="lista-inspeccion">
+        <li class="c5 c16 li-bullet-0">
+          <span class="c1"><input type="checkbox" /> Piso Limpio y sin Arena</span>
+        </li>
+        <li class="c5 c16 li-bullet-0">
+          <span class="c1"><input type="checkbox" /> Cojines Limpios</span>
+        </li>
+        <li class="c5 c16 li-bullet-0">
+          <span class="c1"><input type="checkbox" /> Revisar bombillos</span>
+        </li>
+        <li class="c5 c16 li-bullet-0">
+          <span class="c1"><input type="checkbox" /> CO interior/ CI exterior</span>
+        </li>
+      </ul>
+      <div class="inspection-image">
+          <img
+            alt="Dormitorio principal"
+            src="../villatiffany/images/10389 Villa Tiffany Foto 49.JPG"
+            title=""
+          />
+        </div>
+        <h3 class="titulo-principal">Pasillo de Habitaciones de Invitados y 64B</h3>
+          <ul class="lista-inspeccion">
+            <li class="c5 c16 li-bullet-0">
+              <span class="c1"><input type="checkbox" id="armario-dueno" /> <label for="armario-dueno">Armario de dueño cerrado</label></span>
+            </li>
+            <li class="c5 c16 li-bullet-0">
+              <span class="c1"><input type="checkbox" id="revisar-bombillos" /> <label for="revisar-bombillos">Revisar bombillos</label></span>
+            </li>
+            <li class="c5 c16 li-bullet-0">
+              <span class="c1"><input type="checkbox" id="closet-calentador" /> <label for="closet-calentador">Closet del calentador limpio</label></span>
+            </li>
+          </ul>
+        <div class="images-container">
+          <div class="inspection-image">
+            <img
+              alt="habitacion"
+              src="../villatiffany/images/10389 Villa Tiffany Foto 64A.jpg"
+              title=""
+            />
+          </div>
+          <div class="inspection-image">
+            <img
+              alt="habitacion"
+              src="../villatiffany/images/10389 Villa Tiffany Foto 64B.jpg"
+              title=""
+            />
+        </div>
+        </div>
+
+        <h3 class="subtitulo">Tercer Dormitorio al Inicio del Pasillo</h3>
+        <ul class="lista-inspeccion">
+          <li class="c5 c16 li-bullet-0">
+            <span class="c1"><input type="checkbox" /> Puerta limpia</span>
+          </li>
+          <li class="c5 c16 li-bullet-0">
+            <span class="c1"><input type="checkbox" /> Revisar bombillos techo</span>
+          </li>
+          <li class="c5 c16 li-bullet-0">
+            <span class="c1"><input type="checkbox" /> Abrir cajones de mesitas de noche</span>
+          </li>
+          <li class="c5 c16 li-bullet-0">
+            <span class="c1"><input type="checkbox" /> Revisar bombillos mesitas de noche</span>
+          </li>
+          <li class="c5 c16 li-bullet-0">
+            <span class="c1"><input type="checkbox" /> 4 almohadas King con pillow covers</span>
+          </li>
+          <li class="c5 c16 li-bullet-0">
+            <span class="c1"><input type="checkbox" /> 1 botella de agua en cada mesita de noche (2 total)</span>
+          </li>
+          <li class="c5 c16 li-bullet-0">
+            <span class="c1"><input type="checkbox" /> Mirar debajo de la cama</span>
+          </li>
+          <li class="c5 c16 li-bullet-0">
+            <span class="c1"><input type="checkbox" /> Revisar debajo de la alfombra</span>
+          </li>
+          <li class="c5 c16 li-bullet-0">
+            <span class="c1"><input type="checkbox" /> Cortinas limpias</span>
+          </li>
+          <li class="c5 c16 li-bullet-0">
+            <span class="c1"><input type="checkbox" /> Revisar detrás de las cortinas</span>
+          </li>
+          <li class="c5 c16 li-bullet-0">
+            <span class="c1"><input type="checkbox" /> Armario de dueño cerrado</span>
+          </li>
+        </ul>
+        <div class="images-container">
+          <div class="inspection-image">
+            <img
+              alt="habitacion"
+              src="../villatiffany/images/10389 Villa Tiffany Foto 50A.jpg"
+              title=""
+            />
+          </div>
+          <div class="inspection-image">
+            <video controls width="100%">
+              <source src="../villatiffany/images/10389 Villa Tiffany Foto 50B.mov" type="video/mp4">
+            </video>
+          </div>
+        <div class="inspection-image">
+            <img
+              alt="habitacion"
+              src="../villatiffany/images/10389 Villa Tiffany Foto 50C.jpg"
+              title=""
+            />
+          </div>
+        </div>
+
+    <h3 class="subtitulo2">Armario del Tercer Dormitorio al Inicio del Pasillo</h3>
+    <ul class="lista-inspeccion">
+      <li class="c5 c16 li-bullet-0">
+        <span class="c1"><input type="checkbox" /> Revisar Bombillos</span>
+      </li>
+      <li class="c5 c16 li-bullet-0">
+        <span class="c1"><input type="checkbox" /> Maletero</span>
+      </li>
+      <li class="c5 c16 li-bullet-0">
+        <span class="c1"><input type="checkbox" /> Ganchos organizados por clase</span>
+      </li>
+      <li class="c5 c16 li-bullet-0">
+        <span class="c1"><input type="checkbox" /> Paquete de 2 almohadas standard con pillow cases, covers y frisa limpia</span>
+      </li>
+      <li class="c5 c16 li-bullet-0">
+        <span class="c1"><input type="checkbox" /> Revisar que los cajones y repisas estén vacíos y limpios</span>
+      </li>
+    </ul>
+    <div class="inspection-image">
+        <img
+          alt="habitacion"
+          src="../villatiffany/images/10389 Villa Tiffany Foto 51.JPG"
+          title=""
+        />
+      </div>
+
+
+    <h3 class="subtitulo2">Tercer Baño</h3>
+    <ul class="lista-inspeccion">
+      <li class="c5 c16 li-bullet-0">
+        <span class="c1"><input type="checkbox" id="revisar-bombillos-bano" /> <label for="revisar-bombillos-bano">Revisar bombillos</label></span>
+      </li>
+      <li class="c5 c16 li-bullet-0">
+        <span class="c1"><input type="checkbox" id="revisar-abanico" /> <label for="revisar-abanico">Revisar abanico</label></span>
+      </li>
+      <li class="c5 c16 li-bullet-0">
+        <span class="c1"><input type="checkbox" id="toalla-pies" /> <label for="toalla-pies">1 toalla para pies</label></span>
+      </li>
+      <li class="c5 c16 li-bullet-0">
+        <span class="c1"><input type="checkbox" id="jabonera-limpia" /> <label for="jabonera-limpia">Jabonera limpia</label></span>
+      </li>
+      <li class="c5 c16 li-bullet-0">
+        <span class="c1"><input type="checkbox" id="inodoro-limpio" /> <label for="inodoro-limpio">Inodoro limpio y funcionando</label></span>
+      </li>
+    </ul>
+    <div class="inspection-image">
+        <img
+          alt="habitacion"
+          src="../villatiffany/images/10389 Villa Tiffany Foto 52.jpg"
+          title=""
+        />
+      </div>
+
+    <h3 class="subtitulo2">Tope de Lavamanos</h3>
+    <ul class="lista-inspeccion">
+      <li class="c5 c16 li-bullet-0">
+        <span class="c1"><input type="checkbox" id="lavamanos-funcionando" /> <label for="lavamanos-funcionando">Lavamanos funcionando y limpio</label></span>
+      </li>
+      <li class="c5 c16 li-bullet-0">
+        <span class="c1"><input type="checkbox" id="jabon" /> <label for="jabon">1 jabón</label></span>
+      </li>
+      <li class="c5 c16 li-bullet-0">
+        <span class="c1"><input type="checkbox" id="shampoo" /> <label for="shampoo">1 shampoo</label></span>
+      </li>
+      <li class="c5 c16 li-bullet-0">
+        <span class="c1"><input type="checkbox" id="acondicionador" /> <label for="acondicionador">1 acondicionador</label></span>
+      </li>
+      <li class="c5 c16 li-bullet-0">
+        <span class="c1"><input type="checkbox" id="gel-cuerpo" /> <label for="gel-cuerpo">1 gel para cuerpo</label></span>
+      </li>
+      <li class="c5 c16 li-bullet-0">
+        <span class="c1"><input type="checkbox" id="lotion-cuerpo" /> <label for="lotion-cuerpo">1 loción corporal</label></span>
+      </li>
+      <li class="c5 c16 li-bullet-0">
+        <span class="c1"><input type="checkbox" id="aguas" /> <label for="aguas">2 aguas</label></span>
+      </li>
+      <li class="c5 c16 li-bullet-0">
+        <span class="c1"><input type="checkbox" id="vasito-limpio" /> <label for="vasito-limpio">Vasito limpio</label></span>
+      </li>
+      <li class="c5 c16 li-bullet-0">
+        <span class="c1"><input type="checkbox" id="jabon-liquido" /> <label for="jabon-liquido">Jabón líquido lleno</label></span>
+      </li>
+      <li class="c5 c16 li-bullet-0">
+        <span class="c1"><input type="checkbox" id="kleenex" /> <label for="kleenex">Kleenex</label></span>
+      </li>
+      <li class="c5 c16 li-bullet-0">
+        <span class="c1"><input type="checkbox" id="toalla-mano" /> <label for="toalla-mano">1 toalla de mano</label></span>
+      </li>
+      <li class="c5 c16 li-bullet-0">
+        <span class="c1"><input type="checkbox" id="toalla-maquillaje" /> <label for="toalla-maquillaje">1 toalla de maquillaje</label></span>
+      </li>
+    </ul>
+    <div class="inspection-image">
+        <img
+          alt="habitacion"
+          src="../villatiffany/images/10389 Villa Tiffany Foto 53.JPG"
+          title=""
+        />
+      </div>
+
+    <h3 class="subtitulo2">Gabinete</h3>
+    <ul class="lista-inspeccion">
+      <li class="c5 c16 li-bullet-0">
+        <span class="c1"><input type="checkbox" id="abrir-gabinetes" /> <label for="abrir-gabinetes">Abrir los gabinetes</label></span>
+      </li>
+      <li class="c5 c16 li-bullet-0">
+        <span class="c1"><input type="checkbox" id="papel-higienico" /> <label for="papel-higienico">2 papeles higiénicos extras</label></span>
+      </li>
+    </ul>
+    <div class="inspection-image">
+        <img
+          alt="habitacion"
+          src="../villatiffany/images/10389 Villa Tiffany Foto 54.JPG"
+          title=""
+        />
+      </div>
+
+    <h3 class="subtitulo">Cuarto de Lavado (Laundry)</h3>
+    <ul class="lista-inspeccion">
+      <li class="c5 c16 li-bullet-0">
+        <span class="c1"><input type="checkbox" /> Revisar bombillos</span>
+      </li>
+      <li class="c5 c16 li-bullet-0">
+        <span class="c1"><input type="checkbox" /> Abrir gabinetes y que estén limpios y organizados</span>
+      </li>
+      <li class="c5 c16 li-bullet-0">
+        <span class="c1"><input type="checkbox" /> Revisar encima de gabinetes</span>
+      </li>
+      <li class="c5 c16 li-bullet-0">
+        <span class="c1"><input type="checkbox" /> Jabón de ropa</span>
+      </li>
+      <li class="c5 c16 li-bullet-0">
+        <span class="c1"><input type="checkbox" /> Plancha</span>
+      </li>
+    </ul>
+    <div class="inspection-image">
+        <img
+          alt="habitacion"
+          src="../villatiffany/images/10389 Villa Tiffany Foto 55.JPG"
+          title=""
+        />
+      </div>
+
+    <h3 class="subtitulo2">Lavadora y Secadora</h3>
+    <ul class="lista-inspeccion">
+      <li class="c5 c16 li-bullet-0">
+        <span class="c1"><input type="checkbox" id="revision-maquinas" /> <label for="revision-maquinas">Revisión del interior de las máquinas</label></span>
+      </li>
+      <li class="c5 c16 li-bullet-0">
+        <span class="c1"><input type="checkbox" id="filtro-secadora" /> <label for="filtro-secadora">Revisar filtro de secadora</label></span>
+      </li>
+      <li class="c5 c16 li-bullet-0">
+        <span class="c1"><input type="checkbox" id="compartimiento-jabon" /> <label for="compartimiento-jabon">Revisar compartimiento de jabón de lavadora</label></span>
+      </li>
+      <li class="c5 c16 li-bullet-0">
+        <span class="c1"><input type="checkbox" id="detras-lavadora" /> <label for="detras-lavadora">Revisar detrás de lavadora</label></span>
+      </li>
+      <li class="c5 c16 li-bullet-0">
+        <span class="c1"><input type="checkbox" id="encima-secadora" /> <label for="encima-secadora">Revisar encima de secadora</label></span>
+      </li>
+    </ul>
+    <div class="images-container">
+      <div class="inspection-image">
+        <img
+          alt="habitacion"
+          src="../villatiffany/images/10389 Villa Tiffany Foto 56A.JPG"
+          title=""
+        />
+      </div>
+      <div class="inspection-image">
+        <img
+          alt="habitacion"
+          src="../villatiffany/images/10389 Villa Tiffany Foto 56B.JPG"
+          title=""
+        />
+      </div>
+      <div class="inspection-image">
+        <img
+          alt="habitacion"
+          src="../villatiffany/images/10389 Villa Tiffany Foto 56C.JPG"
+          title=""
+        />
+      </div>
+      <div class="inspection-image">
+        <img
+          alt="habitacion"
+          src="../villatiffany/images/10389 Villa Tiffany Foto 56D.JPG"
+          title=""
+        />
+      </div>
+      <div class="inspection-image">
+        <img
+          alt="habitacion"
+          src="../villatiffany/images/10389 Villa Tiffany Foto 56E.JPG"
+          title=""
+        />
+      </div>
+    </div>
+    <h3 class="subtitulo2">Closet Aire Acondicionado</h3>
+    <ul class="lista-inspeccion">
+      <li class="c5 c16 li-bullet-0">
+        <span class="c1"><input type="checkbox" /> Escoba limpia</span>
+      </li>
+      <li class="c5 c16 li-bullet-0">
+        <span class="c1"><input type="checkbox" /> Recogedor limpio</span>
+      </li>
+      <li class="c5 c16 li-bullet-0">
+        <span class="c1"><input type="checkbox" /> Mapo limpio</span>
+      </li>
+      <li class="c5 c16 li-bullet-0">
+        <span class="c1"><input type="checkbox" /> Tabla de planchar</span>
+      </li>
+      <li class="c5 c16 li-bullet-0">
+        <span class="c1"><input type="checkbox" /> Valde</span>
+      </li>
+      <li class="c5 c16 li-bullet-0">
+        <span class="c1"><input type="checkbox" /> Escalera</span>
+      </li>
+    </ul>
+    <div class="images-container">
+      <div class="inspection-image">
+        <img
+          alt="habitacion"
+          src="../villatiffany/images/10389 Villa Tiffany Foto 57.JPG"
+          title=""
+        />
+      </div>
+    </div>
+
+    <h3 class="subtitulo">Cuarto Dormitorio al Final del Pasillo</h3>
+    <ul class="lista-inspeccion">
+      <li class="c5 c16 li-bullet-0">
+        <span class="c1"><input type="checkbox" /> Puerta limpia</span>
+      </li>
+      <li class="c5 c16 li-bullet-0">
+        <span class="c1"><input type="checkbox" /> Revisar bombillos techo</span>
+      </li>
+      <li class="c5 c16 li-bullet-0">
+        <span class="c1"><input type="checkbox" /> Abrir cajones de mesitas de noche</span>
+      </li>
+      <li class="c5 c16 li-bullet-0">
+        <span class="c1"><input type="checkbox" /> Revisar bombillos mesitas de noche</span>
+      </li>
+      <li class="c5 c16 li-bullet-0">
+        <span class="c1"><input type="checkbox" /> 2 almohadas standard y 2 king con pillow covers</span>
+      </li>
+      <li class="c5 c16 li-bullet-0">
+        <span class="c1"><input type="checkbox" /> 1 botella de agua en cada mesita de noche (2 total)</span>
+      </li>
+      <li class="c5 c16 li-bullet-0">
+        <span class="c1"><input type="checkbox" /> Mirar debajo de la cama</span>
+      </li>
+      <li class="c5 c16 li-bullet-0">
+        <span class="c1"><input type="checkbox" /> Revisar debajo de la alfombra</span>
+      </li>
+      <li class="c5 c16 li-bullet-0">
+        <span class="c1"><input type="checkbox" /> Cortinas limpias</span>
+      </li>
+      <li class="c5 c16 li-bullet-0">
+        <span class="c1"><input type="checkbox" /> Revisar detrás de las cortinas</span>
+      </li>
+    </ul>
+    <div class="images-container">
+      <div class="inspection-image">
+        <img
+          alt="habitacion"
+          src="../villatiffany/images/10389 Villa Tiffany Foto 58.JPG"
+          title=""
+        />
+      </div>
+    </div>
+    <h3 class="subtitulo2">Balcón de Cuarto Dormitorio</h3>
+    <ul class="lista-inspeccion">
+      <li class="c5 c16 li-bullet-0">
+        <span class="c1"><input type="checkbox" /> Piso limpio y sin arena</span>
+      </li>
+      <li class="c5 c16 li-bullet-0">
+        <span class="c1"><input type="checkbox" /> Cojines limpios</span>
+      </li>
+      <li class="c5 c16 li-bullet-0">
+        <span class="c1"><input type="checkbox" /> Revisar bombillos</span>
+      </li>
+      <li class="c5 c16 li-bullet-0">
+        <span class="c1"><input type="checkbox" /> CO interior/ CI exterior</span>
+      </li>
+    </ul>
+    <div class="images-container">
+      <div class="inspection-image">
+        <img
+          alt="Balcón dormitorio"
+          src="../villatiffany/images/10389 Villa Tiffany Foto 59.JPG"
+          title=""
+        />
+      </div>
+    </div>
+
+
+    <h3 class="subtitulo2">Armario del Cuarto Dormitorio</h3>
+    <ul class="lista-inspeccion">
+      <li class="c5 c16 li-bullet-0">
+        <span class="c1"><input type="checkbox" /> Revisar Bombillos</span>
+      </li>
+      <li class="c5 c16 li-bullet-0">
+        <span class="c1"><input type="checkbox" /> Maletero</span>
+      </li>
+      <li class="c5 c16 li-bullet-0">
+        <span class="c1"><input type="checkbox" /> Ganchos organizados por clase</span>
+      </li>
+      <li class="c5 c16 li-bullet-0">
+        <span class="c1"><input type="checkbox" /> Paquete de 2 almohadas standard con pillow cases, covers y frisa limpia</span>
+      </li>
+      <li class="c5 c16 li-bullet-0">
+        <span class="c1"><input type="checkbox" /> Revisar que los cajones y repisas estén vacíos y limpios</span>
+      </li>
+    </ul>
+    <div class="images-container">
+      <div class="inspection-image">
+        <img
+          alt="Armario dormitorio"
+          src="../villatiffany/images/10389 Villa Tiffany Foto 60A.JPG"
+          title=""
+        />
+      </div>
+    </div>
+    <div class="inspection-image">
+      <img
+        alt="Armario dormitorio"
+        src="../villatiffany/images/10389 Villa Tiffany Foto 60B.JPG"
+          title=""
+        />
+    </div> 
+    </div>   
+
+    <h3 class="subtitulo2">Cuarto Baño</h3>
+    <ul class="lista-inspeccion">
+      <li class="c5 c16 li-bullet-0">
+        <span class="c1"><input type="checkbox" /> Revisar bombillos</span>
+      </li>
+      <li class="c5 c16 li-bullet-0">
+        <span class="c1"><input type="checkbox" /> Revisar abanico</span>
+      </li>
+      <li class="c5 c16 li-bullet-0">
+        <span class="c1"><input type="checkbox" /> 1 toalla para pies</span>
+      </li>
+      <li class="c5 c16 li-bullet-0">
+        <span class="c1"><input type="checkbox" /> Jabonera limpia</span>
+      </li>
+      <li class="c5 c16 li-bullet-0">
+        <span class="c1"><input type="checkbox" /> Inodoro limpio y funcionando</span>
+      </li>
+      <li class="c5 c16 li-bullet-0">
+        <span class="c1"><input type="checkbox" id="zafacón-limpio" /> <label for="zafacón-limpio">Zafacón limpio</label></span>
+      </li>
+      <li class="c5 c16 li-bullet-0">
+        <span class="c1"><input type="checkbox" id="cepillo-inodoro" /> <label for="cepillo-inodoro">Cepillo de inodoro</label></span>
+      </li>
+      <li class="c5 c16 li-bullet-0">
+        <span class="c1"><input type="checkbox" id="toallas-bano" /> <label for="toallas-bano">2 toallas de baño</label></span>
+      </li>
+      <li class="c5 c16 li-bullet-0">
+        <span class="c1"><input type="checkbox" id="washcloth" /> <label for="washcloth">1 washcloth</label></span>
+      </li>
+    </ul>
+    <div class="images-container">
+    <div class="inspection-image">
+      <img
+        alt="Baño"
+        src="../villatiffany/images/10389 Villa Tiffany Foto 61A.JPG"
+        title=""
+        />
+    </div>
+    <div class="inspection-image">
+      <img
+        alt="Baño"
+        src="../villatiffany/images/10389 Villa Tiffany Foto 61B.JPG"
+          title=""
+        />
+    </div>
+    <div class="inspection-image">
+      <img
+        alt="Baño"
+        src="../villatiffany/images/10389 Villa Tiffany Foto 61C.JPG"
+          title=""
+        />
+    </div>
+    </div>
+
+    <h3 class="subtitulo2">Tope de Lavamanos</h3>
+    <ul class="lista-inspeccion">
+      <li class="c5 c16 li-bullet-0">
+        <span class="c1"><input type="checkbox" /> Lavamanos funcionando y limpio</span>
+      </li>
+      <li class="c5 c16 li-bullet-0">
+        <span class="c1"><input type="checkbox" /> 1 jabón</span>
+      </li>
+      <li class="c5 c16 li-bullet-0">
+        <span class="c1"><input type="checkbox" /> 1 shampoo</span>
+      </li>
+      <li class="c5 c16 li-bullet-0">
+        <span class="c1"><input type="checkbox" /> 1 acondicionador</span>
+      </li>
+      <li class="c5 c16 li-bullet-0">
+        <span class="c1"><input type="checkbox" /> 1 gel para cuerpo</span>
+      </li>
+      <li class="c5 c16 li-bullet-0">
+        <span class="c1"><input type="checkbox" /> 1 loción corporal</span>
+      </li>
+      <li class="c5 c16 li-bullet-0">
+        <span class="c1"><input type="checkbox" /> 2 aguas</span>
+      </li>
+      <li class="c5 c16 li-bullet-0">
+        <span class="c1"><input type="checkbox" /> Vasito limpio</span>
+      </li>
+      <li class="c5 c16 li-bullet-0">
+        <span class="c1"><input type="checkbox" /> Jabón líquido lleno</span>
+      </li>
+      <li class="c5 c16 li-bullet-0">
+        <span class="c1"><input type="checkbox" /> Kleenex</span>
+      </li>
+      <li class="c5 c16 li-bullet-0">
+        <span class="c1"><input type="checkbox" /> 1 toalla de mano</span>
+      </li>
+      <li class="c5 c16 li-bullet-0">
+        <span class="c1"><input type="checkbox" /> 1 toalla de maquillaje</span>
+      </li>
+    </ul>
+    <div class="inspection-image">
+        <img
+          alt="Tope de lavamanos"
+          src="../villatiffany/images/10389 Villa Tiffany Foto 62.JPG"
+          title=""
+        />
+      </div>
+
+    <h3 class="subtitulo2">Gabinete</h3>
+    <ul class="lista-inspeccion">
+      <li class="c5 c16 li-bullet-0">
+        <span class="c1"><input type="checkbox" /> Abrir los gabinetes</span>
+      </li>
+      <li class="c5 c16 li-bullet-0">
+        <span class="c1"><input type="checkbox" /> 2 papeles higiénicos extras</span>
+      </li>
+    </ul>
+      <div class="inspection-image">
+        <img
+          alt="Gabinete"
+          src="../villatiffany/images/10389 Villa Tiffany Foto 63.jpeg"
+          title=""
+        />
+      </div>
+
+    <h3 class="titulo-principal">Carro de Golf</h3>
+    <ul class="lista-inspeccion">
+      <li class="c5 c16 li-bullet-0">
+        <span class="c1"><input type="checkbox" /> Conectado</span>
+      </li>
+      <li class="c5 c16 li-bullet-0">
+        <span class="c1"><input type="checkbox" /> Funcionando</span>
+      </li>
+      <li class="c5 c16 li-bullet-0">
+        <span class="c1"><input type="checkbox" /> Limpio</span>
+      </li>
+      <li class="c5 c16 li-bullet-0">
+        <span class="c1"><input type="checkbox" /> Llenar papel de inspección y enviarlo</span>
+      </li>
+    </ul>
+    <div class="images-container">
+      <div class="inspection-image">
+        <img
+          alt="Carro de golf"
+          src="../villatiffany/images/10389 Villa Tiffany Foto 65A.JPG"
+          title=""
+        />
+      </div>
+      <div class="inspection-image">
+      <img
+        alt="Carro de golf"
+        src="../villatiffany/images/10389 Villa Tiffany Foto 65B.JPG"
+          title=""
+        />
+      </div>
+    </div>
