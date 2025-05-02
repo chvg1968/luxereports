@@ -7,6 +7,54 @@
     <link rel="stylesheet" href="/css/style.css">
     <style>
       /* Estilos generales */
+      body {
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+        color: #333;
+        margin: 0;
+        padding: 0;
+      }
+      
+      .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 15px;
+      }
+      
+      /* Encabezado */
+      .header-insp {
+        background-color: #f8f9fa;
+        padding: 20px 0;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        margin-bottom: 30px;
+      }
+      
+      .banner {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      
+      .banner img {
+        max-width: 300px;
+        height: auto;
+      }
+      
+      .home a {
+        color: #007bff;
+        text-decoration: none;
+        font-weight: bold;
+        padding: 8px 15px;
+        border-radius: 4px;
+        border: 1px solid #007bff;
+        transition: all 0.3s ease;
+      }
+      
+      .home a:hover {
+        background-color: #007bff;
+        color: white;
+      }
+      
       /* Secciones de inspección */
       .titulo-principal {
         color: #0056b3;
@@ -53,29 +101,85 @@
       }
       
       /* Imágenes */
-      .images-container {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        gap: 10px;
-        margin: 10px 0;
-      }
-      
       .inspection-image {
-        width: 239.4px;
-        height: 160.4px;
-        margin: 0;
+        max-width: 500px;
+        margin: 15px 0 15px 60px;
+        border: 1px solid #ddd;
+        border-radius: 4px;
         overflow: hidden;
-        flex-shrink: 0;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.1);
       }
       
       .inspection-image img {
         width: 100%;
-        height: 100%;
+        height: auto;
+        display: block;
+      }
+      
+      .foto-section {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 15px;
+        margin-left: 60px;
+      }
+      
+      .foto-section .inspection-image {
         margin: 0;
-        transform: rotate(0rad) translateZ(0px);
-        -webkit-transform: rotate(0rad) translateZ(0px);
-        object-fit: cover;
+        width: calc(50% - 15px);
+        max-width: 400px;
+      }
+      
+      /* Observaciones y firma */
+      .observaciones {
+        margin: 30px 0 30px 20px;
+      }
+      
+      .observaciones textarea {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+        font-family: inherit;
+        font-size: 16px;
+      }
+      
+      .firma {
+        margin: 30px 0 50px 20px;
+        padding: 20px;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+        background-color: #f9f9f9;
+      }
+      
+      .firma input {
+        padding: 8px;
+        margin-bottom: 15px;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+        font-size: 16px;
+      }
+      
+      /* Responsive */
+      @media (max-width: 768px) {
+        .foto-section {
+          flex-direction: column;
+        }
+        
+        .foto-section .inspection-image {
+          width: 100%;
+        }
+        
+        .lista-inspeccion {
+          margin-left: 30px;
+        }
+        
+        .subtitulo {
+          margin-left: 10px;
+        }
+        
+        .subtitulo2 {
+          margin-left: 20px;
+        }
       }
     </style>
   </head>
@@ -114,7 +218,7 @@
           <span class="c1"><input type="checkbox" id="lockbox-llave" /> <label for="lockbox-llave">Lockbox con llave adentro</label></span>
         </li>
       </ul>
-      <div class="images-container">
+      <p class="c9">
         <div class="inspection-image">
           <img
             alt="General"
@@ -122,7 +226,7 @@
             title=""
           />
         </div>
-      </div>
+      </p>
 
       <!-- 2. Áreas Sociales -->
       <h3 class="titulo-principal">Áreas Sociales</h3>
@@ -140,14 +244,14 @@
           <span class="c1"><input type="checkbox" id="extintor" /> <label for="extintor">Extintor</label></span>
         </li>
       </ul>
-      <div class="images-container">
+      <p class="c9">
         <div class="inspection-image">
           <img
             alt="Entrada"
             src="../villatiffany/images/10389 Villa Tiffany Foto 2.jpeg"
             title="">
         </div>
-      </div>
+      </p>
 
       <!-- 2.b. Cocina -->
       <h3 class="subtitulo">Cocina</h3>
@@ -165,7 +269,7 @@
           <span class="c1"><input type="checkbox" id="alarma-monoxido" /> <label for="alarma-monoxido">Alarma de monóxido</label></span>
         </li>
       </ul>
-      <div class="images-container">
+      <p class="c9">
         <div class="inspection-image">
           <img
             alt="Cocina"
@@ -173,7 +277,7 @@
             title=""
           />
         </div>
-      </div>
+      </p>
 
       <!-- 2.c. Amenidades de Bienvenida -->
       <h3 class="subtitulo">Amenidades de Bienvenida</h3>
@@ -206,7 +310,7 @@
           <span class="c1"><input type="checkbox" id="hielo" /> <label for="hielo">Hielo para CI</label></span>
         </li>
       </ul>
-      <div class="images-container">
+      <p class="c9">
         <div class="inspection-image">
           <img
             alt="Amenidades de bienvenida"
@@ -214,7 +318,7 @@
             title=""
           />
         </div>
-      </div>
+      </p>
 
       <!-- 2.d. Área de Estufa -->
       <h3 class="subtitulo">Área de Estufa</h3>
@@ -229,7 +333,7 @@
           <span class="c1"><input type="checkbox" id="salero-pimentero" /> <label for="salero-pimentero">Salero y pimentero</label></span>
         </li>
       </ul>
-      <div class="images-container">
+      <p class="c9">
         <div class="inspection-image">
           <img
             alt="Área de estufa"
@@ -237,7 +341,7 @@
             title=""
           />
         </div>
-      </div>
+      </p>
 
       <!-- 2.e. Cajones y Gabinetes de Isla -->
       <h3 class="subtitulo">Cajones y Gabinetes de Isla</h3>
@@ -265,7 +369,7 @@
           <span class="c1"><input type="checkbox" id="clips" /> <label for="clips">Clips</label></span>
         </li>
       </ul>
-      <div class="images-container">
+      <p class="c9">
         <div class="inspection-image">
           <img
             alt="Primer cajón derecha"
@@ -273,7 +377,7 @@
             title=""
           />
         </div>
-      </div>
+      </p>
 
       <h3 class="subtitulo2">Segundo Cajón Derecha de Estufa</h3>
       <ul class="lista-inspeccion">
@@ -281,7 +385,7 @@
           <span class="c1"><input type="checkbox" id="guantes-coge-olla" /> <label for="guantes-coge-olla">Guantes y coge olla limpios</label></span>
         </li>
       </ul>
-      <div class="images-container">
+      <p class="c9">
         <div class="inspection-image">
           <img
             alt="Segundo cajón derecha"
@@ -289,7 +393,7 @@
             title=""
           />
         </div>
-      </div>
+      </p>
 
       <h3 class="subtitulo2">Primer Cajón Izquierda de Estufa</h3>
       <ul class="lista-inspeccion">
@@ -297,7 +401,7 @@
           <span class="c1"><input type="checkbox" id="utensilios-cocina" /> <label for="utensilios-cocina">Utensilios de cocina, tazas/cucharas medidoras y sacacorchos limpios y organizados</label></span>
         </li>
       </ul>
-      <div class="images-container">
+      <p class="c9">
         <div class="inspection-image">
           <img
             alt="Primer cajón izquierda"
@@ -305,7 +409,7 @@
             title=""
           />
         </div>
-      </div>
+      </p>
 
       <h3 class="subtitulo2">Segundo Cajón de Izquierda de Estufa Antes de Vinera</h3>
       <ul class="lista-inspeccion">
@@ -316,7 +420,7 @@
           <span class="c1"><input type="checkbox" id="cubiertos-suficientes" /> <label for="cubiertos-suficientes">Contabilizar que haya suficientes cubiertos para 8 personas</label></span>
         </li>
       </ul>
-      <div class="images-container">
+      <p class="c9">
         <div class="inspection-image">
           <img
             alt="Segundo cajón izquierda"
@@ -324,7 +428,7 @@
             title=""
           />
         </div>
-      </div>
+      </p>
 
       <h3 class="subtitulo2">Primer Gabinete Derecho Debajo de Estufa</h3>
       <ul class="lista-inspeccion">
@@ -335,7 +439,7 @@
           <span class="c1"><input type="checkbox" id="tablas-cortar" /> <label for="tablas-cortar">Tablas de Cortar</label></span>
         </li>
       </ul>
-      <div class="images-container">
+      <p class="c9">
         <div class="inspection-image">
           <img
             alt="Primer gabinete derecho"
@@ -343,7 +447,7 @@
             title=""
           />
         </div>
-      </div>
+      </p>
 
       <h3 class="subtitulo2">Gabinete Debajo de Estufa</h3>
       <ul class="lista-inspeccion">
@@ -351,7 +455,7 @@
           <span class="c1"><input type="checkbox" id="ollas-sartenes" /> <label for="ollas-sartenes">Revisar que las Ollas y Sartenes Estén Limpios y Organizados</label></span>
         </li>
       </ul>
-      <div class="images-container">
+      <p class="c9">
         <div class="inspection-image">
           <img
             alt="Gabinete debajo de estufa"
@@ -359,7 +463,7 @@
             title=""
           />
         </div>
-      </div>
+      </p>
 
       <h3 class="subtitulo2">Gabinete Izquierdo Debajo de Estufa</h3>
       <ul class="lista-inspeccion">
@@ -373,7 +477,7 @@
           <span class="c1"><input type="checkbox" id="tazas-medidoras" /> <label for="tazas-medidoras">Tazas Medidoras</label></span>
         </li>
       </ul>
-      <div class="images-container">
+      <p class="c9">
         <div class="inspection-image">
           <img
             alt="Gabinete izquierdo"
@@ -381,7 +485,7 @@
             title=""
           />
         </div>
-      </div>
+      </p>
 
       <h3 class="subtitulo">Vinera</h3>
       <ul class="lista-inspeccion">
@@ -389,7 +493,7 @@
           <span class="c1"><input type="checkbox" id="nevera-vacia" /> <label for="nevera-vacia">Vacía y Limpia</label></span>
         </li>
       </ul>
-      <div class="images-container">
+      <p class="c9">
         <div class="inspection-image">
           <img
             alt="Vinera"
@@ -397,7 +501,7 @@
             title=""
           />
         </div>
-      </div>
+      </p>
 
       <!-- 2.f. Refrigerador -->
       <h3 class="subtitulo">Refrigerador</h3>
@@ -2122,20 +2226,21 @@
         <span class="c1"><input type="checkbox" /> Llenar papel de inspección y enviarlo</span>
       </li>
     </ul>
-    <div class="images-container">
-    <div class="inspection-image">
-      <img
-        alt="Carro de golf"
-        src="../villatiffany/images/10389 Villa Tiffany Foto 65A.JPG"
-        title=""
-        />
-      </div>
-    </div>
-    <div class="inspection-image">
-      <img
-        alt="Carro de golf"
-        src="../villatiffany/images/10389 Villa Tiffany Foto 65B.JPG"
+    <p class="c9">
+      <div class="inspection-image">
+        <img
+          alt="Carro de golf"
+          src="../villatiffany/images/10389 Villa Tiffany Foto 65A.JPG"
           title=""
         />
       </div>
-    </div>
+    </p>
+    <p class="c9">
+      <div class="inspection-image">
+        <img
+          alt="Carro de golf"
+          src="../villatiffany/images/10389 Villa Tiffany Foto 65B.JPG"
+          title=""
+        />
+      </div>
+    </p>
