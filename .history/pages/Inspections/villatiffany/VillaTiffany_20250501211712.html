@@ -6,31 +6,52 @@
     <title>Villa Tiffany - Inspección</title>
     <link rel="stylesheet" href="/css/style.css">
     <style>
-     
-       /* Reglas de indentación */
-    :root {
-      --indentacion-titulo: 0;
-      --indentacion-subtitulo: 2em;
-      --indentacion-subtitulo2: 4em;
-      --indentacion-lista: 4em;
-    }
-
-    .titulo-principal {
-      margin-left: var(--indentacion-titulo);
-    }
-
-    .subtítulo {
-      margin-left: var(--indentacion-subtitulo);
-    }
-
-    .subtítulo2 {
-      margin-left: var(--indentacion-subtitulo2);
-    }
-
-    .lista-inspeccion {
-      text-indent: var(--indentacion-lista);
-    }
-     
+      /* Estilos generales */
+      /* Secciones de inspección */
+      .titulo-principal {
+        color: #0056b3;
+        border-bottom: 2px solid #0056b3;
+        padding-bottom: 10px;
+        margin-top: 40px;
+        margin-bottom: 20px;
+        font-size: 24px;
+      }
+      
+      .subtitulo {
+        color: #007bff;
+        margin-left: 20px;
+        margin-top: 25px;
+        margin-bottom: 15px;
+        font-size: 20px;
+      }
+      
+      .subtitulo2 {
+        color: #17a2b8;
+        margin-left: 40px;
+        margin-top: 15px;
+        margin-bottom: 10px;
+        font-size: 18px;
+      }
+      
+      /* Listas de inspección */
+      .lista-inspeccion {
+        margin-left: 60px;
+        padding-left: 0;
+        list-style-type: none;
+      }
+      
+      .lista-inspeccion li {
+        margin-bottom: 8px;
+        display: flex;
+        align-items: center;
+      }
+      
+      .lista-inspeccion input[type="checkbox"] {
+        margin-right: 10px;
+        width: 18px;
+        height: 18px;
+      }
+      
       /* Imágenes */
       .images-container {
         display: flex;
