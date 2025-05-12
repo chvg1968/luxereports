@@ -8,14 +8,11 @@
 </head>
 <body>
     <script type="module">
-        // Importar función de validación desde login.js
-        import { validateUserAccess } from '../js/login.js';
-
         // Verificar autenticación y rol
         window.addEventListener('DOMContentLoaded', () => {
             const user = JSON.parse(localStorage.getItem('user'));
             
-            if (!validateUserAccess(user, 'inspeccion')) {
+            if (!user || user.role !== 'inspeccion') {
                 window.location.href = 'login.html';
             }
         });
