@@ -243,6 +243,48 @@
         }
       },
       {
+        "name": "2-105 Ocean Grace Villa",
+        "image": "/assets/Ocean Grace Villa.jpg",
+        "reports": {
+          "expenses": {
+            "src": "https://airtable.com/embed/app2zC1KWcNeBXjXp/shr393AXzWHJOJi97?viewControls=on"
+          },
+          "calendar": {
+            "src": "https://airtable.com/embed/app2zC1KWcNeBXjXp/shrvgR6ngp5mehUY1" 
+          },
+          "cleaning": {     
+            "src": "https://airtable.com/embed/app2zC1KWcNeBXjXp/shrLio2TEvEiBEJh9"
+            },
+          "payout": {
+            "src": "https://airtable.com/embed/app2zC1KWcNeBXjXp/shrOrLUDomh6jIR70?viewControls=on"
+          },
+          "owners_report": {
+            "src": "https://airtable.com/embed/app2zC1KWcNeBXjXp/shrbQq6ttPUeShcw5?viewControls=on"
+          }
+        }
+      },
+      {
+        "name": "2-101 Ocean Serenity Villa",
+        "image": "/assets/Ocean Serenity Villa.jpg",
+        "reports": {
+          "expenses": {
+            "src": "https://airtable.com/embed/app2zC1KWcNeBXjXp/shrQ8SVS7u8nW3SJG?viewControls=on"
+          },
+          "calendar": {
+            "src": "https://airtable.com/embed/app2zC1KWcNeBXjXp/shrFLqAXO6PvBJO4E" 
+          },
+          "cleaning": {     
+            "src": "https://airtable.com/embed/app2zC1KWcNeBXjXp/shrQPgRtHF1Egermw"
+            },
+          "payout": {
+            "src": "https://airtable.com/embed/app2zC1KWcNeBXjXp/shrPqxJk9NltENZvG?viewControls=on"
+          },
+          "owners_report": {
+            "src": "https://airtable.com/embed/app2zC1KWcNeBXjXp/shrePfhfddfaHBh8f?viewControls=on"
+          }
+        }
+      },
+      {
         "name": "Global",
         "image": "/assets/Global.jpg",
         "reports": {
