@@ -285,6 +285,27 @@
         }
       },
       {
+        "name": "315 Ocean View Villa",
+        "image": "/assets/Ocean View Villa.jpg",
+        "reports": {
+          "expenses": {
+            "src": "https://airtable.com/embed/app2zC1KWcNeBXjXp/shrnwo9aRJJXQGp3q?viewControls=on"
+          },
+          "calendar": {
+            "src": "https://airtable.com/embed/app2zC1KWcNeBXjXp/shr6DQoCQm7Cy37jo" 
+          },
+          "cleaning": {     
+            "src": "https://airtable.com/embed/app2zC1KWcNeBXjXp/shrdX8YEU37imm2k5"
+            },
+          "payout": {
+            "src": "https://airtable.com/embed/app2zC1KWcNeBXjXp/shrdweJo9bDymChgm?viewControls=on"
+          },
+          "owners_report": {
+            "src": "https://airtable.com/embed/app2zC1KWcNeBXjXp/shrML6tU4qZHzpLt8?viewControls=on"
+          }
+        }
+      },
+      {
         "name": "Global",
         "image": "/assets/Global.jpg",
         "reports": {
