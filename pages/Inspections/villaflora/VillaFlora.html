@@ -5,11 +5,63 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Villa Flora</title>
     <link rel="stylesheet" href="/css/style.css" />
+    <style>
+      .foto-section {
+        display: flex;
+        flex-direction: row;
+        gap: 10px; /* espacio entre imágenes */
+      }
+      
+      .inspection-image {
+        width: 239.4px;
+        height: 160.4px;
+        margin: 0;
+        overflow: hidden;
+        /* Ya no se necesita display: block; */
+      }
+      
+      .inspection-image img {
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        transform: rotate(0rad) translateZ(0px);
+        -webkit-transform: rotate(0rad) translateZ(0px);
+      }
+  
+      /* Reglas de indentación */
+      :root {
+        --indentacion-titulo: 0;
+        --indentacion-subtitulo: 2em;
+        --indentacion-subtitulo2: 4em;
+        --indentacion-subtitulo3: 8em;
+        --indentacion-lista: 4em;
+      }
+  
+      .titulo-principal {
+        margin-left: var(--indentacion-titulo);
+      }
+  
+      .subtítulo {
+        margin-left: var(--indentacion-subtitulo);
+      }
+  
+      .subtítulo2 {
+        margin-left: var(--indentacion-subtitulo2);
+      }
+  
+      .subtítulo3 {
+        margin-left: var(--indentacion-subtitulo3);
+      }
+  
+      .lista-inspeccion {
+        text-indent: var(--indentacion-lista);
+      }
+    </style>
   </head>
   <body id="checklist-page">
     <header class="header-insp">
       <div class="banner">
-        <img src="../villaflora/assets/Villa Flora.jpeg" />
+        <img src="../villaflora/assets/Villa Flora.jpeg" alt="Banner Villa Flora" />
         <div class="home">
           <a href="/pages/inspecciones.html">Menu principal</a>
           <h1 class="title_inspect">
@@ -17,912 +69,742 @@
           </h1>
         </div>
       </div>
-      
     </header>
 
     <main class="content">
-     
 
-      <h2>
-        <strong>General</strong>
-      </h2>
-
-      <ul>
-        <p>
-          <input type="checkbox" /> Puerta principal y pasillo de entrada
-          limpio.
-        </p>
-
-        <p><input type="checkbox" /> Revisar bombilla exterior</p>
-
-        <p>
-          <input type="checkbox" /> Alfombra y debajo de la alfombra limpio.
-        </p>
-
-        <p><input type="checkbox" /> Timbre funciona</p>
-
-        <p>
-          <input type="checkbox" /> Entrar preparado con trapo para limpiar y
-          secar.
-        </p>
-
-        <p><input type="checkbox" /> Wifi funcionando, abrir página nueva</p>
-
-        <p>
-          <input type="checkbox" /> Caja de seguridad de llaves (Lockbox) con
-          llave adentro.
-        </p>
-      </ul>
-      <img src="..//villaflora/assets/images/1.jpg" />
-
-      <a id="1"></a>
-      <h2>
-        <strong>Áreas sociales</strong>
-      </h2>
-      <p><strong>Entrada</strong></p>
-      <ul>
-        <p><input type="checkbox" /> Sombrilla</p>
-
-        <p><input type="checkbox" /> Revisar bombillas</p>
-
-        <p><input type="checkbox" /> Extintor</p>
-      </ul>
-      <img src="..//villaflora/assets/images/2.jpg" />
-
-      <p><strong>Cocina</strong></p>
-      <ul>
-        <p><input type="checkbox" /> 12 sobres de splenda</p>
-
-        <p><input type="checkbox" /> 12 cápsulas de café</p>
-
-        <p><input type="checkbox" /> Sal</p>
-
-        <p><input type="checkbox" /> Pimienta</p>
-      </ul>
-      <img src="..//villaflora/assets/images/3.jpg" />
-
-      <ul>
-        <p>
-          <input type="checkbox" /> Revisar limpieza en vasos, platos, ollas.
-        </p>
-
-        <p><input type="checkbox" /> Revisar bombillas</p>
-
-        <p><input type="checkbox" /> Alarma de monóxido</p>
-      </ul>
-      <img src="..//villaflora/assets/images/4.jpg" />
-
-      <ul>
-        <p><input type="checkbox" /> Primer cajón lado izquierdo</p>
-      </ul>
-      <img src="..//villaflora/assets/images/5.jpg" />
-
-      <ul>
-        <p><input type="checkbox" /> Segundo cajón lado izquierdo</p>
-      </ul>
-      <img src="..//villaflora/assets/images/6.jpg" />
-
-      <ul>
-        <p><input type="checkbox" /> Tercer cajón lado izquierdo</p>
-      </ul>
-      <img src="..//villaflora/assets/images/7.jpg" />
-      <ul>
-        <p>
-          <input type="checkbox" /> Cuchillos de cocina limpios y organizados.
-        </p>
-
-        <p><input type="checkbox" /> Guantes de cocina</p>
-      </ul>
-      <img src="..//villaflora/assets/images/8.jpg" />
-
-      <p><strong>Amenidades de bienvenida</strong></p>
-
-      <ul>
-        <p><input type="checkbox" /> Nota de bienvenida</p>
-
-        <p><input type="checkbox" /> Portfolio de bienvenida limpio</p>
-
-        <p>
-          <input type="checkbox" /> Mapa dentro de portfolio de bienvenida.
-        </p>
-
-        <p>
-          <input type="checkbox" /> Sobre de propinas en portfolio de
-          bienvenida.
-        </p>
-
-        <p>
-          <input type="checkbox" /> Añadir Tarjeta de Comentarios en portfolio
-          de bienvenida.
-        </p>
-
-        <p><input type="checkbox" /> Agua Fiji o similar</p>
-
-        <p><input type="checkbox" /> Vino o espumoso</p>
-
-        <p><input type="checkbox" /> Flautas o copas</p>
-
-        <p><input type="checkbox" /> Llaves de villa. Probarlas</p>
-
-        <p><input type="checkbox" /> Llaves de carrito. Probarlas</p>
-
-        <p><input type="checkbox" /> Amenidad de bienvenida (Treats)</p>
-
-        <p>
-          <input type="checkbox" /> Amenidad de Ocasión especial de bienvenida.
-        </p>
-
-        <p><input type="checkbox" /> Pases físicos ( De ser necesarios)</p>
-
-        <p><input type="checkbox" /> Sacacorchos (De ser necesario)</p>
-
-        <p><input type="checkbox" /> Hielo para CI</p>
-      </ul>
-      <img src="..//villaflora/assets/images/9.jpg" />
-
-      <p><strong>Fregadero</strong></p>
-      <ul>
-        <p><input type="checkbox" /> Jabón para lavaplatos lleno</p>
-
-        <p><input type="checkbox" /> Esponja para lavaplatos</p>
-
-        <p><input type="checkbox" /> Jabón de manos lleno</p>
-
-        <p><input type="checkbox" /> Escurridor</p>
-
-        <p><input type="checkbox" /> Servilletas de mano</p>
-      </ul>
-      <img src="..//villaflora/assets/images/10.jpg" />
-
-      <p><strong>Gabinete del fregadero de la cocina</strong></p>
-      <ul>
-        <p><input type="checkbox" /> Jabón para lavavaplatos (Dishwasher)</p>
-
-        <p><input type="checkbox" /> Abrillantador (Rinse Aid)</p>
-
-        <p><input type="checkbox" /> Papel de toalla</p>
-
-        <p><input type="checkbox" /> Servilletas</p>
-
-        <p><input type="checkbox" /> Bolsas de basura grandes</p>
-
-        <p><input type="checkbox" /> Bolsas de basura pequeñas</p>
-
-        <p>
-          <input type="checkbox" />
-          • Revisar que todos los compartimentos de la cafetera estén limpios.
-        </p>
-      </ul>
-      <img src="..//villaflora/assets/images/11.jpg" />
-
-      <ul>
-        <p><strong>Refrigerador</strong></p>
-      </ul>
-      <img src="..//villaflora/assets/images/12.jpg" />
-      <ul>
-        <p>
-          <input type="checkbox" /> Revisar que no haya sucio ni migas
-          (crumbs).
-        </p>
-
-        <p><input type="checkbox" /> Enfriando correctamente</p>
-
-        <p><input type="checkbox" /> Fabricador de hielo funcionando</p>
-
-        <p>
-          <input type="checkbox" /> Cajones y estantes del refrigerador y
-          congelador limpios.
-        </p>
-
-        <p><input type="checkbox" /> 6 aguas regulares</p>
-
-        <p><input type="checkbox" /> 1 leche</p>
-
-        <p><input type="checkbox" /> 6 medallas</p>
-      </ul>
-
-      <p><strong>Lavaplatos(Dishwasher)</strong></p>
-      <ul>
-        <p><input type="checkbox" /> Sin agua en el fondo</p>
-
-        <p>
-          <input type="checkbox" /> Todos los platos y utensilios removidos.
-        </p>
-
-        <p><input type="checkbox" /> Sin olores</p>
-
-        <p><input type="checkbox" /> Filtro limpio</p>
-
-        <p><input type="checkbox" /> Rellenar abrillantador (Rinse Aid)</p>
-      </ul>
-      <img src="..//villaflora/assets/images/13.jpg" />
-
-      <p><strong>Microondas</strong></p>
-      <ul>
-        <p><input type="checkbox" /> Funciona</p>
-
-        <p><input type="checkbox" /> Hora</p>
-
-        <p><input type="checkbox" /> Limpio</p>
-      </ul>
-      <img src="..//villaflora/assets/images/14.jpg" />
-
-      <ul>
-        <p><strong>Tostadora</strong></p>
-      </ul>
-      <img src="..//villaflora/assets/images/15.jpg" />
-      <ul>
-        <p><input type="checkbox" /> Revisar que no haya migajas</p>
-      </ul>
-
-      <ul>
-        <p><strong>Triturador de basura</strong></p>
-      </ul>
-      <img src="..//villaflora/assets/images/16.jpg" />
-      <ul>
-        <p><input type="checkbox" /> Ponerlo a funcionar con agua</p>
-
-        <p><input type="checkbox" /> Sin olores</p>
-      </ul>
-
-      <p><strong>Tope de cocina (Counter Top)</strong></p>
-      <ul>
-        <p><input type="checkbox" /> Servilletas</p>
-
-        <p><input type="checkbox" /> Papel Toalla</p>
-
-        <p>
-          <input type="checkbox" /> Revisar que todos los electrodomésticos
-          estén limpios.
-        </p>
-      </ul>
-      <img src="..//villaflora/assets/images/17.jpg" />
-
-      <p><strong>Gabinetes</strong></p>
-      <ul>
-        <p><input type="checkbox" /> Puertas sobre microondas</p>
-
-        <p><input type="checkbox" /> Cajones organizados</p>
-      </ul>
-      <img src="..//villaflora/assets/images/18.jpg" />
-
-      <ul>
-        <p>
-          <input type="checkbox" /> Abrir todas las puertas y mirar dentro.
-        </p>
-      </ul>
-      <img src="..//villaflora/assets/images/19.jpg" />
-
-      <ul>
-        <p><input type="checkbox" /> Tazas ordenadas y limpias</p>
-
-        <p><input type="checkbox" /> Platos ordenados y limpios</p>
-      </ul>
-      <img src="..//villaflora/assets/images/20.jpg" />
-
-      <ul>
-        <p><input type="checkbox" /> Estufa limpia</p>
-
-        <p>
-          <input type="checkbox" />
-          • Revisar y abrir los electrodomésticos que están sobre el mesón y
-          confirmar que estén limpios.
-        </p>
-
-        <p><input type="checkbox" /> 1 toalla de mano</p>
-      </ul>
-      <img src="..//villaflora/assets/images/21.jpg" />
-
-      <ul>
-        <p><strong>Cajón izquierdo de la estufa</strong></p>
-
-        <p><input type="checkbox" /> Cubiertos organizados y limpios</p>
-      </ul>
-      <img src="..//villaflora/assets/images/22.jpg" />
-
-      <ul>
-        <p><strong>Primer cajón lado derecho de la estufa</strong></p>
-
-        <p>
-          <input type="checkbox" /> Utensilios de grill limpios y organizados.
-        </p>
-      </ul>
-      <img src="..//villaflora/assets/images/23.jpg" />
-
-      <ul>
-        <p>
-          <input type="checkbox" /> Segundo cajón lado derecho de la estufa.
-        </p>
-      </ul>
-      <img src="..//villaflora/assets/images/24.jpg" />
-
-      <ul>
-        <p>
-          <input type="checkbox" /> Tercer cajón lado derecho de la estufa.
-        </p>
-      </ul>
-      <img src="..//villaflora/assets/images/25.jpg" />
-
-      <p><strong>Basura</strong></p>
-      <ul>
-        <p>
-          <input type="checkbox" /> Sin suciedad en las bolsas, puertas y
-          divisores.
-        </p>
-      </ul>
-      <img src="..//villaflora/assets/images/26.jpg" />
-
-      <p><strong>Cajones</strong></p>
-      <ul>
-        <p><strong>Primer cajón lado derecho</strong></p>
-
-        <p>
-          <input type="checkbox" />
-          • Abrir todos los cajones y revisar que estén organizados.
-        </p>
-
-        <p><input type="checkbox" /> Papel encerado (Wax Paper)</p>
-
-        <p><input type="checkbox" /> Papel de aluminio</p>
-
-        <p><input type="checkbox" /> Papel film</p>
-
-        <p><input type="checkbox" /> Filtros de café</p>
-
-        <p><input type="checkbox" /> Bolsas ziploc pequeñas</p>
-
-        <p><input type="checkbox" /> Bolsas ziploc grandes</p>
-      </ul>
-      <img src="..//villaflora/assets/images/27.jpg" />
-
-      <ul>
-        <p><strong>Segundo cajón lado derecho</strong></p>
-
-        <p><input type="checkbox" /> Café de bolsa</p>
-
-        <p><input type="checkbox" /> Azúcar</p>
-
-        <p><input type="checkbox" /> Aceite</p>
-      </ul>
-      <img src="..//villaflora/assets/images/28.jpg" />
-
-      <ul>
-        <p><strong>Tercer cajón lado derecho</strong></p>
-
-        <p><input type="checkbox" /> Vacío y limpio</p>
-      </ul>
-      <img src="..//villaflora/assets/images/29.jpg" />
-
-      <p><strong>Horno</strong></p>
-      <ul>
-        <p><input type="checkbox" /> Abrir y revisar que esté limpio</p>
-
-        <p><input type="checkbox" /> Hora correcta</p>
-      </ul>
-      <img src="..//villaflora/assets/images/30.jpg" />
-
-      <p><strong>Campana extractora</strong></p>
-      <ul>
-        <p><input type="checkbox" /> Encender</p>
-
-        <p><input type="checkbox" /> Filtros limpios</p>
-      </ul>
-      <img src="..//villaflora/assets/images/31.jpg" />
-
-      <p><strong>Luces del gabinete</strong></p>
-      <ul>
-        <p><input type="checkbox" /> Todas las bombillas encienden</p>
-
-        <p><input type="checkbox" /> Limpio debajo de los gabinetes</p>
-      </ul>
-      <img src="..//villaflora/assets/images/32.jpg" />
-
-      <h2>
-        <strong>Comedor</strong>
-      </h2>
-      <p><strong>Candelabro</strong></p>
-      <ul>
-        <p><input type="checkbox" /> Limpio</p>
-
-        <p><input type="checkbox" /> Bombillas encendidas</p>
-      </ul>
-      <img src="..//villaflora/assets/images/33.jpg" />
-
-      <p><strong>Mesa y sillas de comedor</strong></p>
-      <ul>
-        <p><input type="checkbox" /> Mesa limpia</p>
-
-        <p><input type="checkbox" /> Sillas organizadas</p>
-
-        <p><input type="checkbox" /> Sillas fuertes</p>
-
-        <p><input type="checkbox" /> Sillas limpias</p>
-      </ul>
-      <img src="..//villaflora/assets/images/34.jpg" />
-
-      <h2><strong>Sala de estar</strong></h2>
-      <ul>
-        <p><input type="checkbox" /> Revisar bombillas</p>
-      </ul>
-      <img src="..//villaflora/assets/images/35.jpg" />
-
-      <p><strong>Sofá</strong></p>
-      <ul>
-        <p>
-          <input type="checkbox" />
-          • Quitar cojines grandes y revisar que no haya comida debajo.
-        </p>
-
-        <p>
-          <input type="checkbox" />
-          • Todas las almohadas decorativas limpias y en dirección correcta.
-        </p>
-
-        <p><input type="checkbox" /> Sofá limpio</p>
-
-        <p><input type="checkbox" /> Mirar debajo y detrás del sofá</p>
-      </ul>
-      <img src="..//villaflora/assets/images/36.jpg" />
-
-      <p>
-        <strong><u>Televisión</u></strong>
-      </p>
-      <ul>
-        <p><input type="checkbox" /> Encender</p>
-
-        <p><input type="checkbox" /> Ajustar canales y volumen</p>
-
-        <p><input type="checkbox" /> Controles en área de TV</p>
-      </ul>
-      <img src="..//villaflora/assets/images/37.jpg" />
-
-      <p><strong>Lámpara</strong></p>
-      <ul>
-        <p><input type="checkbox" /> Conectada y organizada</p>
-
-        <p><input type="checkbox" /> Revisar bombillo de lámpara</p>
-      </ul>
-      <img src="..//villaflora/assets/images/38.jpg" />
-
-      <p><strong>Cortinas</strong></p>
-      <ul>
-        <p><input type="checkbox" /> Limpias</p>
-
-        <p><input type="checkbox" /> Revisar detrás de las cortinas</p>
-      </ul>
-      <img src="..//villaflora/assets/images/39.jpg" />
-
-      <p><strong>Gabinetes</strong></p>
-      <ul>
-        <p><input type="checkbox" /> Abrir cajones</p>
-
-        <p>
-          <input type="checkbox" /> Revisar que los juegos y libros estén
-          organizados.
-        </p>
-      </ul>
-      <img src="..//villaflora/assets/images/40.jpg" />
-
-      <p><strong>Estante de esquina</strong></p>
-      <ul>
-        <p><strong>Primer cajón</strong></p>
-
-        <p><input type="checkbox" /> Manteles Individuales</p>
-      </ul>
-      <img src="..//villaflora/assets/images/41.jpg" />
-
-      <ul>
-        <p><input type="checkbox" /> 4 toallas de playa</p>
-
-        <p>
-          <input type="checkbox" /> Nota de devolución de toallas de playa.
-        </p>
-      </ul>
-      <img src="..//villaflora/assets/images/42.jpg" />
-      <ul>
-        <p><strong>Segundo cajón</strong></p>
-
-        <p><input type="checkbox" /> Posavasos</p>
-
-        <p><input type="checkbox" /> Tazón de cristal</p>
-      </ul>
-      <img src="..//villaflora/assets/images/43.jpg" />
-
-      <ul>
-        <p><strong>Tercer cajón</strong></p>
-
-        <p>
-          <input type="checkbox" /> Platos de cristal blancos limpios y
-          organizados.
-        </p>
-      </ul>
-      <img src="..//villaflora/assets/images/44.jpg" />
-
-      <p><strong>Terraza</strong></p>
-      <ul>
-        <p><input type="checkbox" /> Puertas y vidrios limpios</p>
-
-        <p><input type="checkbox" /> Puertas que abren sin problema</p>
-
-        <p><input type="checkbox" /> Piso limpio sin arena</p>
-
-        <p><input type="checkbox" /> Mueble limpio</p>
-
-        <p><input type="checkbox" /> Mueble en puesto correcto</p>
-
-        <p><input type="checkbox" /> Revisar bombillas</p>
-
-        <p><input type="checkbox" /> Abanicos funcionando</p>
-      </ul>
-      <img src="..//villaflora/assets/images/45.jpg" />
-      <p><strong>Parrilla de gas (BBQ) </strong></p>
-      <ul>
-        <p><input type="checkbox" /> Grill Limpio</p>
-        <p>
-          <input type="checkbox" /> Verificar que no haya escape de gas y
-          encender
-        </p>
-        <p><input type="checkbox" /> Dejar gas cerrado</p>
-      </ul>
-      <img src="..//villaflora/assets/images/46.jpg" />
-
-      <p><strong>Dormitorio principal</strong></p>
-      <ul>
-        <p><input type="checkbox" /> Cortinas limpias</p>
-
-        <p><input type="checkbox" /> Mirar debajo de la cama</p>
-
-        <p><input type="checkbox" /> Revisar detrás de las cortinas</p>
-
-        <p><input type="checkbox" /> 2 aguas en mesitas de noche</p>
-
-        <p><input type="checkbox" /> Revisar bombillos de techo</p>
-
-        <p><input type="checkbox" /> Revisar bombillos de mesitas de noche</p>
-
-        <p>
-          <input type="checkbox" />
-          • 2 almohadas king y 3 estándar con protectores de almohadas.
-        </p>
-      </ul>
-      <img src="..//villaflora/assets/images/47.jpg" />
-
-      <ul>
-        <p><input type="checkbox" /> Nota y lápiz sobre gavetero</p>
-
-        <p><input type="checkbox" /> Controles de TV sobre gavetero</p>
-
-        <p><input type="checkbox" /> Encender el televisor y cable</p>
-
-        <p><input type="checkbox" /> Cajones vacíos</p>
-      </ul>
-      <img src="..//villaflora/assets/images/48.jpg" />
-      <a id="3"></a>
-      <h2>
-        <strong>Baño principal</strong>
-      </h2>
-      <p><strong>Tope de Lavamanos</strong></p>
-      <ul>
-        <p><input type="checkbox" /> Lavamanos funcionando y limpios</p>
-
-        <p><input type="checkbox" /> 2 jabones</p>
-
-        <p><input type="checkbox" /> 1 champú</p>
-
-        <p><input type="checkbox" /> 1 acondicionador</p>
-
-        <p><input type="checkbox" /> 1 gel de baño</p>
-
-        <p><input type="checkbox" /> 1 loción corporal</p>
-
-        <p><input type="checkbox" /> Kleenex</p>
-
-        <p><input type="checkbox" /> 2 kits dentales</p>
-
-        <p><input type="checkbox" /> 2 aguas</p>
-
-        <p><input type="checkbox" /> Vasito limpio</p>
-
-        <p><input type="checkbox" /> Jabón líquido lleno</p>
-
-        <p><input type="checkbox" /> 2 toallas de mano</p>
-
-        <p><input type="checkbox" /> 1 toalla de maquillaje</p>
-
-        <p><input type="checkbox" /> 1 toallita (Washcloth) </p>
-      </ul>
-      <img src="..//villaflora/assets/images/49.jpg" />
-
-      <p><strong>Gabinetes</strong></p>
-      <ul>
-        <p><input type="checkbox" /> 2 rollos de papel higiénico extra</p>
-
-        <p><input type="checkbox" /> Abrir todos los gabinetes</p>
-
-        <p><input type="checkbox" /> Secador de Cabello</p>
-      </ul>
-      <img src="..//villaflora/assets/images/50.jpg" />
-
-      <ul>
-        <p><input type="checkbox" /> Pararse en la pesa</p>
-
-        <p><input type="checkbox" /> Cesto de ropa vacío y limpio</p>
-      </ul>
-      <img src="..//villaflora/assets/images/51.jpg" />
-      <p><strong>Ducha</strong></p>
-      <ul>
-        <p><input type="checkbox" /> Jabonera limpia</p>
-
-        <p><input type="checkbox" /> 1 toalla de pies</p>
-      </ul>
-      <img src="..//villaflora/assets/images/52.jpg" />
-
-      <p><strong>Closet Inodoro</strong></p>
-      <ul>
-        <p><input type="checkbox" /> Inodoro limpio y funcionando</p>
-
-        <p><input type="checkbox" /> Bidet limpio y funcionando</p>
-
-        <p><input type="checkbox" /> Cubo de basura limpio</p>
-
-        <p><input type="checkbox" /> Cepillo para limpiar inodoro</p>
-
-        <p><input type="checkbox" /> Revisar bombillos</p>
-
-        <p><input type="checkbox" /> Revisar abanico</p>
-      </ul>
-      <img src="..//villaflora/assets/images/53.jpg" />
-      <p><strong>Bañera</strong></p>
-      <ul>
-        <p><input type="checkbox" /> Encenderla</p>
-
-        <p><input type="checkbox" /> Limpia</p>
-
-        <p><input type="checkbox" /> 2 juegos de pantuflas</p>
-
-        <p><input type="checkbox" /> Off</p>
-
-        <p><input type="checkbox" /> Protector solar</p>
-
-        <p><input type="checkbox" /> 4 toallas de baño</p>
-
-        <p><input type="checkbox" /> 1 toalla de pies</p>
-      </ul>
-      <img src="..//villaflora/assets/images/54.jpg" />
-      <p><strong>Armario</strong></p>
-      <ul>
-        <p><input type="checkbox" /> Abrir todos los cajones</p>
-
-        <p>
-          <input type="checkbox" />
-          • Todos los ganchos organizados por clase mirando al mismo lado.
-        </p>
-
-        <p><input type="checkbox" /> Maletero</p>
-
-        <p>
-          <input type="checkbox" />
-          • Funda con dos almohadas y una frisa, verificar que todo esté limpio.
-        </p>
-
-        <p><input type="checkbox" /> Revisar bombillos</p>
-      </ul>
-      <img src="..//villaflora/assets/images/55.jpg" />
-      <p><strong>Baño a la derecha de la entrada</strong></p>
-      <ul>
-        <p><input type="checkbox" /> 2 toallas de baño</p>
-
-        <p><input type="checkbox" /> 1 toalla de mano</p>
-
-        <p><input type="checkbox" /> 1 toallita (Washcloth) </p>
-
-        <p><input type="checkbox" /> Revisar bombillos</p>
-
-        <p><input type="checkbox" /> Inodoro limpio y funcionando</p>
-
-        <p><input type="checkbox" /> Cubo de basura limpio</p>
-
-        <p><input type="checkbox" /> Revisar abanico</p>
-      </ul>
-      <img src="..//villaflora/assets/images/56.jpg" />
-      <p><strong>Tope de lavamanos</strong></p>
-      <ul>
-        <p><input type="checkbox" /> Lavamanos funcionando y limpio</p>
-
-        <p><input type="checkbox" /> 1 jabón</p>
-
-        <p><input type="checkbox" /> 1 champú</p>
-
-        <p><input type="checkbox" /> 1 acondicionador</p>
-
-        <p><input type="checkbox" /> 1 gel de cuerpo</p>
-
-        <p><input type="checkbox" /> 1 loción corporal</p>
-
-        <p><input type="checkbox" /> 2 aguas</p>
-
-        <p><input type="checkbox" /> Vasito limpio</p>
-
-        <p><input type="checkbox" /> Jabón líquido lleno</p>
-
-        <p><input type="checkbox" /> 1 toalla de maquillaje</p>
-
-        <p><input type="checkbox" /> 1 kleenex</p>
-      </ul>
-      <img src="..//villaflora/assets/images/57.jpg" />
-      <p><strong>Gabinetes</strong></p>
-      <ul>
-        <p><input type="checkbox" /> 2 rollos de papel higiénico extra</p>
-
-        <p><input type="checkbox" /> Abrir los gabinetes</p>
-      </ul>
-      <img src="..//villaflora/assets/images/58.jpg" />
-
-      <p><strong>Ducha</strong></p>
-      <ul>
-        <p><input type="checkbox" /> Jabonera limpia</p>
-
-        <p><input type="checkbox" /> 1 toalla de pies</p>
-      </ul>
-      <img src="..//villaflora/assets/images/59.jpg" />
-      <p><strong>Segundo dormitorio en el pasillo</strong></p>
-      <ul>
-        <p><input type="checkbox" /> Cortinas limpias</p>
-
-        <p><input type="checkbox" /> Revisar detrás de las cortinas</p>
-
-        <p><input type="checkbox" /> Mirar debajo de la cama</p>
-
-        <p><input type="checkbox" /> Revisar bombillos de techo</p>
-
-        <p>
-          <input type="checkbox" />
-          • 1 almohada estándar con protector de almohada para cada cama (3 en
-          total).
-        </p>
-
-        <p><input type="checkbox" /> Abrir cajones de gavetero</p>
-      </ul>
-      <img src="..//villaflora/assets/images/60.jpg" />
-      <p><strong>Closet del segundo dormitorio</strong></p>
-      <ul>
-        <p>
-          <input type="checkbox" />
-          • Todos los ganchos organizados por clase mirando al mismo lado.
-        </p>
-
-        <p><input type="checkbox" /> Maletero</p>
-
-        <p>
-          <input type="checkbox" /> Funda con dos almohadas y una frisa
-          limpias.
-        </p>
-
-        <p><input type="checkbox" /> Revisar encima y debajo del closet</p>
-      </ul>
-      <img src="..//villaflora/assets/images/61.jpg" />
-
-      <h2>
-        <strong>Baño de las literas</strong>
-      </h2>
-      <ul>
-        <p><input type="checkbox" /> Kleenex</p>
-
-        <p><input type="checkbox" /> 1 paño de maquillaje</p>
-
-        <p><input type="checkbox" /> 1 toalla de mano</p>
-
-        <p><input type="checkbox" /> 1 loción corporal</p>
-
-        <p><input type="checkbox" /> 1 gel de cuerpo</p>
-
-        <p><input type="checkbox" /> 1 champú</p>
-
-        <p><input type="checkbox" /> 1 acondicionador</p>
-
-        <p><input type="checkbox" /> 2 botellas de agua</p>
-      </ul>
-      <img src="..//villaflora/assets/images/62.jpg" />
-      <p><strong>Gabinetes</strong></p>
-      <ul>
-        <p><input type="checkbox" /> 2 rollos de papel higiénico extra</p>
-      </ul>
-      <img src="..//villaflora/assets/images/63.jpg" />
-      <p><strong>Inodoro</strong></p>
-      <ul>
-        <p><input type="checkbox" /> 2 toallas de baño</p>
-
-        <p><input type="checkbox" /> 1 toallita (Washcloth) </p>
-
-        <p><input type="checkbox" /> 1 toalla de pies</p>
-      </ul>
-      <img src="..//villaflora/assets/images/64.jpg" />
-
-      <h2>
-        <strong>Lavandería</strong>
-      </h2>
-      <ul>
-        <p><input type="checkbox" /> Revisar bombillos</p>
-
-        <p>
-          <input type="checkbox" /> Abrir gabinete y que esté limpio y
-          organizado.
-        </p>
-
-        <p><input type="checkbox" /> Plancha</p>
-
-        <p><input type="checkbox" /> Revisar encima de los gabinetes</p>
-      </ul>
-      <img src="..//villaflora/assets/images/65.jpg" />
-      <ul>
-        <p><input type="checkbox" /> Tabla de planchar</p>
-      </ul>
-      <img src="..//villaflora/assets/images/66.jpg" />
-      <ul>
-        <p><input type="checkbox" /> Valde</p>
-
-        <p><input type="checkbox" /> Jabón de ropa lleno</p>
-      </ul>
-      <img src="..//villaflora/assets/images/67.jpg" />
-      <p><strong>Lavadora/secadora</strong></p>
-      <ul>
-        <p><input type="checkbox" /> Revisar dentro de las máquinas</p>
-
-        <p><input type="checkbox" /> Revisar filtro de secadora</p>
-
-        <p>
-          <input type="checkbox" /> Revisar compartimiento de jabón de
-          lavadora.
-        </p>
-
-        <p><input type="checkbox" /> Revisar detrás de lavadora</p>
-
-        <p><input type="checkbox" /> Revisar encima de secadora</p>
-      </ul>
-      <img src="..//villaflora/assets/images/68.jpg" />
-      <p>
-        <strong
-          >Contenedor de suministros de limpieza (Cleaning supply Bin)</strong
-        >
-      </p>
-      <ul>
-        <p><input type="checkbox" /> Escoba limpia</p>
-
-        <p><input type="checkbox" /> Recogedor limpio</p>
-
-        <p><input type="checkbox" /> Trapo limpio</p>
-
-        <p><input type="checkbox" /> Plancha de ropa</p>
-      </ul>
-      <img src="..//villaflora/assets/images/69.jpg" />
-      <p><strong>Sistema de agua caliente</strong></p>
-      <ul>
-        <p><input type="checkbox" /> OFF para CO y ON para CI</p>
-      </ul>
-
-      <h2>
-        <strong>Pasillos</strong>
-      </h2>
-      <p><strong>Termostato del aire acondicionado</strong></p>
-
-      <ul>
-        <p><input type="checkbox" /> 77 CO/70 o 72 CI</p>
-      </ul>
-      <img src="..//villaflora/assets/images/70.jpg" />
-      <p><strong>Carrito de golf</strong></p>
-      <ul>
-        <p><input type="checkbox" /> Limpio</p>
-
-        <p><input type="checkbox" /> Funcionando</p>
-
-        <p><input type="checkbox" /> Conectado</p>
-
-        <p>
-          <input type="checkbox" /> Llenar el formulario de inspección y
-          enviarlo.
-        </p>
-      </ul>
-      <img src="..//villaflora/assets/images/71.jpg" />
-    </main>
-  </body>
+      <h3 class="titulo-principal">General</h3>
+      <ul class="lista-inspeccion">
+        <li class="c9 c2 li-bullet-0"><span class="c3"><input type="checkbox" title="Puerta principal y pasillo de entrada limpio" /> Puerta principal y pasillo de entrada limpio</span></li>
+        <li class="c9 c2 li-bullet-0"><span class="c3"><input type="checkbox" title="Revisar bombillo exterior" /> Revisar bombillo exterior </span></li>
+        <li class="c9 c2 li-bullet-0"><span class="c3"><input type="checkbox" title="Timbre funciona" /> Timbre funciona</span></li>
+        <li class="c9 c2 li-bullet-0"><span class="c3"><input type="checkbox" title="Alfombra" /> Alfombra</span></li>
+        <li class="c9 c2 li-bullet-0"><span class="c3"><input type="checkbox" title="Entrar preparado con trapo para limpiar y secar" /> Entrar preparado con trapo para limpiar y secar</span></li>
+        <li class="c9 c2 li-bullet-0"><span class="c3"><input type="checkbox" title="Wifi funcionando, abrir página nueva" /> Wifi funcionando, abrir página nueva</span></li>
+        <li class="c9 c2 li-bullet-0"><span class="c3"><input type="checkbox" title="Lockbox con llave adentro" /> Lockbox con llave adentro</span></li>
+      </ul>
+      <div class="foto-section">
+      <img src="../villaflora/assets/images/Foto 1.jpg" alt="General" class="inspection-image" />
+      </div>
+
+    <h3 class="titulo-principal">Áreas Sociales</h3>
+    <h3 class="subtítulo">Entrada</h3>
+    <ul class="lista-inspeccion">
+      <li class="c9 c2 li-bullet-0"><span class="c3"><input type="checkbox" title="Sombrilla" /> Sombrilla</span></li>
+      <li class="c9 c2 li-bullet-0"><span class="c3"><input type="checkbox" title="Revisar bombillos" /> Revisar bombillos</span></li>
+      <li class="c9 c2 li-bullet-0"><span class="c3"><input type="checkbox" title="Extintor" /> Extintor</span></li>
+    </ul>
+    <div class="foto-section">
+      <img src="../villaflora/assets/images/Foto 2.jpg" alt="Áreas Sociales Entrada" class="inspection-image" />
+    </div>
+
+    <h3 class="subtítulo">Cocina</h3>
+    <ul class="lista-inspeccion">
+      <li class="c9 c2 li-bullet-0"><span class="c3"><input type="checkbox" title="Revisar limpieza en vasos, platos, ollas" /> Revisar limpieza en vasos, platos, ollas</span></li>
+      <li class="c9 c2 li-bullet-0"><span class="c3"><input type="checkbox" title="Revisar bombillos" /> Revisar bombillos</span></li>
+      <li class="c9 c2 li-bullet-0"><span class="c3"><input type="checkbox" title="2 toallas de mano" /> 2 toallas de mano</span></li>
+    </ul>
+    <div class="foto-section">
+      <img src="../villaflora/assets/images/Foto 3.jpg" alt="Cocina" class="inspection-image" />
+    </div>
+
+    <h3 class="subtítulo">Amenidades de Bienvenida</h3>
+    <ul class="lista-inspeccion">
+      <li class="c9 c2 li-bullet-0"><span class="c3"><input type="checkbox" title="Nota de bienvenida" /> Nota de bienvenida</span></li>
+      <li class="c9 c2 li-bullet-0"><span class="c3"><input type="checkbox" title="Agua Fiji o similar" /> Agua Fiji o similar</span></li>
+      <li class="c9 c2 li-bullet-0"><span class="c3"><input type="checkbox" title="Vino o vino espumoso" /> Vino o vino espumoso</span></li>
+      <li class="c9 c2 li-bullet-0"><span class="c3"><input type="checkbox" title="Flautas o copas" /> Flautas o copas</span></li>
+      <li class="c9 c2 li-bullet-0"><span class="c3"><input type="checkbox" title="Amenidad de bienvenida (Treats)" /> Amenidad de bienvenida (Treats)</span></li>
+      <li class="c9 c2 li-bullet-0"><span class="c3"><input type="checkbox" title="Amenidad de ocasión especial" /> Amenidad de ocasión especial</span></li>
+      <li class="c9 c2 li-bullet-0"><span class="c3"><input type="checkbox" title="Pases físicos (De ser necesarios)" /> Pases físicos (De ser necesarios)</span></li>
+      <li class="c9 c2 li-bullet-0"><span class="c3"><input type="checkbox" title="Sacacorchos (De ser necesario)" /> Sacacorchos (De ser necesario)</span></li>
+      <li class="c9 c2 li-bullet-0"><span class="c3"><input type="checkbox" title="Hielo para CI" /> Hielo para CI</span></li>
+    </ul>
+    <div class="foto-section">
+      <img src="../villaflora/assets/images/Foto 4.jpg" alt="Amenidades de Bienvenida" class="inspection-image" />
+    </div>
+
+    <!-- CONTINUACIÓN DE LA INSPECCIÓN -->
+    <h3 class="subtítulo">Fregadero</h3>
+    <ul class="lista-inspeccion">
+      <li><input type="checkbox" title="Jabón lavaplatos lleno" /> Jabón lavaplatos lleno</li>
+      <li><input type="checkbox" title="Esponja lavaplatos" /> Esponja lavaplatos</li>
+      <li><input type="checkbox" title="Jabón de manos lleno" /> Jabón de manos lleno</li>
+      <li><input type="checkbox" title="Escurridor de platos" /> Escurridor de platos</li>
+      <li><input type="checkbox" title="Servilletas" /> Servilletas</li>
+    </ul>
+    <div class="foto-section">
+      <img src="../villaflora/assets/images/Foto 5.jpg" alt="Fregadero" class="inspection-image" />
+    </div>
+
+    <h3 class="subtítulo"></h3>Triturador de Basura</h3>
+    <ul class="lista-inspeccion">
+      <li><input type="checkbox" title="Triturador de Basura" /> Ponerlo a funcionar con agua</li>
+      <li><input type="checkbox" title="Triturador de Basura" /> No olores</li>
+    </ul>
+    <div class="foto-section">
+      <img src="../villaflora/assets/images/Foto 6.jpg" alt="Triturador de Basura" class="inspection-image" />
+    </div>
+
+    <h3 class="subtítulo">Tope de Cocina Después del Fregadero</h3>
+    <ul class="lista-inspeccion">
+      <li><input type="checkbox" title="Azúcar llena" /> Azúcar llena</li>
+      <li><input type="checkbox" title="Café" /> Café</li>
+      <li><input type="checkbox" title="12 Splendas" /> 12 Splendas</li>
+      <li><input type="checkbox" title="12 Pods de café" /> 12 Pods de café</li>
+      <li><input type="checkbox" title="Papel toalla" /> Papel toalla</li>
+      <li><input type="checkbox" title="Salero y pimentero" /> Salero y pimentero</li>
+      <li><input type="checkbox" title="Alarma de monóxido funcionando" /> Alarma de monóxido funcionando</li>
+    </ul>
+    <div class="foto-section">
+      <img src="../villaflora/assets/images/Foto 7A.jpg" alt="Tope de Cocina Después del Fregadero 7A" class="inspection-image" />
+      <img src="../villaflora/assets/images/Foto 7B.jpg" alt="Tope de Cocina Después del Fregadero 7B" class="inspection-image" />
+      <img src="../villaflora/assets/images/Foto 7C.jpg" alt="Tope de Cocina Después del Fregadero 7C" class="inspection-image" />
+    </div>
+
+    <h3 class="subtítulo">Cajones y Gabinetes de Área de Fregadero</h3>
+    <h4 class="subtítulo2">Primer Cajón Derecha de Fregadero</h4>
+    <ul class="lista-inspeccion">
+      <li><input type="checkbox" title="Bolsas Ziploc pequeñas" /> Bolsas Ziploc pequeñas</li>
+      <li><input type="checkbox" title="Bolsas Ziploc grandes" /> Bolsas Ziploc grandes</li>
+      <li><input type="checkbox" title="Papel encerado" /> Papel encerado</li>
+      <li><input type="checkbox" title="Papel aluminio" /> Papel aluminio</li>
+      <li><input type="checkbox" title="Papel plástico" /> Papel plástico</li>
+      <li><input type="checkbox" title="Encendedor" /> Encendedor</li>
+      <li><input type="checkbox" title="Filtros de café" /> Filtros de café</li>
+    </ul>
+    <div class="foto-section">
+      <img src="../villaflora/assets/images/Foto 8.jpg" alt="Primer Cajón Derecha de Fregadero" class="inspection-image" />
+    </div>
+
+    <h4 class="subtítulo2">Segundo Cajón Derecha de Fregadero</h4>
+    <ul class="lista-inspeccion">
+      <li><input type="checkbox" title="Café en polvo" /> Café en polvo</li>
+      <li><input type="checkbox" title="Aceite" /> Aceite</li>
+      <li><input type="checkbox" title="Azúcar" /> Azúcar</li>
+      <li><input type="checkbox" title="Condimentos" /> Condimentos</li>
+    </ul>
+    <div class="foto-section">
+      <img src="../villaflora/assets/images/Foto 9.jpg" alt="Segundo Cajón Derecha de Fregadero" class="inspection-image" />
+    </div>
+
+    <h4 class="subtítulo2">Tercer Cajón Derecha de Fregadero</h4>
+    <ul class="lista-inspeccion">
+      <li><input type="checkbox" title="Vacío y limpio" /> Vacío y limpio</li>
+    </ul>
+    <div class="foto-section">
+      <img src="../villaflora/assets/images/Foto 10.jpg" alt="Tercer Cajón Derecha de Fregadero" class="inspection-image" />
+    </div>
+
+    <h4 class="subtítulo2">Cajón Sobre Basura</h4>
+    <ul class="lista-inspeccion">
+      <li><input type="checkbox" title="Cuchillos de cocinar limpios y organizados" /> Cuchillos de cocinar limpios y organizados</li>
+      <li><input type="checkbox" title="Guantes de cocinar y coge ollas limpios" /> Guantes de cocinar y coge ollas limpios</li>
+    </ul>
+    <div class="foto-section">
+      <img src="../villaflora/assets/images/Foto 18.jpg" alt="Cajón Sobre Basura" class="inspection-image" />
+    </div>
+
+    <h4 class="subtítulo2">Basura</h4>
+    <ul class="lista-inspeccion">
+      <li><input type="checkbox" title="Limpia" /> Limpia</li>
+    </ul>
+    <div class="foto-section">
+      <img src="../villaflora/assets/images/Foto 11.jpg" alt="Basura" class="inspection-image" />
+    </div>
+
+    <h4 class="subtítulo2">Gabinete de Fregadero</h4>
+    <ul class="lista-inspeccion">
+      <li><input type="checkbox" title="Rinse Aid" /> "Rinse Aid"</li>
+      <li><input type="checkbox" title="Jabón máquina de platos" /> Jabón máquina de platos</li>
+      <li><input type="checkbox" title="Papel toalla" /> Papel toalla</li>
+      <li><input type="checkbox" title="Servilletas" /> Servilletas</li>
+      <li><input type="checkbox" title="Bolsas de basura grandes" /> Bolsas de basura grandes</li>
+      <li><input type="checkbox" title="Bolsas de basura pequeñas" /> Bolsas de basura pequeñas</li>
+      <li><input type="checkbox" title="Cafetera de americano" /> Cafetera de americano</li>
+    </ul>
+    <div class="foto-section">
+      <img src="../villaflora/assets/images/Foto 12.jpg" alt="Gabinete de Fregadero" class="inspection-image" />
+    </div>
+
+    <h4 class="subtítulo2">Lavaplatos</h4>
+    <ul class="lista-inspeccion">
+      <li><input type="checkbox" title="Sin agua en el fondo" /> Sin agua en el fondo</li>
+      <li><input type="checkbox" title="Todos los platos y utensilios removidos" /> Todos los platos y utensilios removidos</li>
+      <li><input type="checkbox" title="No olores" /> No olores</li>
+      <li><input type="checkbox" title="Filtro limpio" /> Filtro limpio</li>
+      <li><input type="checkbox" title="Reponer abrillantador Rinse Aid" /> Reponer abrillantador "Rinse Aid"</li>
+    </ul>
+    <div class="foto-section">
+      <img src="../villaflora/assets/images/Foto 13.jpg" alt="Lavaplatos" class="inspection-image" />
+    </div>
+
+    <h4 class="subtítulo2">Primer Cajón Izquierda de Lavaplatos</h4>
+    <ul class="lista-inspeccion">
+      <li><input type="checkbox" title="Utensilios de cocina limpios y organizados" /> Utensilios de cocina limpios y organizados</li>
+    </ul>
+    <div class="foto-section">
+      <img src="../villaflora/assets/images/Foto 14.jpg" alt="Primer Cajón Izquierda de Lavaplatos" class="inspection-image" />
+    </div>
+
+    <h4 class="subtítulo2">Segundo Cajón Izquierda de Lavaplatos</h4>
+    <ul class="lista-inspeccion">
+      <li><input type="checkbox" title="Bowls de mezclar" /> Bowls de mezclar</li>
+      <li><input type="checkbox" title="Tazas medidoras" /> Tazas medidoras</li>
+    </ul>
+    <div class="foto-section">
+      <img src="../villaflora/assets/images/Foto 15.jpg" alt="Segundo Cajón Izquierda de Lavaplatos" class="inspection-image" />
+    </div>
+
+    <h4 class="subtítulo2">Tercer Cajón Izquierda de Lavaplatos</h4>
+    <ul class="lista-inspeccion">
+      <li><input type="checkbox" title="Refractarios" /> Refractarios</li>
+      <li><input type="checkbox" title="Tablas de cortar" /> Tablas de cortar</li>
+      <li><input type="checkbox" title="Greca" /> Greca</li>
+    </ul>
+    <div class="foto-section">
+      <img src="../villaflora/assets/images/Foto 16.jpg" alt="Tercer Cajón Izquierda de Lavaplatos" class="inspection-image" />
+    </div>
+
+    <h3 class="subtítulo">Área de Estufa</h3>
+    <h4 class="subtítulo2">Tope de Área de Estufa</h4>
+    <ul class="lista-inspeccion">
+      <li><input type="checkbox" title="Luces prendidas y limpio debajo de gabinetes" /> Luces prendidas y limpio debajo de gabinetes</li>
+      <li><input type="checkbox" title="Filtros debajo de microondas limpios" /> Filtros debajo de microondas limpios</li>
+      <li><input type="checkbox" title="Cafetera limpia" /> Cafetera limpia</li>
+      <li><input type="checkbox" title="Licuadora limpia" /> Licuadora limpia</li>
+    </ul>
+    <div class="foto-section">
+      <img src="../villaflora/assets/images/Foto 17A.jpg" alt="Tope de Área de Estufa 17A" class="inspection-image" />
+      <img src="../villaflora/assets/images/Foto 17B.jpg" alt="Tope de Área de Estufa 17B" class="inspection-image" />
+      <img src="../villaflora/assets/images/Foto 17C.jpg" alt="Luces prendidas y limpio debajo de gabinetes 17C" class="inspection-image" />
+      <img src="../villaflora/assets/images/Foto 17D.jpg" alt="Filtros debajo de microondas limpios 17D" class="inspection-image" />
+
+    </div>
+
+    <h4 class="subtítulo2">Primer Cajón Derecha de Horno</h4>
+   
+    <ul class="lista-inspeccion">
+      <li><input type="checkbox" title="Utensilios de BBQ" /> Utensilios de BBQ</li>
+      <li><input type="checkbox" title="Pinzas de cocina" /> Pinzas de cocina</li>
+      <li><input type="checkbox" title="Espátulas para cocinar" /> Espátulas para cocinar</li>
+    </ul>
+    <div class="foto-section">
+      <img src="../villaflora/assets/images/Foto 19.jpg" alt="Primer Cajón Derecha de Horno" class="inspection-image" />
+    </div>
+
+    <h4 class="subtítulo2">Segundo Cajón Derecha de Horno</h4>
+    <ul class="lista-inspeccion">
+      <li><input type="checkbox" title="Electrodomésticos limpios y organizados" /> Electrodomésticos limpios y organizados</li>
+    </ul>
+    <div class="foto-section">
+      <img src="../villaflora/assets/images/Foto 20A.jpg" alt="Segundo Cajón Derecha de Horno 20A" class="inspection-image" />
+      <img src="../villaflora/assets/images/Foto 20B.jpg" alt="Segundo Cajón Derecha de Horno 20B" class="inspection-image" />
+    </div>
+
+
+    <h4 class="subtítulo2">Tercer Cajón Derecha de Horno</h4>
+   
+    <ul class="lista-inspeccion">
+      <li><input type="checkbox" title="Bandejas de hornear" /> Bandejas de hornear</li>
+      <li><input type="checkbox" title="Rodillo" /> Rodillo</li>
+      <li><input type="checkbox" title="Protector de salpicaduras" /> Protector de salpicaduras</li>
+    </ul>
+    <div class="foto-section">
+      <img src="../villaflora/assets/images/Foto 21.jpg" alt="Tercer Cajón Derecha de Horno" class="inspection-image" />
+    </div>
+
+    <h4 class="subtítulo2">Horno</h4>
+  
+    <ul class="lista-inspeccion">
+      <li><input type="checkbox" title="Funciona" /> Funciona</li>
+      <li><input type="checkbox" title="Hora" /> Hora</li>
+      <li><input type="checkbox" title="Limpio" /> Limpio</li>
+    </ul>
+    <div class="foto-section">
+      <img src="../villaflora/assets/images/Foto 22.jpg" alt="Horno" class="inspection-image" />
+    </div>
+
+    <h4 class="subtítulo2">Primer Cajón Izquierda de Horno</h4>
+    
+    <ul class="lista-inspeccion">
+      <li><input type="checkbox" title="Cubiertos organizados por clase y limpios" /> Cubiertos organizados por clase y limpios</li>
+      <li><input type="checkbox" title="Contabilizar que haya suficientes cubiertos para 6 personas" /> Contabilizar que haya suficientes cubiertos para 6 personas</li>
+      <li><input type="checkbox" title="Sacacorchos" /> Sacacorchos</li>
+    </ul>
+    <div class="foto-section">
+      <img src="../villaflora/assets/images/Foto 23.jpg" alt="Primer Cajón Izquierda de Horno" class="inspection-image" />
+    </div>
+
+    <h4 class="subtítulo2">Segundo Cajón Izquierda de Horno</h4>
+  
+    <ul class="lista-inspeccion">
+      <li><input type="checkbox" title="Ollas y sartenes limpios y organizados" /> Ollas y sartenes limpios y organizados</li>
+    </ul>
+    <div class="foto-section">
+      <img src="../villaflora/assets/images/Foto 24.jpg" alt="Segundo Cajón Izquierda de Horno" class="inspection-image" />
+    </div>
+
+    <h4 class="subtítulo2">Tercer Cajón Izquierda de Horno</h4>
+    <div class="foto-section">
+      <img src="../villaflora/assets/images/Foto 25.jpg" alt="Tercer Cajón Izquierda de Horno" class="inspection-image" />
+    </div>
+    <ul class="lista-inspeccion">
+      <li><input type="checkbox" title="Ollas, sartenes y tapas limpios y organizados" /> Ollas, sartenes y tapas limpios y organizados</li>
+    </ul>
+
+    <h4 class="subtítulo2">Gabinete Derecha de Microondas con Tazas, Platos y Bowls</h4>
+   
+    <ul class="lista-inspeccion">
+      <li><input type="checkbox" title="Limpios" /> Limpios</li>
+      <li><input type="checkbox" title="Organizados por clase" /> Organizados por clase</li>
+      <li><input type="checkbox" title="Suficiente para 6 personas" /> Suficiente para 6 personas</li>
+    </ul>
+    <div class="foto-section">
+      <img src="../villaflora/assets/images/Foto 26.jpg" alt="Gabinete Derecha de Microondas con Tazas, Platos y Bowls" class="inspection-image" />
+    </div>
+
+    <h4 class="subtítulo2">Encima de Microondas</h4>
+  
+    <ul class="lista-inspeccion">
+      <li><input type="checkbox" title="Limpio" /> Limpio</li>
+      <li><input type="checkbox" title="Libros de garantías organizados" /> Libros de garantías organizados</li>
+    </ul>
+    <div class="foto-section">
+      <img src="../villaflora/assets/images/Foto 27.jpg" alt="Encima de Microondas" class="inspection-image" />
+    </div>
+
+    <h4 class="subtítulo2">Microondas</h4>
+   
+    <ul class="lista-inspeccion">
+      <li><input type="checkbox" title="Funciona" /> Funciona</li>
+      <li><input type="checkbox" title="Hora" /> Hora</li>
+      <li><input type="checkbox" title="Limpio" /> Limpio</li>
+    </ul>
+    <div class="foto-section">
+      <img src="../villaflora/assets/images/Foto 28.jpg" alt="Microondas" class="inspection-image" />
+    </div>
+
+    <h4 class="subtítulo2">Gabinete Izquierda de Microondas con Vasos y Copas</h4>
+   
+    <ul class="lista-inspeccion">
+      <li><input type="checkbox" title="Limpios" /> Limpios</li>
+      <li><input type="checkbox" title="Organizados por clase" /> Organizados por clase</li>
+      <li><input type="checkbox" title="Suficiente para 6 personas" /> Suficiente para 6 personas</li>
+    </ul>
+    <div class="foto-section">
+      <img src="../villaflora/assets/images/Foto 29.jpg" alt="Gabinete Izquierda de Microondas con Vasos y Copas" class="inspection-image" />
+    </div>
+    
+    <h3 class="subtítulo">Refrigerador</h3>
+    <ul class="lista-inspeccion">
+      <li><input type="checkbox" title="Revisar que no haya sucio ni migajas" /> Revisar que no haya sucio ni migajas</li>
+      <li><input type="checkbox" title="Enfriando correctamente" /> Enfriando correctamente</li>
+      <li><input type="checkbox" title="Cajones y repisas de nevera limpios" /> Cajones y repisas de nevera limpios</li>
+      <li><input type="checkbox" title="6 aguas regulares" /> 6 aguas regulares</li>
+      <li><input type="checkbox" title="1 leche" /> 1 leche</li>
+      <li><input type="checkbox" title="6 medallas" /> 6 medallas</li>
+    </ul>
+    <div class="foto-section">
+      <img src="../villaflora/assets/images/Foto 30.jpg" alt="Refrigerador" class="inspection-image" />
+    </div>
+
+    <h3 class="subtítulo">Congelador</h3>
+    <ul class="lista-inspeccion">
+      <li><input type="checkbox" title="Revisar que no haya sucio ni migajas en el congelador" /> Revisar que no haya sucio ni migajas en el congelador</li>
+      <li><input type="checkbox" title="Verificar que esté enfriando correctamente" /> Verificar que esté enfriando correctamente</li>
+      <li><input type="checkbox" title="Fábrica de hielo funcionando" /> Fábrica de hielo funcionando</li>
+    </ul>
+    <div class="foto-section">
+      <img src="../villaflora/assets/images/Foto 30.jpg" alt="Congelador" class="inspection-image" />
+    </div>
+
+    <h3 class="subtítulo">Sala / Comedor</h3>
+    <h4 class="subtítulo2">Sillas de Barra</h4>
+    <ul class="lista-inspeccion">
+      <li><input type="checkbox" title="Limpias y fuertes" /> Limpias y fuertes</li>
+    </ul>
+    <div class="foto-section">
+      <img src="../villaflora/assets/images/Foto 31.jpg" alt="Sillas de Barra" class="inspection-image" />
+    </div>
+
+    <h4 class="subtítulo2">Candelabro, Lámparas y Bombillos</h4>
+    <ul class="lista-inspeccion">
+      <li><input type="checkbox" title="Limpios" /> Limpios</li>
+      <li><input type="checkbox" title="Bombillos encendidos" /> Bombillos encendidos</li>
+    </ul>
+    <div class="foto-section">
+      <img src="../villaflora/assets/images/Foto 32.jpg" alt="Candelabro, Lámparas y Bombillos" class="inspection-image" />
+    </div>
+
+    <h4 class="subtítulo2">Comedor</h4>
+    <ul class="lista-inspeccion">
+      <li><input type="checkbox" title="Mesa limpia" /> Mesa limpia</li>
+      <li><input type="checkbox" title="Sillas organizadas" /> Sillas organizadas</li>
+      <li><input type="checkbox" title="Sillas fuertes" /> Sillas fuertes</li>
+      <li><input type="checkbox" title="Sillas limpias" /> Sillas limpias</li>
+    </ul>
+    <div class="foto-section">
+      <img src="../villaflora/assets/images/Foto 33.jpg" alt="Comedor" class="inspection-image" />
+    </div>
+
+    <h4 class="subtítulo2">Mueble de Comedor</h4>
+    <ul class="lista-inspeccion">
+      <li><input type="checkbox" title="4 toallas de piscina con aviso" /> 4 toallas de piscina con aviso</li>
+      <li><input type="checkbox" title="Suficientes manteles individuales para 6 personas" /> Suficientes manteles individuales para 6 personas</li>
+      <li><input type="checkbox" title="Bandejas y bowls de picadas y de servir" /> Bandejas y bowls de picadas y de servir</li>
+    </ul>
+    <div class="foto-section">
+      <img src="../villaflora/assets/images/Foto 34A.jpg" alt="Mueble de Comedor 34A" class="inspection-image" />
+      <img src="../villaflora/assets/images/Foto 34B.jpg" alt="Mueble de Comedor 34B" class="inspection-image" />
+      <img src="../villaflora/assets/images/Foto 34C.jpg" alt="Mueble de Comedor 34C" class="inspection-image" />
+      <img src="../villaflora/assets/images/Foto 34D.jpg" alt="Mueble de Comedor 34D" class="inspection-image" />
+      <img src="../villaflora/assets/images/Foto 34F.jpg" alt="Mueble de Comedor 34F" class="inspection-image" />
+    </div>
+
+    <h4 class="subtítulo2">Sala</h4>
+    <ul class="lista-inspeccion">
+      <li><input type="checkbox" title="Quitar cojines y revisar que no haya comida debajo" /> Quitar cojines y revisar que no haya comida debajo</li>
+      <li><input type="checkbox" title="Todas las almohadas decorativas limpias y en dirección correcta" /> Todas las almohadas decorativas limpias y en dirección correcta</li>
+      <li><input type="checkbox" title="Sofá limpio" /> Sofá limpio</li>
+      <li><input type="checkbox" title="Mirar debajo del sofá" /> Mirar debajo del sofá</li>
+      <li><input type="checkbox" title="Encender televisor y verificar internet" /> Encender televisor y verificar internet</li>
+      <li><input type="checkbox" title="Control en mueble de TV" /> Control en mueble de TV</li>
+      <li><input type="checkbox" title="Abrir cajones de gabinete" /> Abrir cajones de gabinete</li>
+      <li><input type="checkbox" title="Juegos de mesa organizados y limpios" /> Juegos de mesa organizados y limpios</li>
+      <li><input type="checkbox" title="Revisar detrás de las cortinas" /> Revisar detrás de las cortinas</li>
+    </ul>
+    <div class="foto-section">
+      <img src="../villaflora/assets/images/Foto 35A.jpg" alt="Sala 35A" class="inspection-image" />
+      <img src="../villaflora/assets/images/Foto 35B.jpg" alt="Sala 35B" class="inspection-image" />
+      <img src="../villaflora/assets/images/Foto 35C.jpg" alt="Sala 35C" class="inspection-image" />
+      <img src="../villaflora/assets/images/Foto 35D.jpg" alt="Sala 35D" class="inspection-image" />
+      <img src="../villaflora/assets/images/Foto 35E.jpg" alt="Sala 35E" class="inspection-image" />
+    </div>
+
+    <h4 class="subtítulo2">Terraza</h4>
+    <ul class="lista-inspeccion">
+      <li><input type="checkbox" title="Puertas y vidrios limpios" /> Puertas y vidrios limpios</li>
+      <li><input type="checkbox" title="Puertas abren sin problema" /> Puertas abren sin problema</li>
+      <li><input type="checkbox" title="Piso limpio sin arena" /> Piso limpio sin arena</li>
+      <li><input type="checkbox" title="Muebles limpios" /> Muebles limpios</li>
+      <li><input type="checkbox" title="Muebles en puesto correcto" /> Muebles en puesto correcto</li>
+      <li><input type="checkbox" title="Revisar bombillos" /> Revisar bombillos</li>
+      <li><input type="checkbox" title="Hamaca colgada" /> Hamaca colgada</li>
+      <li><input type="checkbox" title="Forro del sofá: CO exterior/ CI interior" /> Forro del sofá: CO exterior/ CI interior</li>
+      <li>
+        <span><input type="checkbox" /> Parrilla de Gas/ BBQ</span>
+        <ul>
+          <li>
+            <span class="subtítulo"><input type="checkbox" /> Grill limpio</span>
+          </li>
+          <li>
+            <span class="subtítulo"><input type="checkbox" /> Verificar que no haya escape de gas y encender</span>
+          </li>
+          <li>
+            <span class="subtítulo"><input type="checkbox" /> Dejar gas cerrado</span>
+          </li>
+        </ul>
+    </li>
+    </ul>
+ 
+</ul>
+    <div class="foto-section">
+      <img src="../villaflora/assets/images/Foto 36A.jpg" alt="Terraza 36A" class="inspection-image" />
+      <img src="../villaflora/assets/images/Foto 36B.jpg" alt="Terraza 36B" class="inspection-image" />
+    </div>
+
+
+    <h3 class="subtítulo">Dormitorio Principal</h3>
+    <ul class="lista-inspeccion">
+      <li><input type="checkbox" title="Puerta y pasillo limpio" /> Puerta y pasillo limpio</li>
+      <li><input type="checkbox" title="Bombillos funcionando" /> Bombillos funcionando</li>
+    </ul>
+
+    <h4 class="subtítulo2">Baño del Dormitorio Principal</h4>
+    <h4 class="subtítulo3">Ducha </h4>
+    <ul class="lista-inspeccion">
+      <li><input type="checkbox" title="Jabonera limpia" /> Jabonera limpia</li>
+      <li><input type="checkbox" title="1 toalla de pies" /> 1 toalla de pies</li>
+      <li><input type="checkbox" title="2 toallas de baño" /> 2 toallas de baño</li>
+    </ul>
+    <div class="foto-section">
+      <img src="../villaflora/assets/images/Foto 38.jpg" alt="Ducha Baño Dormitorio Principal" class="inspection-image" />
+    </div>
+
+    <h4 class="subtítulo3">Bañera</h4>
+    <ul class="lista-inspeccion">
+      <li><input type="checkbox" title="Prenderla" /> Prenderla</li>
+      <li><input type="checkbox" title="Limpia" /> Limpia</li>
+      <li><input type="checkbox" title="2 sets de pantuflas" /> 2 sets de pantuflas</li>
+      <li><input type="checkbox" title="Repelente de mosquitos /Off" /> Repelente de mosquitos /Off</li>
+      <li><input type="checkbox" title="Bloqueador solar" /> Bloqueador solar</li>
+      <li><input type="checkbox" title="2 toallas de baño" /> 2 toallas de baño</li>
+      <li><input type="checkbox" title="2 toallitas (washcloths)" /> 2 toallitas (washcloths)</li>
+      <li><input type="checkbox" title="1 toalla de pies" /> 1 toalla de pies</li>
+    </ul>
+    <div class="foto-section">
+      <img src="../villaflora/assets/images/Foto 39.jpg" alt="Bañera Baño Dormitorio Principal" class="inspection-image" />
+    </div>
+
+    <h4 class="subtítulo3">Tope de Lavamanos</h4>
+    <ul class="lista-inspeccion">
+      <li><input type="checkbox" title="Revisar bombillos" /> Revisar bombillos</li>
+      <li><input type="checkbox" title="Lavamanos funcionando y limpios" /> Lavamanos funcionando y limpios</li>
+      <li><input type="checkbox" title="2 jabones" /> 2 jabones</li>
+      <li><input type="checkbox" title="1 shampoo" /> 1 shampoo</li>
+      <li><input type="checkbox" title="1 acondicionador" /> 1 acondicionador</li>
+      <li><input type="checkbox" title="1 gel de cuerpo" /> 1 gel de cuerpo</li>
+      <li><input type="checkbox" title="1 loción corporal" /> 1 loción corporal</li>
+      <li><input type="checkbox" title="Kleenex" /> Kleenex</li>
+      <li><input type="checkbox" title="2 kits dentales" /> 2 kits dentales</li>
+      <li><input type="checkbox" title="2 aguas" /> 2 aguas</li>
+      <li><input type="checkbox" title="Jabón líquido lleno" /> Jabón líquido lleno</li>
+      <li><input type="checkbox" title="Vasitos limpios" /> Vasitos limpios</li>
+      <li><input type="checkbox" title="1 toalla de maquillaje" /> 1 toalla de maquillaje</li>
+      <li><input type="checkbox" title="2 toallas de mano" /> 2 toallas de mano</li>
+      <li><input type="checkbox" title="2 toallas pequeñas (washcloths)" /> 2 toallas pequeñas (washcloths)</li>
+    </ul>
+    <div class="foto-section">
+      <img src="../villaflora/assets/images/Foto 40.jpg" alt="Tope de Lavamanos Baño Dormitorio Principal" class="inspection-image" />
+    </div>
+
+    <h4 class="subtítulo3">Gabinetes</h4>
+    <ul class="lista-inspeccion">
+      <li><input type="checkbox" title="First Aid Kit" /> First Aid Kit</li>
+      <li><input type="checkbox" title="2 papeles higiénicos extra" /> 2 papeles higiénicos extra</li>
+      <li><input type="checkbox" title="Abrir todos los gabinetes" /> Abrir todos los gabinetes</li>
+      <li><input type="checkbox" title="Secador de cabello" /> Secador de cabello</li>
+    </ul>
+    <div class="foto-section">
+      <img src="../villaflora/assets/images/Foto 41.jpg" alt="Gabinetes Baño Dormitorio Principal" class="inspection-image" />
+    </div>
+
+    <h4 class="subtítulo3">Área de Inodoro</h4>
+    <ul class="lista-inspeccion">
+      <li><input type="checkbox" title="Revisar bombillos" /> Revisar bombillos</li>
+      <li><input type="checkbox" title="Revisar abanico" /> Revisar abanico</li>
+      <li><input type="checkbox" title="Inodoro limpio y funcionando" /> Inodoro limpio y funcionando</li>
+      <li><input type="checkbox" title="Zafacón limpio y vacío" /> Zafacón limpio y vacío</li>
+      <li><input type="checkbox" title="Pararse en pesa" /> Pararse en pesa</li>
+      <li><input type="checkbox" title="Bomba para destapar inodoro" /> Bomba para destapar inodoro</li>
+      <li><input type="checkbox" title="Bidet limpio y funcionando" /> Bidet limpio y funcionando</li>
+      <li><input type="checkbox" title="Hamper vacío y limpio" /> Hamper vacío y limpio</li>
+    </ul>
+    <div class="foto-section">
+      <img src="../villaflora/assets/images/Foto 42A.jpg" alt="Área de Inodoro 42A" class="inspection-image" />
+      <img src="../villaflora/assets/images/Foto 42B.jpg" alt="Área de Inodoro 42B" class="inspection-image" />
+    </div>
+
+    <h4 class="subtítulo2">Área de Armarios</h4>
+    <h4 class="subtítulo3">Armario de Dueño</h4>
+    <ul class="lista-inspeccion">
+      <li><input type="checkbox" title="Cerrado" /> Cerrado</li>
+    </ul>
+    <h4 class="subtítulo3">Armario Huéspedes</h4>
+    <ul class="lista-inspeccion">
+      <li><input type="checkbox" title="Revisar bombillos" /> Revisar bombillos</li>
+      <li><input type="checkbox" title="Maletero" /> Maletero</li>
+      <li><input type="checkbox" title="Ganchos organizados por clase" /> Ganchos organizados por clase</li>
+      <li><input type="checkbox" title="Paquete de 2 almohadas standard con pillow cases, covers y frisa limpia" /> Paquete de 2 almohadas standard con pillow cases, covers y frisa limpia</li>
+      <li><input type="checkbox" title="Revisar que los cajones y repisas estén vacíos y limpios" /> Revisar que los cajones y repisas estén vacíos y limpios</li>
+    </ul>
+    <div class="foto-section">
+      <img src="../villaflora/assets/images/Foto 44.jpg" alt="Armario Huéspedes" class="inspection-image" />
+    </div>
+
+    <h4 class="subtítulo2">Área de Cama</h4>
+    <div class="foto-section">
+      <img src="../villaflora/assets/images/Foto 45A.jpg" alt="Área de Cama 45A" class="inspection-image" />
+      <img src="../villaflora/assets/images/Foto 45B.jpg" alt="Área de Cama 45B" class="inspection-image" />
+      <img src="../villaflora/assets/images/Foto 45C.jpg" alt="Área de Cama 45C" class="inspection-image" />
+    </div>
+    <ul class="lista-inspeccion">
+      <li><input type="checkbox" title="Revisar bombillos techo" /> Revisar bombillos techo</li>
+      <li><input type="checkbox" title="Cortinas limpias" /> Cortinas limpias</li>
+      <li><input type="checkbox" title="Revisar detrás de las cortinas" /> Revisar detrás de las cortinas</li>
+      <li><input type="checkbox" title="1 botella de agua en cada mesita de noche (2 total)" /> 1 botella de agua en cada mesita de noche (2 total)</li>
+      <li><input type="checkbox" title="Revisar bombillos mesitas de noche" /> Revisar bombillos mesitas de noche</li>
+      <li><input type="checkbox" title="4 almohadas king con pillow covers" /> 4 almohadas king con pillow covers</li>
+      <li><input type="checkbox" title="Mirar debajo de la cama" /> Mirar debajo de la cama</li>
+      <li><input type="checkbox" title="Gabinete limpio y vacío" /> Gabinete limpio y vacío</li>
+      <li><input type="checkbox" title="Revisar que la T.V. esté funcionando" /> Revisar que la T.V. esté funcionando</li>
+      <li><input type="checkbox" title="Libreta de notas y lapicero sobre mueble" /> Libreta de notas y lapicero sobre mueble</li>
+      <li><input type="checkbox" title="Nota de QR codes para tips y sobres" /> Nota de QR codes para tips y sobres</li>
+    </ul>
+    
+    <h3 class="subtítulo">Dormitorio Secundario</h3>
+    <ul class="lista-inspeccion">
+      <li><input type="checkbox" title="Puerta y pasillo limpio" /> Puerta y pasillo limpio</li>
+      <li><input type="checkbox" title="Bombillos funcionando" /> Bombillos funcionando</li>
+    </ul>
+
+    <h4 class="subtítulo2">Armario Segundo Dormitorio</h4>
+    <ul class="lista-inspeccion">
+      <li><input type="checkbox" title="Revisar bombillos" /> Revisar bombillos</li>
+      <li><input type="checkbox" title="Maletero" /> Maletero</li>
+      <li><input type="checkbox" title="Ganchos organizados por clase" /> Ganchos organizados por clase</li>
+      <li><input type="checkbox" title="Paquete de 2 almohadas standard con pillow cases, covers y frisa limpia" /> Paquete de 2 almohadas standard con pillow cases, covers y frisa limpia</li>
+      <li><input type="checkbox" title="Revisar que los cajones y repisas estén vacíos y limpios" /> Revisar que los cajones y repisas estén vacíos y limpios</li>
+    </ul>
+    <div class="foto-section">
+      <img src="../villaflora/assets/images/Foto 47.jpg" alt="Armario Segundo Dormitorio" class="inspection-image" />
+    </div>
+
+    <h4 class="subtítulo2">Área de Cama</h4>
+    
+    <ul class="lista-inspeccion">
+      <li><input type="checkbox" title="Cortina limpia" /> Cortina limpia</li>
+      <li><input type="checkbox" title="Revisar detrás de la cortina" /> Revisar detrás de la cortina</li>
+      <li><input type="checkbox" title="Revisar bombillos techo" /> Revisar bombillos techo</li>
+      <li><input type="checkbox" title="2 almohadas standard con pillow cover sobre cada cama (4 en total)" /> 2 almohadas standard con pillow cover sobre cada cama (4 en total)</li>
+      <li><input type="checkbox" title="Revisar y sacar cama cajón de abajo" /> Revisar y sacar cama cajón de abajo</li>
+      <li><input type="checkbox" title="Abrir cajones de mueble y baúl" /> Abrir cajones de mueble y baúl</li>
+    </ul>
+    <div class="foto-section">
+      <img src="../villaflora/assets/images/Foto 48A.jpg" alt="Área de Cama 48A" class="inspection-image" />
+      <img src="../villaflora/assets/images/Foto 48B.jpg" alt="Área de Cama 48B" class="inspection-image" />
+    </div>
+
+    <h4 class="subtítulo2">Baño Segundo Dormitorio</h4>
+    <ul class="lista-inspeccion">
+      <li><input type="checkbox" title="Revisar bombillos" /> Revisar bombillos</li>
+      <li><input type="checkbox" title="Revisar abanico" /> Revisar abanico</li>
+      <li><input type="checkbox" title="Inodoro limpio y funcionando" /> Inodoro limpio y funcionando</li>
+      <li><input type="checkbox" title="Zafacón limpio" /> Zafacón limpio</li>
+    </ul>
+    <h4 class="subtítulo3">Tope de Lavamanos</h4>
+ 
+    <ul class="lista-inspeccion">
+      <li><input type="checkbox" title="Lavamanos funcionando y limpio" /> Lavamanos funcionando y limpio</li>
+      <li><input type="checkbox" title="1 jabón" /> 1 jabón</li>
+      <li><input type="checkbox" title="1 shampoo" /> 1 shampoo</li>
+      <li><input type="checkbox" title="1 acondicionador" /> 1 acondicionador</li>
+      <li><input type="checkbox" title="1 gel para cuerpo" /> 1 gel para cuerpo</li>
+      <li><input type="checkbox" title="1 loción corporal" /> 1 loción corporal</li>
+      <li><input type="checkbox" title="2 aguas" /> 2 aguas</li>
+      <li><input type="checkbox" title="Vasito limpio" /> Vasito limpio</li>
+      <li><input type="checkbox" title="Jabón líquido lleno" /> Jabón líquido lleno</li>
+      <li><input type="checkbox" title="Kleenex" /> Kleenex</li>
+      <li><input type="checkbox" title="1 toalla de mano" /> 1 toalla de mano</li>
+      <li><input type="checkbox" title="1 toalla de maquillaje" /> 1 toalla de maquillaje</li>
+    </ul>
+    <div class="foto-section">
+      <img src="../villaflora/assets/images/Foto 49.jpg" alt="Tope de Lavamanos Baño Segundo Dormitorio" class="inspection-image" />
+    </div>
+    <h4 class="subtítulo3">Gabinete</h4>
+  
+    <ul class="lista-inspeccion">
+      <li><input type="checkbox" title="Abrir los gabinetes" /> Abrir los gabinetes</li>
+      <li><input type="checkbox" title="2 papeles higiénicos extras" /> 2 papeles higiénicos extras</li>
+    </ul>
+    <div class="foto-section">
+      <img src="../villaflora/assets/images/Foto 50.jpg" alt="Gabinete Baño Segundo Dormitorio" class="inspection-image" />
+    </div>
+    <h4 class="subtítulo3">Ducha</h4>
+   
+    <ul class="lista-inspeccion">
+      <li><input type="checkbox" title="Jabonera limpia" /> Jabonera limpia</li>
+      <li><input type="checkbox" title="1 toalla de pies" /> 1 toalla de pies</li>
+      <li><input type="checkbox" title="2 toallas de baño" /> 2 toallas de baño</li>
+      <li><input type="checkbox" title="1 washcloth" /> 1 washcloth</li>
+    </ul>
+    <div class="foto-section">
+      <img src="../villaflora/assets/images/Foto 51.jpg" alt="Ducha Baño Segundo Dormitorio" class="inspection-image" />
+    </div>
+
+    <h3 class="subtítulo">Pasillo de Área Social</h3>
+    <h4 class="subtítulo2">Cuarto de Lavado (Laundry)</h4>
+
+    <ul class="lista-inspeccion">
+      <li><input type="checkbox" title="Revisar bombillos" /> Revisar bombillos</li>
+      <li><input type="checkbox" title="Abrir gabinetes y que estén limpios y organizados" /> Abrir gabinetes y que estén limpios y organizados</li>
+      <li><input type="checkbox" title="Jabón de ropa" /> Jabón de ropa</li>
+      <li><input type="checkbox" title="Plancha" /> Plancha</li>
+      <li><input type="checkbox" title="Mesa de plancha" /> Mesa de plancha</li>
+      <li><input type="checkbox" title="Utensilios de limpieza básicos: escoba, mapo, recogedor y cubo" /> Utensilios de limpieza básicos: escoba, mapo, recogedor y cubo</li>
+    </ul>
+    <div class="foto-section">
+      <img src="../villaflora/assets/images/Foto 52A.jpg" alt="Cuarto de Lavado 52A" class="inspection-image" />
+      <img src="../villaflora/assets/images/Foto 52C.jpg" alt="Cuarto de Lavado 52C" class="inspection-image" />
+    </div>
+    <h4 class="subtítulo3">Lavadora y Secadora</h4>
+   
+    <ul class="lista-inspeccion">
+      <li><input type="checkbox" title="Revisión del interior de las máquinas" /> Revisión del interior de las máquinas</li>
+      <li><input type="checkbox" title="Revisar filtro de secadora" /> Revisar filtro de secadora</li>
+      <li><input type="checkbox" title="Revisar compartimiento de jabón de lavadora" /> Revisar compartimiento de jabón de lavadora</li>
+      <li><input type="checkbox" title="Revisar detrás de lavadora" /> Revisar detrás de lavadora</li>
+      <li><input type="checkbox" title="Revisar encima de secadora" /> Revisar encima de secadora</li>
+      <li><input type="checkbox" title="Aviso limpio y centrado" /> Aviso limpio y centrado</li>
+    </ul>
+    <div class="foto-section">
+      <img src="../villaflora/assets/images/Foto 52B.jpg" alt="Lavadora y Secadora 52B" class="inspection-image" />
+      <img src="../villaflora/assets/images/Foto 52D.jpg" alt="Lavadora y Secadora 52D" class="inspection-image" />
+    </div>
+
+    <h4 class="subtítulo2">Baño Final de Pasillo</h4>
+    <ul class="lista-inspeccion">
+      <li><input type="checkbox" title="Revisar bombillos" /> Revisar bombillos</li>
+      <li><input type="checkbox" title="Revisar abanico" /> Revisar abanico</li>
+      <li><input type="checkbox" title="Inodoro limpio y funcionando" /> Inodoro limpio y funcionando</li>
+      <li><input type="checkbox" title="Zafacón limpio" /> Zafacón limpio</li>
+    </ul>
+    <h4 class="subtítulo3">Tope de Lavamanos</h4>
+    <div class="foto-section">
+      <img src="../villaflora/assets/images/Foto 54.jpg" alt="Tope de Lavamanos Baño Final de Pasillo" class="inspection-image" />
+    </div>
+    <ul class="lista-inspeccion">
+      <li><input type="checkbox" title="Lavamanos funcionando y limpio" /> Lavamanos funcionando y limpio</li>
+      <li><input type="checkbox" title="1 jabón" /> 1 jabón</li>
+      <li><input type="checkbox" title="1 shampoo" /> 1 shampoo</li>
+      <li><input type="checkbox" title="1 acondicionador" /> 1 acondicionador</li>
+      <li><input type="checkbox" title="1 gel para cuerpo" /> 1 gel para cuerpo</li>
+      <li><input type="checkbox" title="1 loción corporal" /> 1 loción corporal</li>
+      <li><input type="checkbox" title="2 aguas" /> 2 aguas</li>
+      <li><input type="checkbox" title="Vasito limpio" /> Vasito limpio</li>
+      <li><input type="checkbox" title="Jabón líquido lleno" /> Jabón líquido lleno</li>
+      <li><input type="checkbox" title="Kleenex" /> Kleenex</li>
+      <li><input type="checkbox" title="1 toalla de mano" /> 1 toalla de mano</li>
+      <li><input type="checkbox" title="1 toalla de maquillaje" /> 1 toalla de maquillaje</li>
+    </ul>
+    <h4 class="subtítulo3">Gabinete</h4>
+    <ul class="lista-inspeccion">
+      <li><input type="checkbox" title="Abrir los gabinetes" /> Abrir los gabinetes</li>
+      <li><input type="checkbox" title="2 papeles higiénicos extras" /> 2 papeles higiénicos extras</li>
+    </ul>
+    <div class="foto-section">
+      <img src="../villaflora/assets/images/Foto 55.jpg" alt="Gabinete Baño Final de Pasillo" class="inspection-image" />
+    </div>
+    <h4 class="subtítulo3">Ducha</h4>
+    <ul class="lista-inspeccion">
+      <li><input type="checkbox" title="Jabonera limpia" /> Jabonera limpia</li>
+      <li><input type="checkbox" title="1 toalla de pies" /> 1 toalla de pies</li>
+      <li><input type="checkbox" title="2 toallas de baño" /> 2 toallas de baño</li>
+      <li><input type="checkbox" title="1 washcloth" /> 1 washcloth</li>
+    </ul>
+    <div class="foto-section">
+      <img src="../villaflora/assets/images/Foto 56.jpg" alt="Ducha Baño Final de Pasillo" class="inspection-image" />
+    </div>
+    <h4 class="subtítulo2">Closets Aires Acondicionados</h4>
+    <ul class="lista-inspeccion">
+      <li><input type="checkbox" title="Closets limpios y organizados" /> Closets limpios y organizados</li>
+      <li><input type="checkbox" title="Revisar bombillos" /> Revisar bombillos</li>
+      <li><input type="checkbox" title="Termostatos: 77 CO/ 72 CI" /> Termostatos: 77 CO/ 72 CI</li>
+      <li><input type="checkbox" title="Escaleras" /> Escaleras</li>
+      <li><input type="checkbox" title="Aspiradora" /> Aspiradora</li>
+    </ul>
+    <h3 class="subtítulo">Carro de Golf</h3>
+    <ul class="lista-inspeccion">
+      <li><input type="checkbox" title="Conectado" /> Conectado</li>
+      <li><input type="checkbox" title="Funcionando" /> Funcionando</li>
+      <li><input type="checkbox" title="Limpio" /> Limpio</li>
+      <li><input type="checkbox" title="Llenar papel de inspección y enviarlo" /> Llenar papel de inspección y enviarlo</li>
+    </ul>
+    <div class="foto-section">
+      <img src="../villaflora/assets/images/Foto 58.jpg" alt="Carro de Golf" class="inspection-image" />
+    </div>
+
+</main>
+</body>
 </html>
