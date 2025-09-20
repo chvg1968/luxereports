@@ -1,9 +1,109 @@
 Instrucciones:
-Actualiza el archivo OceanGrace.html de acuerdo a la siguiente información: 
 
+Aplica este patrón html al siguiente texto después del formato html llamado TEXTO PARA HTML haciendo un mapeo de las fotos en oceangrace/images con las fotos numeradas en el texto: 
 
-Inspección 2-105 Ocean Grace
-General
+<html>
+
+<head>
+  <meta content="text/html; charset=UTF-8" http-equiv="content-type">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/css/style.css">
+  <style>
+    .foto-section {
+      display: flex;
+      flex-direction: row;
+      gap: 10px; /* espacio entre imágenes */
+    }
+    
+    .inspection-image {
+      width: 239.4px;
+      height: 160.4px;
+      margin: 0;
+      overflow: hidden;
+      /* Ya no se necesita display: block; */
+    }
+    
+    .inspection-image img {
+      width: 100%;
+      height: 100%;
+      margin: 0;
+      transform: rotate(0rad) translateZ(0px);
+      -webkit-transform: rotate(0rad) translateZ(0px);
+    }
+
+    /* Reglas de indentación */
+    :root {
+      --indentacion-titulo: 0;
+      --indentacion-subtitulo: 2em;
+      --indentacion-subtitulo2: 4em;
+      --indentacion-lista: 4em;
+    }
+
+    .titulo-principal {
+      margin-left: var(--indentacion-titulo);
+    }
+
+    .subtítulo {
+      margin-left: var(--indentacion-subtitulo);
+    }
+
+    .subtítulo2 {
+      margin-left: var(--indentacion-subtitulo2);
+    }
+
+    .lista-inspeccion {
+      text-indent: var(--indentacion-lista);
+    }
+  </style>
+
+</head>
+
+<body class="c11 c22 doc-content" id="checklist-page">
+  <header class="header-insp">
+    <div class="banner">
+      <img src="../oceangrace/images/Ocean Grace Villa.jpg">
+      <div class="home"><a href="/pages/inspecciones.html">Menu principal</a>
+      <h1 class="title_inspect">
+        Inspección 2-105 Ocean Grace
+      </h1>
+      </div>
+    </div>
+  </header>
+
+  <h3 class="content">
+    
+
+    <h3 class="titulo-principal">General</h3>
+    <ul class="lista-inspeccion">
+      <li class="c9 c2 li-bullet-0"><span class="c3"><input type="checkbox" /> Puerta principal y pasillo de entrada limpio</span></li>
+      <li class="c9 c2 li-bullet-0"><span class="c3"><input type="checkbox" /> Revisar bombillo exterior</span></li>
+      <li class="c9 c2 li-bullet-0"><span class="c3"><input type="checkbox" /> Timbre funciona</span></li>
+      <li class="c9 c2 li-bullet-0"><span class="c3"><input type="checkbox" /> Entrar preparado con trapo para limpiar y secar</span></li>
+      <li class="c9 c2 li-bullet-0"><span class="c3"><input type="checkbox" /> Wifi funcionando, abrir página nueva</span></li>
+      <li class="c9 c2 li-bullet-0"><span class="c3"><input type="checkbox" /> Lockbox con llave adentro</span></li>
+    </ul>
+    <div class="foto-section">
+      <img src="../oceangrace/images/FOTO 1.jpeg" alt="Foto General" class="inspection-image" />
+      <img src="../oceangrace/images/FOTO 2.jpeg" alt="Foto General" class="inspection-image" />
+    </div>
+
+    <h3 class="titulo-principal">Áreas Sociales</h3>
+    <h3 class="subtítulo">Entrada</h3>
+    <ul class="lista-inspeccion">
+      <li class="c9 c2 li-bullet-0"><span class="c3"><input type="checkbox" /> Sombrilla</li>
+      <li class="c9 c2 li-bullet-0"><span class="c3"><input type="checkbox" /> Revisar bombillos</li>
+      <li class="c9 c2 li-bullet-0"><span class="c3"><input type="checkbox" /> Extintor</li>
+      <li class="c9 c2 li-bullet-0"><span class="c3"><input type="checkbox" /> 4 toallas de piscina con aviso</li>
+      <li class="c9 c2 li-bullet-0"><span class="c3"><input type="checkbox" /> Espejo y mesa limpios</li>
+    </ul>
+    <div class="foto-section">
+      <img src="../oceangrace/images/FOTO 3.jpeg" alt="Entrada Foto 3" class="inspection-image" />
+      <img src="../oceangrace/images/FOTO 4 A.jpeg" alt="Entrada Foto 4 A" class="inspection-image" />
+      <img src="../oceangrace/images/FOTO 4.jpeg" alt="Entrada Foto 4" class="inspection-image" />
+    </div>
+
+//TEXTO PARA HTML
+
 
 •	 Puerta principal y pasillo de entrada limpio
 •	 Revisar bombillo exterior
