@@ -1,130 +1,36 @@
-Instrucciones:
+RULES: 
+1.Este es el texto que se debe usar para actualizar la inspección de Ocean Grace, el archivo destino ya está creado, solo es necesario actualizar algunos items: OceanHaven.html.
+2.Este texto hace referencias a fotos como Foto1 que corresponde a la ruta de images/Foto1.jpeg y así sucesivamente.
+3.Se deben eliminar las fotos donde se dice específicamente cual foto eliminar
+4.Como es un documento muy extenso, recomiendo procesar 100 lineas y verificar que todo esté correcto, antes de continuar con el siguiente bloque de 100 lineas. Si tienes dudas no dudes en preguntarme.
 
-Aplica este patrón html al siguiente texto después del formato html llamado TEXTO PARA HTML haciendo un mapeo de las fotos en oceangrace/images con las fotos numeradas en el texto: 
 
-<html>
 
-<head>
-  <meta content="text/html; charset=UTF-8" http-equiv="content-type">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="/css/style.css">
-  <style>
-    .foto-section {
-      display: flex;
-      flex-direction: row;
-      gap: 10px; /* espacio entre imágenes */
-    }
-    
-    .inspection-image {
-      width: 239.4px;
-      height: 160.4px;
-      margin: 0;
-      overflow: hidden;
-      /* Ya no se necesita display: block; */
-    }
-    
-    .inspection-image img {
-      width: 100%;
-      height: 100%;
-      margin: 0;
-      transform: rotate(0rad) translateZ(0px);
-      -webkit-transform: rotate(0rad) translateZ(0px);
-    }
 
-    /* Reglas de indentación */
-    :root {
-      --indentacion-titulo: 0;
-      --indentacion-subtitulo: 2em;
-      --indentacion-subtitulo2: 4em;
-      --indentacion-lista: 4em;
-    }
-
-    .titulo-principal {
-      margin-left: var(--indentacion-titulo);
-    }
-
-    .subtítulo {
-      margin-left: var(--indentacion-subtitulo);
-    }
-
-    .subtítulo2 {
-      margin-left: var(--indentacion-subtitulo2);
-    }
-
-    .lista-inspeccion {
-      text-indent: var(--indentacion-lista);
-    }
-  </style>
-
-</head>
-
-<body class="c11 c22 doc-content" id="checklist-page">
-  <header class="header-insp">
-    <div class="banner">
-      <img src="../oceangrace/images/Ocean Grace Villa.jpg">
-      <div class="home"><a href="/pages/inspecciones.html">Menu principal</a>
-      <h1 class="title_inspect">
-        Inspección 2-105 Ocean Grace
-      </h1>
-      </div>
-    </div>
-  </header>
-
-  <h3 class="content">
-    
-
-    <h3 class="titulo-principal">General</h3>
-    <ul class="lista-inspeccion">
-      <li class="c9 c2 li-bullet-0"><span class="c3"><input type="checkbox" /> Puerta principal y pasillo de entrada limpio</span></li>
-      <li class="c9 c2 li-bullet-0"><span class="c3"><input type="checkbox" /> Revisar bombillo exterior</span></li>
-      <li class="c9 c2 li-bullet-0"><span class="c3"><input type="checkbox" /> Timbre funciona</span></li>
-      <li class="c9 c2 li-bullet-0"><span class="c3"><input type="checkbox" /> Entrar preparado con trapo para limpiar y secar</span></li>
-      <li class="c9 c2 li-bullet-0"><span class="c3"><input type="checkbox" /> Wifi funcionando, abrir página nueva</span></li>
-      <li class="c9 c2 li-bullet-0"><span class="c3"><input type="checkbox" /> Lockbox con llave adentro</span></li>
-    </ul>
-    <div class="foto-section">
-      <img src="../oceangrace/images/FOTO 1.jpeg" alt="Foto General" class="inspection-image" />
-      <img src="../oceangrace/images/FOTO 2.jpeg" alt="Foto General" class="inspection-image" />
-    </div>
-
-    <h3 class="titulo-principal">Áreas Sociales</h3>
-    <h3 class="subtítulo">Entrada</h3>
-    <ul class="lista-inspeccion">
-      <li class="c9 c2 li-bullet-0"><span class="c3"><input type="checkbox" /> Sombrilla</li>
-      <li class="c9 c2 li-bullet-0"><span class="c3"><input type="checkbox" /> Revisar bombillos</li>
-      <li class="c9 c2 li-bullet-0"><span class="c3"><input type="checkbox" /> Extintor</li>
-      <li class="c9 c2 li-bullet-0"><span class="c3"><input type="checkbox" /> 4 toallas de piscina con aviso</li>
-      <li class="c9 c2 li-bullet-0"><span class="c3"><input type="checkbox" /> Espejo y mesa limpios</li>
-    </ul>
-    <div class="foto-section">
-      <img src="../oceangrace/images/FOTO 3.jpeg" alt="Entrada Foto 3" class="inspection-image" />
-      <img src="../oceangrace/images/FOTO 4 A.jpeg" alt="Entrada Foto 4 A" class="inspection-image" />
-      <img src="../oceangrace/images/FOTO 4.jpeg" alt="Entrada Foto 4" class="inspection-image" />
-    </div>
-
-//TEXTO PARA HTML
-
+Inspección 2-105 Ocean Grace
+General
 
 •	 Puerta principal y pasillo de entrada limpio
 •	 Revisar bombillo exterior
-•	 Timbre funciona
+•	 Timbre 
 •	 Alfombra y bajo alfombra limpio
 •	 Entrar preparado con trapo para limpiar y secar
 •	 Wifi funcionando, abrir página nueva
 •	 Lockbox con llave adentro
-Foto #1             Foto#2
+Foto1             Foto2
 Áreas Sociales
 Entrada
 •	 Sombrilla
 •	 Revisar bombilla
-•	Espejo limpio y mueble
-Foto #3                                     Foto #4                  Foto #4A
+•	Espejo y mueble limpio
+•	Dimmer funciona
+Foto3                                     Foto4                  Foto4A
 
 Cocina
 •	 Revisar limpieza en vasos, platos, ollas
 •	 Revisar bombillos
 •	 2 toallas de mano
-Foto #5                                              
+Foto5                                              
 Amenidades de Bienvenida
 •	 Nota de bienvenida
 •	 Agua Fiji o similar
@@ -136,7 +42,7 @@ Amenidades de Bienvenida
 •	 Sacacorchos (De ser necesario)
 •	 Hielo para CI
 
-Foto #7                                Foto #8
+Foto7                                Foto8
 Fregadero
 •	 Jabón lavaplatos lleno
 •	 Esponja lavaplatos
@@ -145,8 +51,7 @@ Fregadero
 Triturador de Basura
 •	 Ponerlo a funcionar con agua
 •	 No olores
-
-Foto #8                               Foto #9                             Foto #9A
+ (eliminar la Foto8 de aqui)                           Foto9                             Foto9A
                                              
     Topes de Cocina
 •	 Papel toalla
@@ -156,70 +61,48 @@ Foto #8                               Foto #9                             Foto #
 •	 Luces prendidas
 •	 Licuadora limpia
 •	 Tostadora limpia y sin migajas
+•	Horno pequeño 
 •	 Revisar que todos los cuchillos de cocina estén limpios
 
                   
 
-Foto #10A         Foto #11             Foto #12         Foto #12A
+Foto10A (eliminar)        Foto11             Foto12         Foto12A
 
          
 Área de Estufa
 •	 Estufa limpia y funcionando
-•	 Extractor limpia y funcionando
+•	 Extractor limpio y funcionando
 
-Foto #13    #13 A    
+Foto13    #13 A (eliminar foto)   
 
 Luces Debajo de Gabinetes
 •	 Todas funcionando
 •	 Limpio debajo de los gabinetes
-•	 Alarma de monóxido funcionando
 
-Foto #14      #14A   #14 B
+Foto14      #14 A
 Primer Cajón Izquierda de Fregadero
 •	   Cubiertos organizados por clase y limpios
+•	Sacacorchos
 •	 Contabilizar que haya suficientes cubiertos para 8 personas
-Foto # 20
+Foto 20 (NUEVA FOTO)
 Segundo Cajón Izquierda de Fregadero
-•	 Utensilios de cocina y sacacorchos limpios y organizados
-Foto # 20A
+•	 Utensilios de cocina ,limpios y organizados
+Foto 20A (NUEVA FOTO)
 
 Tercer Cajón Izquierda de Fregadero
 •	 Kit de BBQ limpio y completo
 •	 Encendedor
-•	 Clips
-Foto #15 
-
-Gabinete A lado Izquierdo de la nevera 
-•	 Tablas de cortar  
-•	Coladores
-•	 Electrodomésticos limpios
-•	 Refractarias de cocina
-•	 Coladores de pasta
-•	 Refractarias
-•	 Bandejas de hornear
-•	
-
-Foto #16 A
-
-
-Basura
-•	 Limpia
-
-Foto #17
+Foto15 (NUEVA FOTO)
 
 Gabinete de Fregadero de la Cocina
 •	 “Rinse Aid”
 •	Extintor
 •	 Jabón máquina de platos
 •	 Papel toalla
-•	 Servilletas.  
+•	 Servilletas 
 •	Papel toalla
-Foto #10
-
-
-
-
-
+•	Bolsas de basuras pequeñas y grandes
+Foto10
 Lavaplatos
 •	 Sin agua en el fondo
 •	 Todos los platos y utensilios removidos
@@ -227,70 +110,99 @@ Lavaplatos
 •	 Filtro limpio
 •	 Reponer abrillantador "Rinse Aid"
 
-Foto #18
+Foto18
 
-Primer Cajón Gabinete Derecha del Lavaplatos
-•	 Guantes y coge olla limpios. 
-•	Tazas medidoras
-Foto #19 A
-
- Segundo Cajón Gabinete Derecha del Lavaplatos
-Zafacón Grande
-•	 Sacarlo y revisar detrás
-•	 Limpio
-•	 Bolsa grande
-•	 Bolsas de zafacón grandes, medianas y pequeñas
-Foto #17
-Gabinete con Repisas Rotatorias
-•	 Revisar que las ollas y sartenes estén limpios y organizados
-
-Foto #19
-
-Cajón Izquierda de Estufa
+Cajón Derecha del Lavaplatos 
 
 •	 Bolsas Ziploc pequeñas
 •	 Bolsas Ziploc grandes
 •	 Papel encerado
 •	 Papel aluminio
 •	 Papel plástico
-Foto #19B
+•	 Guantes y coge olla limpios
+•	Guantes de cocina
+•	Clips 
+
+Foto19B
+
+Gabinete Derecha del Lavaplatos
+Zafacón Grande
+•	 Sacarlo y revisar detrás
+•	 Limpio
+•	 Bolsa grande
+•	 Bolsas de zafacón grandes, medianas y pequeñas
+Foto17
+
+
 Gabinete Izquierda de Estufa
 •	  Mini batidora
 •	 Greca
-
-Foto #19 C
-
+Foto19 C
 
 Horno
 •	 Funciona
 •	 Hora
 •	 Limpio
-•	
-Foto #13
+Foto13
 
-Gabinete Derecha de la Estufa
+Gabinete Derecho Estufa
+•	Guayo de cocina
+•	Foto62
+
+Gabinete con Repisas Rotatorias 
+•	 Revisar que las ollas y sartenes estén limpios y organizados
+
+Foto19
+
+Gabinete al Lado Izquierdo de la Nevera
+•	 Tablas de cortar  
+•	Coladores
 •	 Electrodomésticos limpios
 •	 Refractarias de cocina
 •	 Coladores de pasta
-•	 Tazas medidoras
 •	 Refractarias
 •	 Bandejas de hornear
 
-Foto 16 A           
-
+Foto16 A
 
 Gabinete Encima de Tope a la Izquierda de Microondas
 •	 Revisar que haya suficientes vasos para 8 personas
 •	 Revisar que los vasos estén organizados por clase y limpios
 
-Foto #21B                                      
+Foto21B                                      
+
+Gabinete  Encima del Microondas
+•	 Alarma de monóxido funcionando
+
+   Foto14B (Nueva foto)
 
 Microondas
 •	 Funciona
 •	 Hora
 •	 Limpio
+Foto22 
+Gabinete Encima de Tope a la Derecha de Microondas
+•	Aceite y condimentos
 
-Foto 22 
+Foto22A (Nueva foto)
+
+
+Primer Gabinete Izquierdo de la Nevera
+
+•	Bandeja de servir
+•	Mantequillero
+•	Bowl de ensalada
+
+
+Foto63 (Nueva foto)
+
+Segundo Gabinete Izquierdo de la nevera
+
+•	Revisar que haya suficientes platos y bowls para 8 personas
+
+Foto21
+
+
 
 Refrigerador
 •	 Revisar que no haya sucio ni migajas
@@ -300,14 +212,14 @@ Refrigerador
 •	 1 leche
 •	 6 medallas
 
-Foto #23
+Foto23
 
 Congelador
 •	 Revisar que no haya sucio ni migajas en el congelador
 •	 Verificar que esté enfriando correctamente
 •	 Fábrica de hielo funcionando
 
-Foto #23 A
+•	Foto23 A
 
 Área de Bar
 Tope de Bar
@@ -316,29 +228,42 @@ Tope de Bar
 •	 12 Sobres de Splenda
 •	 Azúcar
 •	 Cafetera limpia
-•	 Tetera limpia
-Foto #24
+Foto24
 
+Fregadero Pequeño - (Mini Bar)
+•	 Instrucciones del dimmer
+•	Fregadero limpio y funcionado 
+Foto70
 
+Gabinete Debajo del Fregadero Pequeño 
+•	 Revisar que este vacío y limpio
+
+Foto62A
 
 Vinera
 •	 Vacía y limpia
 
-Foto #25
+Foto25
+
+Cajón Derecha de Vinera 
+•	 Vacío y limpio
+•	Placemat para 8 personas
+
+Foto71  Foto71A
 
 Gabinete Izquierdo Encima de Tope de Bar
 •	 Copas organizadas por clase, limpias, suficiente para 8 personas
+•	Filtros de Café 
 
-Foto #25 A
+Foto25A
 
 Gabinete Derecho encima de Tope de Bar
 •	 Tazas organizadas por clase, limpias, suficiente para 8 personas
 
-
-Foto #25 B
+Foto25B
 
 Sala / Comedor
-Foto #26 A
+Foto26A
 
 Comedor, Lámparas y Bombillos
 •	 Limpios
@@ -348,7 +273,7 @@ Comedor, Lámparas y Bombillos
 •	 Sillas fuertes
 •	 Sillas limpias
 
-Foto #6B                   Foto #26
+Foto6B                   Foto26
 
 
 Sala
@@ -359,13 +284,15 @@ Sala
 •	 Mirar debajo del sofá
 •	 Encender televisor y verificar internet
 •	 Control en mueble de TV
+•	Instrucciones de control del TV
 •	 Abrir cajones de gabinete
 •	 Juegos de mesa y libros organizados y limpios
 •	 4 toallas de piscina con aviso
 •	 Revisar detrás de las cortinas
+•	Lámparas limpia y encendidas
 
 
-Foto #27, #27 A,          Foto #28     Foto #28 A      Foto #29      Foto #30  Foto #30A  Foto #30 B
+Foto27  Foto27A  Foto28  Foto28A   Foto29   Foto30  Foto30A  Foto30B Foto72
 Terraza
 •	 Puertas y vidrios limpios
 •	 Puertas abren sin problema
@@ -379,15 +306,15 @@ o	 Grill limpio
 o	 Verificar que no haya escape de gas y encender
 o	 Dejar gas cerrado
 
-Foto #31     Foto #32   Foto # 32A   Foto # 32B  Foto #32C   Foto #32D   Foto #32E
-
+Foto73  Foto31     Foto32   Foto 32A   Foto 32B   Foto32C   Foto32D   Foto32E
+ 
 
 Dormitorio Principal
 •	 Puerta y pasillo limpio
 •	 Bombillos funcionando
 •	 Espejo limpio
 
-Foto  #42 A Foto  #42 B  Foto  #42 C 
+Foto42A Foto42B  Foto42C 
 
 
 
@@ -395,8 +322,7 @@ Baño del Dormitorio Principal
 Ducha
 •	 Jabonera limpia
 •	 1 toalla de pies
-•	 4 toallas de baño
-Foto #34 
+Foto34 
 
 
 Bañera
@@ -406,10 +332,10 @@ Bañera
 •	 Repelente de mosquitos /Off
 •	 Bloqueador solar
 •	 4 toallas de baño
-•	 2 toallitas (washcloths)
+•	 1 toallitas (washcloths)
 •	 1 toalla de pies
 
-Foto #35         Foto #34A            Foto #36
+Foto35         Foto34A            Foto36  (Eliminar foto)
 
 
 Tope de Lavamanos
@@ -427,31 +353,29 @@ Tope de Lavamanos
 •	 Vasitos limpios
 •	 1 toalla de maquillaje
 •	 2 toallas de mano
-•	 2 toallas pequeñas (washcloths)
-
-Foto #36         Foto #36A
 
 
+Foto36         Foto36A
 
 Gabinetes
 •	 First Aid Kit
 •	 2 papeles higiénicos extra
-•	 Abrir todos los gabinetes
-•	 Abrir todos los cajones
+•	Secadora de pelo
+•	 Abrir todos los gabinetes y revisa que estén limpios
+•	 Abrir todos los cajones y revisa que estén limpios 
 
 
-Foto #37         Foto #37A       
+Foto37         Foto37A       Foto74       
 
 
-  Área de Inodoro
+  Área de Inodoro y Bidet
 •	 Revisar bombillos
-•	 Revisar abanico
 •	 Cepillo de limpiar inodoro y bomba
 •	 Inodoro limpio y funcionando
 •	 Zafacón limpio y vacío
 •	 Pararse en pesa
 
-Foto #38           Foto #38A       Foto #38B
+Foto38           Foto38A       Foto38B
 
 
     Pasillo de Oficina
@@ -460,9 +384,10 @@ Escritorio
 •	 Libreta de notas y lapicero sobre escritorio
 •	 Nota de QR codes para tips y sobres
 •	Linterna con baterias (verificar que funcionen )
+•	 Abrir todos los cajones y revisa que estén limpios
 
 
-   Foto #39       Foto #39A             
+   Foto39       Foto39A             
 
 
 Armario Huéspedes
@@ -472,20 +397,22 @@ Armario Huéspedes
 •	 Paquete de 2 almohadas standard con pillow cases, covers y frisa limpia
 •	 Revisar que los cajones y repisas estén vacíos y limpios
 
-   Foto #40       Foto #41          
+   Foto40       Foto41(Eliminar foto)          
 
 
 Área de Cama
 •	 Revisar bombillos techo
 •	 Cortinas limpias
 •	 Revisar detrás de las cortinas
+•	Revisar debajo de la alfombra 
+•	Revisar todas las gavetas 
 •	 1 botella de agua en cada mesita de noche (2 total)
 •	 Revisar bombillos mesitas de noche
 •	 4 almohadas king con pillow covers
 •	 Mirar debajo de la cama
 •	Verificar que T.V. esté funcionando
-•	 Control de T.V. sobre mueble
-Foto #42       Foto # 42 A Foto  #42 C #42D
+•	 Control de T.V. sobre mueble con instrucciones 
+Foto42       Foto 42A   Foto42C   Foto42D  Foto77    Foto78
 
 
 Baño a la Derecha en el Pasillo
@@ -498,37 +425,55 @@ Baño a la Derecha en el Pasillo
 •	 2 toallas de baño
 •	 1 washcloth
 
-Foto #43A Foto #43b
+Foto43A     Foto43b
 
-Gabinete de Lavamanos
+Tope de Lavamanos
+•	 Lavamanos funcionando y limpio
+•	 1 jabón
+•	 1 shampoo
+•	 1 acondicionador
+•	 1 gel para cuerpo
+•	 1 loción corporal
+•	 2 aguas
+•	 Vasitos limpios
+•	 Jabón líquido lleno
+•	 Kleenex
+•	 1 toallas de mano
+•	 1 toalla de maquillaje
+•	Gabinete de Lavamanos
 •	 2 papeles higiénicos extra
 •	 Abrir los gabinetes
 •	Blower
 
-Foto #43C       FOTO #43D
+Foto43C       Foto43D
 
 Ducha
 •	 Jabonera limpia
 
-Foto #43
+Foto43
 
       Primer Dormitorio Frente a Pasillo
 •	 Puerta limpia
 •	 Cortina limpia
 •	 Revisar detrás de la cortina
 •	 Revisar bombillos techo
+•	Revisar debajo de la alfombra
 •	 2 almohadas standard con pillow cover sobre cada cama (4 en total)
 
 
-Foto #44          
+Foto44     
+
+     Mesas de Noche 
+•	Control de T.V. sobre mesa
+•	 2 botellas de agua sobre mesa
+Foto44D
+
 
 Mueble de TV
-•	 Abrir puertas. Mueble vacío y limpio
+•	 Mueble limpio
 •	 Verificar que T.V. esté funcionando
-•	 Control de T.V. sobre mueble
-•	 2 botellas de agua sobre mueble
 
-Foto #44 A Foto #44 C Foto #44 D
+Foto44A    Foto44C.   Foto44D. (Eliminar)
 
 
 
@@ -540,7 +485,7 @@ Armario de Dormitorio Frente a Pasillo
 •	 Revisar que los cajones y repisas estén vacíos y limpios
 
 
-Foto #44B
+Foto44B
 
 Baño Jack & Jill
 •	 Revisar bombillos
@@ -552,7 +497,8 @@ Baño Jack & Jill
 •	 2 toallas de baño
 •	 1 washcloth
 
-Foto #45B      Foto #45A.     FOTO #45C
+Foto45B      Foto45A. (Eliminar foto)          Foto45C
+
 
 
 Tope de Lavamanos
@@ -569,7 +515,7 @@ Tope de Lavamanos
 •	 2 toallas de mano
 •	 1 toalla de maquillaje
 
- Foto #45B 
+ Foto45B 
 
 
 
@@ -578,41 +524,53 @@ Segundo Dormitorio Después de Jack & Jill
 •	 Cortina limpia
 •	 Revisar detrás de la cortina
 •	 Revisar bombillos techo
-•	 4 almohadas king con pillow cover
+•	 4 almohadas standard con pillow cover
 •	 1 botella de agua en cada mesita de noche (2 total)
-•	 Abrir cajones de mesitas de noche y de mesa central
-•	 Escritorio, silla y zafacón limpio  Revisar bombillos
+•	 Abrir cajones de mesitas de noche 
+•	 Escritorio, gavetas, silla y zafacón limpio
+•	 Revisar bombillos de lámparas
+Foto46   Foto46A   
+
+Mueble de TV
+•	 Mueble  limpio
+•	 Verificar que T.V. esté funcionando
+Foto46B
+
+
+Armario de Dormitorio 
+
 •	 Maletero
 •	 Ganchos organizados por clase
 •	 Paquete de 2 almohadas standard con pillow cases, covers y frisa limpia
 •	 Revisar que los cajones y repisas estén vacíos y limpios
 
+  Foto 47    Foto48
 
-Foto # 46,    Foto # 46 A,    Foto # 46 B,     Foto # 47,       Foto # 48
+Owner Closet
+
+•	 Revisar que esté  cerrado 
+
 Closets de Aires Acondicionados
 •	 Closets limpios y organizados
 •	 Revisar bombillos
 •	 Termostatos: 77 CO/ 72 CI
 •	 Escaleras
-•	Aspirador
+•	Aspiradora
 •	Utensilios de limpieza básicos: escoba, mapo, recogedor y cubo
 
 
-
-
-Foto#54    Foto #54 A        
+Foto54    Foto54A        
      
 Cuarto de Lavado (Laundry)
-•	 Switch de Calentador de Agua
-o	 Prendido en check-in
-o	 Apagado en check-out
+•	 Switch de calentador de agua
+o	(Prendido en check-in - Apagado en check-out 
 •	 Revisar bombillos
-•	 Abrir gabinetes y que estén limpios y organizados
+•	 Gabinetes limpios y organizados
 •	 Revisar encima de gabinetes
 •	 Jabón de ropa
 •	 Plancha
 •	 Mesa de plancha
-Foto #51.       Foto #52       
+Foto51      Foto52       
 Lavadora y Secadora
 •	 Revisión del interior de las máquinas
 •	 Revisar filtro de secadora
@@ -621,7 +579,7 @@ Lavadora y Secadora
 •	 Revisar encima de secadora
 
 
-Foto #55
+Foto55
 
 Carro de Golf
 •	 Conectado
@@ -629,7 +587,7 @@ Carro de Golf
 •	 Limpio
 •	 Llenar papel de inspección y enviarlo
 
-Foto #53  Foto #53 A      Foto #53B
+Foto53   Foto53A      Foto53B
 
 
 
