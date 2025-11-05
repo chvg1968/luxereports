@@ -8,7 +8,10 @@
     "start": "npx http-server -o",
     "lint": "eslint .",
     "lint:fix": "eslint --fix .",
-    "lint:watch": "eslint --watch ."
+    "lint:watch": "eslint --watch .",
+    "add-inspection-component": "node scripts/add-inspection-component.js",
+    "test-email": "node scripts/test-email.js",
+    "test-email-personal": "node scripts/test-email-personal.js"
   },
   "devDependencies": {
     "@eslint/create-config": "0.4.6",
@@ -23,6 +26,7 @@
     "dotenv": "^16.4.7",
     "heic-convert": "^1.2.4",
     "netlify-cli": "^18.0.4",
+    "resend": "^6.4.1",
     "sharp": "^0.33.2"
   }
 }
