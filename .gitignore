@@ -6,3 +6,8 @@ node_modules
 # Local Netlify folder
 .netlify
 .env
+
+# IDE and OS files
+.history/
+.DS_Store
+Icon?
