@@ -27,7 +27,8 @@ const inspectionFiles = [
   'villapalacio/VillaPalacio.html',
   'villatiffany/VillaTiffany.html',
   'oceangrace/OceanGrace.html',
-  'oceanhaven/OceanHaven.html'
+  'oceanhaven/OceanHaven.html',
+  'oceansoundvilla/OceanSoundVilla.html'
 ];
 
 /**
