@@ -37,7 +37,7 @@ Fotos: ./images/foto-04.jpeg, ./images/foto-05.jpeg
 - Flautas o copas (2)
 - Treats de bienvenida
 - Amenidad de ocasión especial (de ser necesario)
-- Passes físicos (de ser necesarios)
+- Pases físicos (de ser necesarios)
 - Sacacorcho (de ser necesario)
 - Hielo para CI (de ser necesario)
 

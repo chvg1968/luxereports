@@ -48,7 +48,7 @@ lavaplatos)
   de golf cart y de la villa (validar que sean las correctas)
 * Vino o vino espumoso
 * Flautas o copas (2)
-* Passes físicos (de ser necesarios)
+* Pases físicos (de ser necesarios)
 * Sacacorcho (de ser necesario)
 * Hielo para CI (de ser necesario)
 
