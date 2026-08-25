@@ -1,6 +1,6 @@
-const { Resend } = require('resend');
+import { Resend } from 'resend';
 
-exports.handler = async (event) => {
+export const handler = async (event) => {
     // Only allow POST requests
     if (event.httpMethod !== 'POST') {
         return {
