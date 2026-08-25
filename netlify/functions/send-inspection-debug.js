@@ -1,11 +1,11 @@
-const { Resend } = require('resend');
+import { Resend } from 'resend';
 
 /**
  * Versión de debug de la función send-inspection
  * Proporciona más información sobre errores y el estado del envío
  */
 
-exports.handler = async (event) => {
+export const handler = async (event) => {
     // Only allow POST requests
     if (event.httpMethod !== 'POST') {
         return {
